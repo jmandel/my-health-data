@@ -1,6 +1,5 @@
 import uuid from "uuid";
 import queryString from "query-string"
-import epicEndpointsJson from './epic.json'
 
 const smartOAuthExtension = 'http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris';
 
@@ -17,9 +16,17 @@ const client = async (endpoint, registrations, fetch = window.fetch) => {
     .extension
     .filter(e => e.url === smartOAuthExtension)[0]
     .extension
-    .reduce((ret, v) => ({...ret, [v.url]: v.valueUri}), {})
+    .reduce((ret, v) => ({
+      ...ret,
+      [v.url]: v.valueUri
+    }), {})
 
-  return { endpoint, clientDetails, serverUrls, metadata }
+  return {
+    endpoint,
+    clientDetails,
+    serverUrls,
+    metadata
+  }
 }
 
 const authorize = (clientState, fetch = window.fetch) => {
@@ -40,9 +47,11 @@ const authorize = (clientState, fetch = window.fetch) => {
 
     const authorizeWindow = window.open(authorizeLink)
     const channel = new BroadcastChannel(state)
-    channel.onmessage = e => resolve({...clientState,
+    channel.onmessage = e => resolve({
+      ...clientState,
       authorizeRequest,
-      authorizeResponse: e.data})
+      authorizeResponse: e.data
+    })
   })
 }
 
@@ -55,24 +64,24 @@ const token = async (clientState, fetch = window.fetch) => {
     client_id: clientState.clientDetails.client_id
   }
 
-  const tokenResponse = await fetch(
-    tokenUrl, {
-      method: 'POST',
-      mode: 'cors',
-      body: queryString.stringify(tokenRequest),
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      }
-    }).then(r=>r.json())
+  const tokenResponse = await fetch(tokenUrl, {
+    method: 'POST',
+    mode: 'cors',
+    body: queryString.stringify(tokenRequest),
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
+  }).then(r => r.json())
 
-  return {...clientState, tokenRequest, tokenResponse}
+  return {
+    ...clientState,
+    tokenRequest,
+    tokenResponse
+  }
 }
 
-const epicEndpoints = epicEndpointsJson.Entries.map(e=>({
-  name: e.OrganizationName,
-  endpoint: e.FHIRPatientFacingURI
-}))
-
 export default {
-  client, authorize, token, epicEndpoints
+  client,
+  authorize,
+  token
 }
