@@ -8,5 +8,5 @@ No one other than me (Josh Mandel) should share their records with it.
 
 * https://parceljs.org/getting_started.html
 * add `$(yarn global bin)` to `PATH`
-* `parcel src/*.html
+* `parcel src/*.html`
 * browse to http://localhost:1234/index.html
