@@ -1,0 +1,17 @@
+{
+  "name": "my-health-data",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jmandel/my-health-data.git",
+  "author": "Josh Mandel <jmandel@med.harvard.edu>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "babel-polyfill": "^6.26.0",
+    "query-string": "^6.2.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
+  }
+}
