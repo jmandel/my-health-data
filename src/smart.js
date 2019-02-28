@@ -1,5 +1,6 @@
 import uuid from "uuid";
 import queryString from "query-string"
+import epicEndpointsJson from './epic.json'
 
 const smartOAuthExtension = 'http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris';
 
@@ -67,6 +68,11 @@ const token = async (clientState, fetch = window.fetch) => {
   return {...clientState, tokenRequest, tokenResponse}
 }
 
+const epicEndpoints = epicEndpointsJson.Entries.map(e=>({
+  name: e.OrganizationName,
+  endpoint: e.FHIRPatientFacingURI
+}))
+
 export default {
-  client, authorize, token
+  client, authorize, token, epicEndpoints
 }

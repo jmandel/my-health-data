@@ -7,6 +7,7 @@ No one other than me (Josh Mandel) should share their records with it.
 ## Dev
 
 * https://parceljs.org/getting_started.html
+* `curl -s https://open.epic.com/MyApps/EndpointsJson > src/epic.json`
 * add `$(yarn global bin)` to `PATH`
 * `parcel src/*.html`
 * browse to http://localhost:1234/index.html
