@@ -5,8 +5,7 @@ const smartOAuthExtension = 'http://fhir-registry.smarthealthit.org/StructureDef
 
 const oauth = async (clientState, fetch = window.fetch) => {
   const {
-    endpoint,
-    registration
+    endpoint
   } = clientState
 
   const fhirBaseUrl = endpoint.fhirBaseUrl + (
