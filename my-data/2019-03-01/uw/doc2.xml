@@ -1,1 +1,1055 @@
-<ClinicalDocument xmlns="urn:hl7-org:v3"><realmCode code="US" /><typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" /><templateId root="1.2.840.114350.1.72.1.51693" /><templateId root="2.16.840.1.113883.10.20.22.1.1" /><templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01" /><templateId root="2.16.840.1.113883.10.20.22.1.9" /><templateId root="2.16.840.1.113883.10.20.22.1.9" extension="2015-08-01" /><id assigningAuthorityName="EPC" root="1.2.840.114350.1.13.92.2.7.8.688883.299988754" /><code code="11506-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Subsequent evaluation note" /><title>Encounter Summary</title><effectiveTime value="20190301131221-0600" /><confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="Normal" /><languageCode code="en-US" /><setId assigningAuthorityName="EPC" extension="9ab8d532-3c55-11e9-8e2d-a20dd1eafb96" root="1.2.840.114350.1.13.92.2.7.1.1" /><versionNumber value="2" /><recordTarget><patientRole><id root="1.2.840.114350.1.13.92.2.7.3.688884.100" extension="UWH782294W" /><addr use="HP"><streetAddressLine>443 VIRGINIA TER</streetAddressLine><city>MADISON</city><state>WI</state><postalCode>53726-5345</postalCode><country>USA</country><county>DANE</county></addr><telecom use="MC" value="tel:+1-617-500-3253" /><telecom use="HP" value="tel:+1-617-500-3253" /><telecom value="mailto:jmandel@alum.mit.edu" /><patient><name use="L"><given>Joshua</given><given>Craig</given><family>Mandel</family></name><name use="P"><given qualifier="CL">Josh</given><family>Mandel</family></name><name use="P"><given>Joshu</given><given>Craig</given><family>Mandel</family></name><name use="P"><given>Josh</given><family>Mandel</family></name><administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGenderCode" displayName="Male" /><birthTime value="19821026" /><maritalStatusCode nullFlavor="UNK" /><raceCode nullFlavor="UNK" /><ethnicGroupCode nullFlavor="UNK" /><languageCommunication><languageCode code="eng" /><preferenceInd value="true" /></languageCommunication></patient><providerOrganization><id root="1.2.840.114350.1.13.92.2.7.2.688879" extension="3600" /><name>UW Health and Affiliates - Wisconsin and Illinois</name><telecom nullFlavor="NA" /><addr><streetAddressLine nullFlavor="UNK" /><city>Madison</city><state>WI</state><postalCode>53792</postalCode><country>USA</country></addr></providerOrganization></patientRole></recordTarget><author><time value="20190301131221-0600" /><assignedAuthor><id root="1.2.840.114350.1.1" extension="8.3" /><addr nullFlavor="NA" /><telecom nullFlavor="NA" /><assignedAuthoringDevice><manufacturerModelName>Epic - Version 8.3</manufacturerModelName><softwareName>Epic - Version 8.3</softwareName></assignedAuthoringDevice><representedOrganization><id root="1.2.840.114350.1.13.92.2.7.2.688879" extension="3600" /><name>UW Health and Affiliates - Wisconsin and Illinois</name><telecom nullFlavor="NA" /><addr><streetAddressLine nullFlavor="UNK" /><city>Madison</city><state>WI</state><postalCode>53792</postalCode><country>USA</country></addr></representedOrganization></assignedAuthor></author><custodian><assignedCustodian><representedCustodianOrganization><id root="1.2.840.114350.1.13.92.2.7.2.688879" extension="3600" /><name>UW Health and Affiliates - Wisconsin and Illinois</name><telecom nullFlavor="NA" /><addr><streetAddressLine nullFlavor="UNK" /><city>Madison</city><state>WI</state><postalCode>53792</postalCode><country>USA</country></addr></representedCustodianOrganization></assignedCustodian></custodian><participant typeCode="IND"><time value="20190208" /><associatedEntity classCode="ECON"><id nullFlavor="UNK" /><code nullFlavor="OTH"><originalText>Significant other</originalText></code><addr nullFlavor="UNK" /><telecom use="MC" value="tel:+1-478-227-7436" /><associatedPerson><name>NIZIOLEK,CAROLINE</name></associatedPerson></associatedEntity></participant><documentationOf typeCode="DOC"><serviceEvent classCode="PCPR"><templateId root="2.16.840.1.113883.10.20.21.3.1" /><effectiveTime><low value="20190226091300-0600" /><high value="20190226101500-0600" /></effectiveTime><performer typeCode="PRF"><functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" displayName="Primary Care Provider"><originalText>General</originalText></functionCode><time><low value="20190208" /><high nullFlavor="PINF" /></time><assignedEntity><id root="1.2.840.114350.1.13.92.2.7.2.836982" extension="70003411" /><code nullFlavor="UNK"><originalText>Internal Medicine</originalText></code><addr use="WP"><streetAddressLine>4410 REGENT ST</streetAddressLine><city>MADISON</city><state>WI</state><postalCode>53705-4901</postalCode></addr><telecom use="WP" value="tel:+1-608-233-9746" /><telecom value="fax:+1-608-236-1981" /><assignedPerson><name><given>Puneet</given><given>S</given><family>Dhillon</family><suffix>MD</suffix></name></assignedPerson></assignedEntity></performer></serviceEvent></documentationOf><relatedDocument typeCode="RPLC"><parentDocument><id assigningAuthorityName="EPC" root="1.2.840.114350.1.13.92.2.7.8.688883.299988181" /></parentDocument></relatedDocument><componentOf><encompassingEncounter><id root="1.2.840.114350.1.13.92.2.7.3.698084.8" extension="225166832" /><code code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatory"><originalText>Office Visit</originalText><translation code="101" codeSystem="1.2.840.114350.1.72.1.30" displayName="Office Visit" /></code><effectiveTime><low value="20190226091300-0600" /><high value="20190226101500-0600" /></effectiveTime><encounterParticipant typeCode="ATND"><time value="20190226091300-0600" /><assignedEntity><id root="1.2.840.114350.1.13.92.2.7.2.836982" extension="500773" /><code nullFlavor="UNK"><originalText>Physical Therapy</originalText></code><addr use="WP"><streetAddressLine>1050 EAST BROADWAY</streetAddressLine><city>MONONA</city><state>WI</state><postalCode>53716</postalCode></addr><telecom nullFlavor="UNK" /><assignedPerson><name><given>James</given><given>R</given><family>Cumming</family><suffix>PT</suffix></name></assignedPerson></assignedEntity></encounterParticipant><location><healthCareFacility><id root="1.2.840.114350.1.13.92.2.7.2.686980" extension="23231" /><code nullFlavor="UNK"><originalText>Physical Therapy</originalText></code><location><name>WEST CLINIC PT</name><addr><streetAddressLine>451 JUNCTION RD</streetAddressLine><city>MADISON</city><state>WI</state><postalCode>53717</postalCode></addr></location><serviceProviderOrganization><id root="1.2.840.114350.1.13.92.2.7.2.696570" extension="23000" /><name>WEST CLINIC UW HEALTH</name><addr><streetAddressLine>451 JUNCTION RD</streetAddressLine><city>MADISON</city><state>WI</state><postalCode>53717</postalCode><country nullFlavor="UNK" /></addr><asOrganizationPartOf><wholeOrganization><name>UW Health and Affiliates - Wisconsin and Illinois</name><addr nullFlavor="NA" /></wholeOrganization></asOrganizationPartOf></serviceProviderOrganization></healthCareFacility></location></encompassingEncounter></componentOf><component><structuredBody><component><section><code code="X-DOCCMT" codeSystem="1.2.840.114350.1.72.2" displayName="Document Comments" /><title>Note from UW Health and Affiliates - Wisconsin and Illinois</title><text>This document contains information that was shared with Josh Craig Mandel. It may not contain the entire record from UW Health and Affiliates - Wisconsin and Illinois.</text></section></component><component><section><templateId root="2.16.840.1.113883.10.20.22.2.22" /><templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01" /><templateId root="2.16.840.1.113883.10.20.22.2.22.1" /><templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01" /><code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF ENCOUNTERS" /><title>Encounter Details</title><text><table><colgroup><col width="10%" /><col width="15%" /><col width="25%" /><col width="25%" /></colgroup><thead><tr><th>Date</th><th>Type</th><th>Department</th><th>Care Team</th></tr></thead><tbody><tr ID="encounter2" styleCode="normRow"><td>02/26/2019</td><td ID="encounter2type">Office Visit</td><td><paragraph>WEST CLINIC PT</paragraph><paragraph>451 JUNCTION RD</paragraph><paragraph>MADISON, WI 53717</paragraph><paragraph>608-890-6110</paragraph></td><td><paragraph styleCode="Bold">Cumming, James R, PT</paragraph><paragraph>1050 EAST BROADWAY</paragraph><paragraph>MONONA, WI 53716</paragraph></td></tr></tbody></table></text><entry><encounter classCode="ENC" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.22.4.49" /><templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01" /><id assigningAuthorityName="EPIC" root="1.2.840.114350.1.13.92.2.7.3.698084.8" extension="225166832" /><code code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatory"><originalText><reference value="#encounter2type" /></originalText><translation code="101" codeSystem="1.2.840.114350.1.13.92.2.7.4.698084.30" displayName="Office Visit" codeSystemName="Epic.EncounterType" /><translation code="101" codeSystem="1.2.840.114350.1.72.1.30" displayName="Office Visit" /></code><text><reference value="#encounter2" /></text><statusCode code="normal" /><effectiveTime><low value="20190226091300-0600" /><high value="20190226101500-0600" /></effectiveTime><performer typeCode="PRF"><time><low nullFlavor="UNK" /><high nullFlavor="UNK" /></time><assignedEntity classCode="ASSIGNED"><id root="1.2.840.114350.1.13.92.2.7.2.836982" extension="500773" /><code nullFlavor="UNK"><originalText>Physical Therapy</originalText></code><addr><streetAddressLine>1050 EAST BROADWAY</streetAddressLine><city>MONONA</city><state>WI</state><postalCode>53716</postalCode></addr><telecom nullFlavor="UNK" /><assignedPerson><name><given>James</given><given>R</given><family>Cumming</family><suffix>PT</suffix></name></assignedPerson><representedOrganization classCode="ORG"><name nullFlavor="UNK" /><telecom nullFlavor="UNK" /><addr nullFlavor="UNK" /></representedOrganization></assignedEntity></performer><participant typeCode="LOC"><participantRole classCode="SDLOC"><templateId root="2.16.840.1.113883.10.20.22.4.32" /><id root="1.2.840.114350.1.13.92.2.7.2.686980" extension="23231" /><code nullFlavor="UNK"><originalText>Physical Therapy</originalText></code><addr><streetAddressLine>451 JUNCTION RD</streetAddressLine><city>MADISON</city><state>WI</state><postalCode>53717</postalCode></addr><playingEntity classCode="PLC"><name>WEST CLINIC PT</name><desc>Physical Therapy</desc></playingEntity></participantRole></participant><entryRelationship typeCode="SUBJ"><act classCode="ACT" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.22.4.80" /><templateId root="2.16.840.1.113883.10.20.22.4.80" extension="2015-08-01" /><id root="1.2.840.114350.1.13.92.2.7.1.1099.1" extension="225166832-1364290" /><code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Encounter Diagnosis" /><statusCode code="active" /><entryRelationship typeCode="SUBJ" inversionInd="false"><observation classCode="OBS" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.22.4.4" /><templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" /><id root="1.2.840.114350.1.13.92.2.7.1.1099.1" extension="225166832-1364290" /><code code="282291009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diagnosis"><translation code="29308-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diagnosis" codeSystemName="LOINC" /></code><text>Sprain of left ankle, unspecified ligament, subsequent encounter</text><statusCode code="completed" /><effectiveTime><low nullFlavor="UNK" /></effectiveTime><value code="11833631000119105" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Sprain of left ankle, unspecified ligament, subsequent encounter" xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><originalText>Sprain of left ankle, unspecified ligament, subsequent encounter<reference value="#vdx3Name" /></originalText><translation code="S93.402D" codeSystem="2.16.840.1.113883.6.90" displayName="Sprain of left ankle, unspecified ligament, subsequent encounter" codeSystemName="ICD-10-CM" /><translation code="V58.89" codeSystem="2.16.840.1.113883.6.103" displayName="Sprain of left ankle, unspecified ligament, subsequent encounter" codeSystemName="ICD-9CM" /><translation code="613383139" codeSystem="2.16.840.1.113883.3.247.1.1" displayName="Sprain of left ankle, unspecified ligament, subsequent encounter" codeSystemName="Intelligent Medical Objects ProblemIT" /></value><entryRelationship typeCode="REFR"><observation classCode="OBS" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.22.4.6" /><code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status" /><statusCode code="completed" /><effectiveTime><low nullFlavor="UNK" /></effectiveTime><value code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active" xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></observation></entryRelationship></observation></entryRelationship></act></entryRelationship></encounter></entry></section></component><component><section><templateId root="2.16.840.1.113883.10.20.22.2.17" /><templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01" /><code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history" /><title>Social History</title><text><table><colgroup><col width="25%" /><col width="25%" /><col width="13%" /><col width="12%" /><col width="25%" /></colgroup><thead><tr><th>Tobacco Use</th><th>Types</th><th>Packs/Day</th><th>Years Used</th><th>Date</th></tr></thead><tbody><tr><td>Never Smoker</td><td /><td /><td /><td /></tr><tr><td>Smokeless Tobacco: Never Used</td><td /><td colspan="2" /><td /></tr></tbody></table><table><colgroup><col width="25%" /><col width="75%" /></colgroup><thead><tr><th>Sex Assigned at Birth</th><th>Date Recorded</th></tr></thead><tbody><tr ID="BirthSex7"><td ID="BirthSex7Value">Not on file</td><td /></tr></tbody></table><footnote ID="subTitle5" styleCode="xSectionSubTitle xHidden">as of this encounter</footnote></text><entry><observation classCode="OBS" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.22.4.78" /><templateId root="2.16.840.1.113883.10.20.22.4.78" extension="2014-06-09" /><id root="1.2.840.114350.1.13.92.2.7.1.1040.1" extension="Z4061493^65052^72166-2" /><code code="72166-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tobacco smoking status NHIS" /><statusCode code="completed" /><effectiveTime value="20190208" /><value code="266919005" codeSystem="2.16.840.1.113883.6.96" displayName="Never smoker" xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></observation></entry><entry><observation classCode="OBS" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01" /><code code="76689-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sex Assigned At Birth" /><text><reference value="#BirthSex7" /></text><statusCode code="completed" /><value codeSystem="2.16.840.1.113883.5.1" xsi:type="CD" nullFlavor="UNK" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><originalText><reference value="#BirthSex7Value" /></originalText></value></observation></entry></section></component><component><section><templateId root="2.16.840.1.113883.10.20.22.2.45" /><templateId root="2.16.840.1.113883.10.20.22.2.45" extension="2014-06-09" /><id root="F0439866-3C55-11E9-A261-A20DD1EAFB96" /><code code="69730-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Instructions" /><title>Instructions</title><text ID="Instructions13"><list styleCode="TOC"><item><caption>Patient Instructions - Cumming, James R, PT - 02/26/2019  9:15 AM CST</caption><paragraph>Brace <br />- continue to wear continuously for another 3-4 weeks<br />- wean after that, then wear when you will be on uneven ground a lot, probably for the next 6 months to a year<br /><br />Exercises<br />- work on big / exaggerated alphabet, 1-2 x day<br />- seated, foot planted, slide foot back, keep heel down, till a bit of a stretch in lower part of calf, x 10 sec hold, x 4-5 , 1-2 x day<br />- heel raises holding counter for support, use left leg a bit more than right, 2 x to fatigue, 3-4 x week<br /><br />Balance<br />- most important long term exercise<br />- start with right foot on volleyball/soccer ball for instance<br />- some progression ideas: move head side to side, eyes closed, standing on pillow, moving other leg / reaching, ball toss <br /><br />Gait <br />- get back to treadmills , 5-10 min bouts 1-2 x day<br />- progress gradually from there<br />- stairs - work on standing on left leg on slight elevation, touching ground with right foot and coming right back up<br /></paragraph></item></list><footnote ID="subTitle12" styleCode="xSectionSubTitle xHidden">in this encounter</footnote></text><entry><act classCode="ACT" moodCode="INT"><templateId root="2.16.840.1.113883.10.20.22.4.20" /><templateId root="2.16.840.1.113883.10.20.22.4.20" extension="2014-06-09" /><code code="311401005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Patient Education" /><text><reference value="#Instructions13" /></text><statusCode code="completed" /></act></entry></section></component><component><section><templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4" /><id root="F043E3FC-3C55-11E9-A261-A20DD1EAFB96" /><code code="10164-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Present Illness" /><title>Progress Notes</title><text><list styleCode="TOC"><item><caption>Cumming, James R, PT - 02/26/2019  9:15 AM CST</caption><paragraph><content styleCode="label">Formatting of this note may be different from the original.</content><br />UW Health Rehabiliation<br />Physical Therapy Initial Evaluation<br />UW Health West  Clinic<br /><br />Diagnosis: ankle sprain<br />PCP: Puneet S Dhillon, MD<br />Referring provider: No Referring Provider, *<br />Start of Care: 2/26/2019<br /><br />SUBJECTIVE <br /><br />History of Present Condition:  <br />Joshua Craig Mandel is a 36 year old year old male who presents for evaluation of ankle sprain<br /><br />he describes the onset of symptoms as:  fall - on ice/ sprain - inversion sprain<br /><br />Date of Onset: 2/8/2019 date of injury<br /><br />Symptoms:<br /><br />Symptom location: anterolateral ankel<br />Symptom quality: sharp, aching<br />Symptom frequency: intermittent, present daily but &lt;50% of the time<br />Aggravating factors: certain movements (sheet moving across foot in righ way turning in inward), walking <br />Alleviating factors: rest/ time off feet<br /><br />Pain ratings:<br />Pain Score: 0 - No Pain Pain Loc: Ankle <br />BEST Pain Score: 0 - No Pain<br />WORST Pain Score: 5/10 Number Scale (some brief pain higher than that)<br /><br />Since the onset date noted above (new injury or exacerbation), symptoms are gradually improving. <br /><br />Region Specific Questions (Knee, Leg, Ankle and Foot)<br />· Mechanical symptoms?: popping at time of incident only , also states some catching at times while walking<br /><br />Prior History of this Condition and Past and Current Management<br />Prior history of the same, similar, or related condition and prior management:<br />no previous history<br /><br />Health Care Provider and Self Management of condition (past and current):<br />Urgent care visit day of injury<br /><br />Prior physical therapy for current episode?: none<br /><br />Imaging and other diagnostic tests performed:<br />See imaging section of medical record for more information regarding recent diagnostic work including:   Radiographs 2/8/2019<br /><br />Social History and Activities: <br /><br />Occupation: work from home for Microsoft, does a lot of travel about 1/3 of the time<br /><br />Living environment: Joshua currently lives in a House.  he currently lives with a partner.   At discharge it is planned that same as current<br /><br />Critical work duties/tasks which are affected by this condition: <br />self imposted restrictions and/or modification of work duties: not using treadmill work station<br /><br />Exercise/Activity History: walking - has not done due to injury<br /><br />Functional Limitations:<br />Level of function prior to onset of this condition:  No prior limitations, able to perform ADLs, IADLs, and general mobility tasks without symptoms or difficulty<br /> <br />The patient reports the following current primary functional limitations due to this condition:<br />1. Walking - household and community distances<br />2. stairs<br /><br />Durable medical equipment currently needed for this condition: has ankle ASO<br /><br />See assessment below for complete list of activities limitations and participation restrictions due to this condition. <br /><br />The following patient reported questionnaires were completed for today's visit:<br />Assigned post visit<br /><br />OBJECTIVE <br /><br />Observation: mild swelling, very faint bruising observed lateral foot<br /><br />Gait: <br />Level Ground: antalgic, short stance time left<br />Stairs:walks step to down stairs, able to walk step over step but with deviations / pain <br /><br />Proprioception/balance:  single leg stance on involved leg left impaired: increased sway, hold approx 20 sec<br /><br />Ankle ROM (Passive unless otherwise specified)<br /> Involved Left Uninvolved Right <br />Dorsiflexion 18 some end range pain  full  <br />Plantarflexion 48  55  <br />Inversion 40 40 <br />Eversion NT NT <br /><br />Special Tests:<br />Positive tests include:squeeze test tib-fib compression<br />Negative tests include:anterior drawer, talar tilt for deltoid ligament, talar tilt for calcaneofibular ligament, posterior drawer, ankle inv/PF end range<br /><br />Treatment Provided: The patient was educated on the findings of the evaluation and the course for treatment. <br /><br />Home exercise program, education, and other recommendataions<br />see patient instructions for complete HEP<br /><br />Written descriptions of home recommendations and exercises were provided via Patient Instructions<br /><br />In clinic treatment<br />HEP instruction and education as detailed in patient instructions<br />Education on WB progression as well<br /><br />Tolerance or reaction to treatment:<br />Appeared to or stated an understanding of the rationale of the intervention and participated with no adverse reaction. In clinic response: no immediate effect<br /><br />After visit summary: The patient was offered and declined the After Visit Summary paperwork, but is aware of its availability in MyChart. <br /><br />Total Treatment Time: 50 minutes.<br />Timed Code Treatment Minutes: 24<br />Detailed Treatment Times: 26 minutes of Evaluation, 12 minutes of Therapeutic Exercise, 7 minutes of Neuromuscular Reeducation and 8 min gait <br />Supplies issued to patient in today's visit: None<br />**The patient is aware that insurance may not cover the above issued item and verbally agreed to the charge.<br /><br />ASSESSMENT <br /><br />Overall clinical impression: Joshua Craig Mandel is a 36 year old year old male presenting with signs and symptoms consistent with s/p left ligamentous sprain, inversion, with elements of high ankle sprain as well. Overall severity of sprain is mild to moderate. He has mild limitations in ROM, gait, and proprioception. Today's focus was on prescription of a complete HEP with progressions for ongoing self management with HEP only. <br /><br />Is physical therapy indicated? Yes<br /><br />Determination of Evaluation Complexity:<br />History: <br />Personal and environmental factors  which may impede functional recovery include:none<br />Relevant PMH: no relevant past medical history <br /> <br />Examination:<br />Today's examination included the following elements in Body Structure and Function: pain, joint range of motion, joint integrity/structure , gait<br />Activity Limitations and Participation Restrictions due to this condition: Walking community distances, Walking on different surfaces <br /> <br />Presentation:<br />Characteristics of the clinical presentation as assessed today is described as: evolving clinical presentation with changing characteristics (moderate), evolving presentation due to the following factors: acuity. <br /> <br />Complexity determination:<br />Based on personal factors involved, systems assessed, characteristics of the clinical presentation, and level of clinical decision making required the complexity of the evaluation performed today is determined to be:  low complexity<br />  <br /><br />Further assessment:<br /><br />Rehabilitation potential is excellent. <br /><br />GOALS:  to be achieved by 6 weeks<br />1. Ambulate on uneven surfaces such as grass without reports of instability and minimal increase in pain <br />2. Walk community distances with 75% less pain<br />3. Independently ascend/descend steps with 75% less pain <br /><br />Explanation of need for skilled care:<br />Mr.Mandel presents with functional limitations and impairments that would benefit from skilled Physical  Therapy services in an outpatient setting in order to reduce symptoms in the context of functional activities,  improve functional abilities, maximize their level of independence and achieve the established goals for this episode of care.    Education was provided that physical therapy may include performance of a home exercise program; recommendations for behavioral modification, suggestions for lifestyle accommodation, recommendations for resuming life roles; and/or development of techniques for self-management where appropriate. Education included the expectation and importance of active participation in order to obtain the most benefit from the services provided. Joshua  indicated a willingness to actively participate in rehabilitation and has expressed or demonstrated an understanding of his role.<br /><br />Barriers to learning and learning preferences were reviewed and documented in the medical record: yes <br /><br />PLAN <br /><br />Visit frequency: consultation only, f/u prn<br /><br />Estimated total number of visits: 1<br /><br />Interventions most likely to be used include: Therapeutic Exercise - 97110 and Neuromuscular Re-education - 97112.<br /><br />Plan for next treatment session:  NA<br /><br />Recommended Referrals:<br />No additional referrals are recommended at this time.<br /><br />Once patient no longer needs skilled care, a self directed, independent program will be the primary means of management (if needed). <br /><br />The Goals and Plan of Care were discussed with the patient and agreed upon.The anticipated risks and benefits were discussed with the patient for all treatment options as a component of the elements of informed consent. Consent was obtained verbally and by patient signing the supplied consent form. <br /><br />Mr. Mandel was encouraged to contact me via MyChart or telephone with any questions or concerns that arise regarding the above assessment or plan of care.<br /><br />James R Cumming, PT<br /></paragraph></item></list><footnote ID="subTitle15" styleCode="xSectionSubTitle xHidden">in this encounter</footnote></text></section></component><component><section><templateId root="2.16.840.1.113883.10.20.22.2.10" /><templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09" /><code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan" /><title>Plan of Treatment</title><text><paragraph>Not on file</paragraph><footnote ID="subTitle16" styleCode="xSectionSubTitle xHidden">as of this encounter</footnote></text></section></component><component><section><templateId root="2.16.840.1.113883.10.20.22.2.8" /><id root="F04B5902-3C55-11E9-A261-A20DD1EAFB96" /><code code="51848-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Assessments" /><title>Visit Diagnoses</title><text><table><colgroup><col width="100%" /></colgroup><thead><tr><th>Diagnosis</th></tr></thead><tbody><tr ID="vdx3" styleCode="normRow"><td><paragraph><content ID="vdx3Name">Sprain of left ankle, unspecified ligament, subsequent encounter</content><content> - Primary</content></paragraph></td></tr></tbody></table></text></section></component></structuredBody></component></ClinicalDocument>
+<ClinicalDocument xmlns="urn:hl7-org:v3">
+  <realmCode code="US" />
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+  <templateId root="1.2.840.114350.1.72.1.51693" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"
+  extension="2015-08-01" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.9" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.9"
+  extension="2015-08-01" />
+  <id assigningAuthorityName="EPC"
+  root="1.2.840.114350.1.13.92.2.7.8.688883.299988754" />
+  <code code="11506-3" codeSystem="2.16.840.1.113883.6.1"
+  codeSystemName="LOINC"
+  displayName="Subsequent evaluation note" />
+  <title>Encounter Summary</title>
+  <effectiveTime value="20190301131221-0600" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"
+  displayName="Normal" />
+  <languageCode code="en-US" />
+  <setId assigningAuthorityName="EPC"
+  extension="9ab8d532-3c55-11e9-8e2d-a20dd1eafb96"
+  root="1.2.840.114350.1.13.92.2.7.1.1" />
+  <versionNumber value="2" />
+  <recordTarget>
+    <patientRole>
+      <id root="1.2.840.114350.1.13.92.2.7.3.688884.100"
+      extension="UWH782294W" />
+      <addr use="HP">
+        <streetAddressLine>443 VIRGINIA TER</streetAddressLine>
+        <city>MADISON</city>
+        <state>WI</state>
+        <postalCode>53726-5345</postalCode>
+        <country>USA</country>
+        <county>DANE</county>
+      </addr>
+      <telecom use="MC" value="tel:+1-617-500-3253" />
+      <telecom use="HP" value="tel:+1-617-500-3253" />
+      <telecom value="mailto:jmandel@alum.mit.edu" />
+      <patient>
+        <name use="L">
+          <given>Joshua</given>
+          <given>Craig</given>
+          <family>Mandel</family>
+        </name>
+        <name use="P">
+          <given qualifier="CL">Josh</given>
+          <family>Mandel</family>
+        </name>
+        <name use="P">
+          <given>Joshu</given>
+          <given>Craig</given>
+          <family>Mandel</family>
+        </name>
+        <name use="P">
+          <given>Josh</given>
+          <family>Mandel</family>
+        </name>
+        <administrativeGenderCode code="M"
+        codeSystem="2.16.840.1.113883.5.1"
+        codeSystemName="AdministrativeGenderCode"
+        displayName="Male" />
+        <birthTime value="19821026" />
+        <maritalStatusCode nullFlavor="UNK" />
+        <raceCode nullFlavor="UNK" />
+        <ethnicGroupCode nullFlavor="UNK" />
+        <languageCommunication>
+          <languageCode code="eng" />
+          <preferenceInd value="true" />
+        </languageCommunication>
+      </patient>
+      <providerOrganization>
+        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
+        extension="3600" />
+        <name>UW Health and Affiliates - Wisconsin and
+        Illinois</name>
+        <telecom nullFlavor="NA" />
+        <addr>
+          <streetAddressLine nullFlavor="UNK" />
+          <city>Madison</city>
+          <state>WI</state>
+          <postalCode>53792</postalCode>
+          <country>USA</country>
+        </addr>
+      </providerOrganization>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20190301131221-0600" />
+    <assignedAuthor>
+      <id root="1.2.840.114350.1.1" extension="8.3" />
+      <addr nullFlavor="NA" />
+      <telecom nullFlavor="NA" />
+      <assignedAuthoringDevice>
+        <manufacturerModelName>Epic - Version
+        8.3</manufacturerModelName>
+        <softwareName>Epic - Version 8.3</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
+        extension="3600" />
+        <name>UW Health and Affiliates - Wisconsin and
+        Illinois</name>
+        <telecom nullFlavor="NA" />
+        <addr>
+          <streetAddressLine nullFlavor="UNK" />
+          <city>Madison</city>
+          <state>WI</state>
+          <postalCode>53792</postalCode>
+          <country>USA</country>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
+        extension="3600" />
+        <name>UW Health and Affiliates - Wisconsin and
+        Illinois</name>
+        <telecom nullFlavor="NA" />
+        <addr>
+          <streetAddressLine nullFlavor="UNK" />
+          <city>Madison</city>
+          <state>WI</state>
+          <postalCode>53792</postalCode>
+          <country>USA</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <participant typeCode="IND">
+    <time value="20190208" />
+    <associatedEntity classCode="ECON">
+      <id nullFlavor="UNK" />
+      <code nullFlavor="OTH">
+        <originalText>Significant other</originalText>
+      </code>
+      <addr nullFlavor="UNK" />
+      <telecom use="MC" value="tel:+1-478-227-7436" />
+      <associatedPerson>
+        <name>NIZIOLEK,CAROLINE</name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <documentationOf typeCode="DOC">
+    <serviceEvent classCode="PCPR">
+      <templateId root="2.16.840.1.113883.10.20.21.3.1" />
+      <effectiveTime>
+        <low value="20190226091300-0600" />
+        <high value="20190226101500-0600" />
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <functionCode code="PCP"
+        codeSystem="2.16.840.1.113883.5.88"
+        codeSystemName="ParticipationFunction"
+        displayName="Primary Care Provider">
+          <originalText>General</originalText>
+        </functionCode>
+        <time>
+          <low value="20190208" />
+          <high nullFlavor="PINF" />
+        </time>
+        <assignedEntity>
+          <id root="1.2.840.114350.1.13.92.2.7.2.836982"
+          extension="70003411" />
+          <code nullFlavor="UNK">
+            <originalText>Internal Medicine</originalText>
+          </code>
+          <addr use="WP">
+            <streetAddressLine>4410 REGENT ST</streetAddressLine>
+            <city>MADISON</city>
+            <state>WI</state>
+            <postalCode>53705-4901</postalCode>
+          </addr>
+          <telecom use="WP" value="tel:+1-608-233-9746" />
+          <telecom value="fax:+1-608-236-1981" />
+          <assignedPerson>
+            <name>
+              <given>Puneet</given>
+              <given>S</given>
+              <family>Dhillon</family>
+              <suffix>MD</suffix>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <relatedDocument typeCode="RPLC">
+    <parentDocument>
+      <id assigningAuthorityName="EPC"
+      root="1.2.840.114350.1.13.92.2.7.8.688883.299988181" />
+    </parentDocument>
+  </relatedDocument>
+  <componentOf>
+    <encompassingEncounter>
+      <id root="1.2.840.114350.1.13.92.2.7.3.698084.8"
+      extension="225166832" />
+      <code code="AMB" codeSystem="2.16.840.1.113883.5.4"
+      displayName="Ambulatory">
+        <originalText>Office Visit</originalText>
+        <translation code="101"
+        codeSystem="1.2.840.114350.1.72.1.30"
+        displayName="Office Visit" />
+      </code>
+      <effectiveTime>
+        <low value="20190226091300-0600" />
+        <high value="20190226101500-0600" />
+      </effectiveTime>
+      <encounterParticipant typeCode="ATND">
+        <time value="20190226091300-0600" />
+        <assignedEntity>
+          <id root="1.2.840.114350.1.13.92.2.7.2.836982"
+          extension="500773" />
+          <code nullFlavor="UNK">
+            <originalText>Physical Therapy</originalText>
+          </code>
+          <addr use="WP">
+            <streetAddressLine>1050 EAST
+            BROADWAY</streetAddressLine>
+            <city>MONONA</city>
+            <state>WI</state>
+            <postalCode>53716</postalCode>
+          </addr>
+          <telecom nullFlavor="UNK" />
+          <assignedPerson>
+            <name>
+              <given>James</given>
+              <given>R</given>
+              <family>Cumming</family>
+              <suffix>PT</suffix>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </encounterParticipant>
+      <location>
+        <healthCareFacility>
+          <id root="1.2.840.114350.1.13.92.2.7.2.686980"
+          extension="23231" />
+          <code nullFlavor="UNK">
+            <originalText>Physical Therapy</originalText>
+          </code>
+          <location>
+            <name>WEST CLINIC PT</name>
+            <addr>
+              <streetAddressLine>451 JUNCTION
+              RD</streetAddressLine>
+              <city>MADISON</city>
+              <state>WI</state>
+              <postalCode>53717</postalCode>
+            </addr>
+          </location>
+          <serviceProviderOrganization>
+            <id root="1.2.840.114350.1.13.92.2.7.2.696570"
+            extension="23000" />
+            <name>WEST CLINIC UW HEALTH</name>
+            <addr>
+              <streetAddressLine>451 JUNCTION
+              RD</streetAddressLine>
+              <city>MADISON</city>
+              <state>WI</state>
+              <postalCode>53717</postalCode>
+              <country nullFlavor="UNK" />
+            </addr>
+            <asOrganizationPartOf>
+              <wholeOrganization>
+                <name>UW Health and Affiliates - Wisconsin and
+                Illinois</name>
+                <addr nullFlavor="NA" />
+              </wholeOrganization>
+            </asOrganizationPartOf>
+          </serviceProviderOrganization>
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <code code="X-DOCCMT" codeSystem="1.2.840.114350.1.72.2"
+          displayName="Document Comments" />
+          <title>Note from UW Health and Affiliates - Wisconsin and
+          Illinois</title>
+          <text>This document contains information that was shared
+          with Josh Craig Mandel. It may not contain the entire
+          record from UW Health and Affiliates - Wisconsin and
+          Illinois.</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.22"
+          extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1"
+          extension="2015-08-01" />
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1"
+          codeSystemName="LOINC"
+          displayName="HISTORY OF ENCOUNTERS" />
+          <title>Encounter Details</title>
+          <text>
+            <table>
+              <colgroup>
+                <col width="10%" />
+                <col width="15%" />
+                <col width="25%" />
+                <col width="25%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Department</th>
+                  <th>Care Team</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="encounter2" styleCode="normRow">
+                  <td>02/26/2019</td>
+                  <td ID="encounter2type">Office Visit</td>
+                  <td>
+                    <paragraph>WEST CLINIC PT</paragraph>
+                    <paragraph>451 JUNCTION RD</paragraph>
+                    <paragraph>MADISON, WI 53717</paragraph>
+                    <paragraph>608-890-6110</paragraph>
+                  </td>
+                  <td>
+                    <paragraph styleCode="Bold">Cumming, James R,
+                    PT</paragraph>
+                    <paragraph>1050 EAST BROADWAY</paragraph>
+                    <paragraph>MONONA, WI 53716</paragraph>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"
+              extension="2015-08-01" />
+              <id assigningAuthorityName="EPIC"
+              root="1.2.840.114350.1.13.92.2.7.3.698084.8"
+              extension="225166832" />
+              <code code="AMB" codeSystem="2.16.840.1.113883.5.4"
+              displayName="Ambulatory">
+                <originalText>
+                  <reference value="#encounter2type" />
+                </originalText>
+                <translation code="101"
+                codeSystem="1.2.840.114350.1.13.92.2.7.4.698084.30"
+                displayName="Office Visit"
+                codeSystemName="Epic.EncounterType" />
+                <translation code="101"
+                codeSystem="1.2.840.114350.1.72.1.30"
+                displayName="Office Visit" />
+              </code>
+              <text>
+                <reference value="#encounter2" />
+              </text>
+              <statusCode code="normal" />
+              <effectiveTime>
+                <low value="20190226091300-0600" />
+                <high value="20190226101500-0600" />
+              </effectiveTime>
+              <performer typeCode="PRF">
+                <time>
+                  <low nullFlavor="UNK" />
+                  <high nullFlavor="UNK" />
+                </time>
+                <assignedEntity classCode="ASSIGNED">
+                  <id root="1.2.840.114350.1.13.92.2.7.2.836982"
+                  extension="500773" />
+                  <code nullFlavor="UNK">
+                    <originalText>Physical Therapy</originalText>
+                  </code>
+                  <addr>
+                    <streetAddressLine>1050 EAST
+                    BROADWAY</streetAddressLine>
+                    <city>MONONA</city>
+                    <state>WI</state>
+                    <postalCode>53716</postalCode>
+                  </addr>
+                  <telecom nullFlavor="UNK" />
+                  <assignedPerson>
+                    <name>
+                      <given>James</given>
+                      <given>R</given>
+                      <family>Cumming</family>
+                      <suffix>PT</suffix>
+                    </name>
+                  </assignedPerson>
+                  <representedOrganization classCode="ORG">
+                    <name nullFlavor="UNK" />
+                    <telecom nullFlavor="UNK" />
+                    <addr nullFlavor="UNK" />
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.32" />
+                  <id root="1.2.840.114350.1.13.92.2.7.2.686980"
+                  extension="23231" />
+                  <code nullFlavor="UNK">
+                    <originalText>Physical Therapy</originalText>
+                  </code>
+                  <addr>
+                    <streetAddressLine>451 JUNCTION
+                    RD</streetAddressLine>
+                    <city>MADISON</city>
+                    <state>WI</state>
+                    <postalCode>53717</postalCode>
+                  </addr>
+                  <playingEntity classCode="PLC">
+                    <name>WEST CLINIC PT</name>
+                    <desc>Physical Therapy</desc>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="SUBJ">
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.80" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.80"
+                  extension="2015-08-01" />
+                  <id root="1.2.840.114350.1.13.92.2.7.1.1099.1"
+                  extension="225166832-1364290" />
+                  <code code="29308-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  codeSystemName="LOINC"
+                  displayName="Encounter Diagnosis" />
+                  <statusCode code="active" />
+                  <entryRelationship typeCode="SUBJ"
+                  inversionInd="false">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                      <templateId root="2.16.840.1.113883.10.20.22.4.4"
+                      extension="2015-08-01" />
+                      <id root="1.2.840.114350.1.13.92.2.7.1.1099.1"
+                      extension="225166832-1364290" />
+                      <code code="282291009"
+                      codeSystem="2.16.840.1.113883.6.96"
+                      codeSystemName="SNOMED CT"
+                      displayName="Diagnosis">
+                        <translation code="29308-4"
+                        codeSystem="2.16.840.1.113883.6.1"
+                        displayName="Diagnosis"
+                        codeSystemName="LOINC" />
+                      </code>
+                      <text>Sprain of left ankle, unspecified
+                      ligament, subsequent encounter</text>
+                      <statusCode code="completed" />
+                      <effectiveTime>
+                        <low nullFlavor="UNK" />
+                      </effectiveTime>
+                      <value code="11833631000119105"
+                      codeSystem="2.16.840.1.113883.6.96"
+                      codeSystemName="SNOMED CT"
+                      displayName="Sprain of left ankle, unspecified ligament, subsequent encounter"
+                      xsi:type="CD"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+                        <originalText>Sprain of left ankle,
+                        unspecified ligament, subsequent encounter
+                        <reference value="#vdx3Name" /></originalText>
+                        <translation code="S93.402D"
+                        codeSystem="2.16.840.1.113883.6.90"
+                        displayName="Sprain of left ankle, unspecified ligament, subsequent encounter"
+                        codeSystemName="ICD-10-CM" />
+                        <translation code="V58.89"
+                        codeSystem="2.16.840.1.113883.6.103"
+                        displayName="Sprain of left ankle, unspecified ligament, subsequent encounter"
+                        codeSystemName="ICD-9CM" />
+                        <translation code="613383139"
+                        codeSystem="2.16.840.1.113883.3.247.1.1"
+                        displayName="Sprain of left ankle, unspecified ligament, subsequent encounter"
+                        codeSystemName="Intelligent Medical Objects ProblemIT" />
+                      </value>
+                      <entryRelationship typeCode="REFR">
+                        <observation classCode="OBS"
+                        moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.22.4.6" />
+                          <code code="33999-4"
+                          codeSystem="2.16.840.1.113883.6.1"
+                          displayName="Status" />
+                          <statusCode code="completed" />
+                          <effectiveTime>
+                            <low nullFlavor="UNK" />
+                          </effectiveTime>
+                          <value code="55561003"
+                          codeSystem="2.16.840.1.113883.6.96"
+                          displayName="Active" xsi:type="CD"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                </act>
+              </entryRelationship>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"
+          extension="2015-08-01" />
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"
+          codeSystemName="LOINC" displayName="Social history" />
+          <title>Social History</title>
+          <text>
+            <table>
+              <colgroup>
+                <col width="25%" />
+                <col width="25%" />
+                <col width="13%" />
+                <col width="12%" />
+                <col width="25%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Tobacco Use</th>
+                  <th>Types</th>
+                  <th>Packs/Day</th>
+                  <th>Years Used</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Never Smoker</td>
+                  <td />
+                  <td />
+                  <td />
+                  <td />
+                </tr>
+                <tr>
+                  <td>Smokeless Tobacco: Never Used</td>
+                  <td />
+                  <td colspan="2" />
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <colgroup>
+                <col width="25%" />
+                <col width="75%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Sex Assigned at Birth</th>
+                  <th>Date Recorded</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="BirthSex7">
+                  <td ID="BirthSex7Value">Not on file</td>
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+            <footnote ID="subTitle5"
+            styleCode="xSectionSubTitle xHidden">as of this
+            encounter</footnote>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.78" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.78"
+              extension="2014-06-09" />
+              <id root="1.2.840.114350.1.13.92.2.7.1.1040.1"
+              extension="Z4061493^65052^72166-2" />
+              <code code="72166-2"
+              codeSystem="2.16.840.1.113883.6.1"
+              codeSystemName="LOINC"
+              displayName="Tobacco smoking status NHIS" />
+              <statusCode code="completed" />
+              <effectiveTime value="20190208" />
+              <value code="266919005"
+              codeSystem="2.16.840.1.113883.6.96"
+              displayName="Never smoker" xsi:type="CD"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.200"
+              extension="2016-06-01" />
+              <code code="76689-9"
+              codeSystem="2.16.840.1.113883.6.1"
+              codeSystemName="LOINC"
+              displayName="Sex Assigned At Birth" />
+              <text>
+                <reference value="#BirthSex7" />
+              </text>
+              <statusCode code="completed" />
+              <value codeSystem="2.16.840.1.113883.5.1"
+              xsi:type="CD" nullFlavor="UNK"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+                <originalText>
+                  <reference value="#BirthSex7Value" />
+                </originalText>
+              </value>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.45" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.45"
+          extension="2014-06-09" />
+          <id root="F0439866-3C55-11E9-A261-A20DD1EAFB96" />
+          <code code="69730-0" codeSystem="2.16.840.1.113883.6.1"
+          codeSystemName="LOINC" displayName="Instructions" />
+          <title>Instructions</title>
+          <text ID="Instructions13">
+            <list styleCode="TOC">
+              <item>
+                <caption>Patient Instructions - Cumming, James R,
+                PT - 02/26/2019 9:15 AM CST</caption>
+                <paragraph>Brace 
+                <br />- continue to wear continuously for another
+                3-4 weeks
+                <br />- wean after that, then wear when you will be
+                on uneven ground a lot, probably for the next 6
+                months to a year
+                <br />
+                <br />Exercises
+                <br />- work on big / exaggerated alphabet, 1-2 x
+                day
+                <br />- seated, foot planted, slide foot back, keep
+                heel down, till a bit of a stretch in lower part of
+                calf, x 10 sec hold, x 4-5 , 1-2 x day
+                <br />- heel raises holding counter for support,
+                use left leg a bit more than right, 2 x to fatigue,
+                3-4 x week
+                <br />
+                <br />Balance
+                <br />- most important long term exercise
+                <br />- start with right foot on volleyball/soccer
+                ball for instance
+                <br />- some progression ideas: move head side to
+                side, eyes closed, standing on pillow, moving other
+                leg / reaching, ball toss 
+                <br />
+                <br />Gait 
+                <br />- get back to treadmills , 5-10 min bouts 1-2
+                x day
+                <br />- progress gradually from there
+                <br />- stairs - work on standing on left leg on
+                slight elevation, touching ground with right foot
+                and coming right back up
+                <br /></paragraph>
+              </item>
+            </list>
+            <footnote ID="subTitle12"
+            styleCode="xSectionSubTitle xHidden">in this
+            encounter</footnote>
+          </text>
+          <entry>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"
+              extension="2014-06-09" />
+              <code code="311401005"
+              codeSystem="2.16.840.1.113883.6.96"
+              codeSystemName="SNOMED CT"
+              displayName="Patient Education" />
+              <text>
+                <reference value="#Instructions13" />
+              </text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4" />
+          <id root="F043E3FC-3C55-11E9-A261-A20DD1EAFB96" />
+          <code code="10164-2" codeSystem="2.16.840.1.113883.6.1"
+          codeSystemName="LOINC"
+          displayName="History of Present Illness" />
+          <title>Progress Notes</title>
+          <text>
+            <list styleCode="TOC">
+              <item>
+                <caption>Cumming, James R, PT - 02/26/2019 9:15 AM
+                CST</caption>
+                <paragraph>
+                <content styleCode="label">Formatting of this note
+                may be different from the original.</content>
+                <br />UW Health Rehabiliation
+                <br />Physical Therapy Initial Evaluation
+                <br />UW Health West Clinic
+                <br />
+                <br />Diagnosis: ankle sprain
+                <br />PCP: Puneet S Dhillon, MD
+                <br />Referring provider: No Referring Provider, *
+                <br />Start of Care: 2/26/2019
+                <br />
+                <br />SUBJECTIVE 
+                <br />
+                <br />History of Present Condition: 
+                <br />Joshua Craig Mandel is a 36 year old year old
+                male who presents for evaluation of ankle sprain
+                <br />
+                <br />he describes the onset of symptoms as: fall -
+                on ice/ sprain - inversion sprain
+                <br />
+                <br />Date of Onset: 2/8/2019 date of injury
+                <br />
+                <br />Symptoms:
+                <br />
+                <br />Symptom location: anterolateral ankel
+                <br />Symptom quality: sharp, aching
+                <br />Symptom frequency: intermittent, present
+                daily but &lt;50% of the time
+                <br />Aggravating factors: certain movements (sheet
+                moving across foot in righ way turning in inward),
+                walking 
+                <br />Alleviating factors: rest/ time off feet
+                <br />
+                <br />Pain ratings:
+                <br />Pain Score: 0 - No Pain Pain Loc: Ankle 
+                <br />BEST Pain Score: 0 - No Pain
+                <br />WORST Pain Score: 5/10 Number Scale (some
+                brief pain higher than that)
+                <br />
+                <br />Since the onset date noted above (new injury
+                or exacerbation), symptoms are gradually improving.
+                
+                <br />
+                <br />Region Specific Questions (Knee, Leg, Ankle
+                and Foot)
+                <br />· Mechanical symptoms?: popping at time of
+                incident only , also states some catching at times
+                while walking
+                <br />
+                <br />Prior History of this Condition and Past and
+                Current Management
+                <br />Prior history of the same, similar, or
+                related condition and prior management:
+                <br />no previous history
+                <br />
+                <br />Health Care Provider and Self Management of
+                condition (past and current):
+                <br />Urgent care visit day of injury
+                <br />
+                <br />Prior physical therapy for current episode?:
+                none
+                <br />
+                <br />Imaging and other diagnostic tests performed:
+                <br />See imaging section of medical record for
+                more information regarding recent diagnostic work
+                including: Radiographs 2/8/2019
+                <br />
+                <br />Social History and Activities: 
+                <br />
+                <br />Occupation: work from home for Microsoft,
+                does a lot of travel about 1/3 of the time
+                <br />
+                <br />Living environment: Joshua currently lives in
+                a House. he currently lives with a partner. At
+                discharge it is planned that same as current
+                <br />
+                <br />Critical work duties/tasks which are affected
+                by this condition: 
+                <br />self imposted restrictions and/or
+                modification of work duties: not using treadmill
+                work station
+                <br />
+                <br />Exercise/Activity History: walking - has not
+                done due to injury
+                <br />
+                <br />Functional Limitations:
+                <br />Level of function prior to onset of this
+                condition: No prior limitations, able to perform
+                ADLs, IADLs, and general mobility tasks without
+                symptoms or difficulty
+                <br />
+                <br />The patient reports the following current
+                primary functional limitations due to this
+                condition:
+                <br />1. Walking - household and community
+                distances
+                <br />2. stairs
+                <br />
+                <br />Durable medical equipment currently needed
+                for this condition: has ankle ASO
+                <br />
+                <br />See assessment below for complete list of
+                activities limitations and participation
+                restrictions due to this condition. 
+                <br />
+                <br />The following patient reported questionnaires
+                were completed for today's visit:
+                <br />Assigned post visit
+                <br />
+                <br />OBJECTIVE 
+                <br />
+                <br />Observation: mild swelling, very faint
+                bruising observed lateral foot
+                <br />
+                <br />Gait: 
+                <br />Level Ground: antalgic, short stance time
+                left
+                <br />Stairs:walks step to down stairs, able to
+                walk step over step but with deviations / pain 
+                <br />
+                <br />Proprioception/balance: single leg stance on
+                involved leg left impaired: increased sway, hold
+                approx 20 sec
+                <br />
+                <br />Ankle ROM (Passive unless otherwise
+                specified)
+                <br />Involved Left Uninvolved Right 
+                <br />Dorsiflexion 18 some end range pain full 
+                <br />Plantarflexion 48 55 
+                <br />Inversion 40 40 
+                <br />Eversion NT NT 
+                <br />
+                <br />Special Tests:
+                <br />Positive tests include:squeeze test tib-fib
+                compression
+                <br />Negative tests include:anterior drawer, talar
+                tilt for deltoid ligament, talar tilt for
+                calcaneofibular ligament, posterior drawer, ankle
+                inv/PF end range
+                <br />
+                <br />Treatment Provided: The patient was educated
+                on the findings of the evaluation and the course
+                for treatment. 
+                <br />
+                <br />Home exercise program, education, and other
+                recommendataions
+                <br />see patient instructions for complete HEP
+                <br />
+                <br />Written descriptions of home recommendations
+                and exercises were provided via Patient
+                Instructions
+                <br />
+                <br />In clinic treatment
+                <br />HEP instruction and education as detailed in
+                patient instructions
+                <br />Education on WB progression as well
+                <br />
+                <br />Tolerance or reaction to treatment:
+                <br />Appeared to or stated an understanding of the
+                rationale of the intervention and participated with
+                no adverse reaction. In clinic response: no
+                immediate effect
+                <br />
+                <br />After visit summary: The patient was offered
+                and declined the After Visit Summary paperwork, but
+                is aware of its availability in MyChart. 
+                <br />
+                <br />Total Treatment Time: 50 minutes.
+                <br />Timed Code Treatment Minutes: 24
+                <br />Detailed Treatment Times: 26 minutes of
+                Evaluation, 12 minutes of Therapeutic Exercise, 7
+                minutes of Neuromuscular Reeducation and 8 min gait
+                
+                <br />Supplies issued to patient in today's visit:
+                None
+                <br />**The patient is aware that insurance may not
+                cover the above issued item and verbally agreed to
+                the charge.
+                <br />
+                <br />ASSESSMENT 
+                <br />
+                <br />Overall clinical impression: Joshua Craig
+                Mandel is a 36 year old year old male presenting
+                with signs and symptoms consistent with s/p left
+                ligamentous sprain, inversion, with elements of
+                high ankle sprain as well. Overall severity of
+                sprain is mild to moderate. He has mild limitations
+                in ROM, gait, and proprioception. Today's focus was
+                on prescription of a complete HEP with progressions
+                for ongoing self management with HEP only. 
+                <br />
+                <br />Is physical therapy indicated? Yes
+                <br />
+                <br />Determination of Evaluation Complexity:
+                <br />History: 
+                <br />Personal and environmental factors which may
+                impede functional recovery include:none
+                <br />Relevant PMH: no relevant past medical
+                history 
+                <br />
+                <br />Examination:
+                <br />Today's examination included the following
+                elements in Body Structure and Function: pain,
+                joint range of motion, joint integrity/structure ,
+                gait
+                <br />Activity Limitations and Participation
+                Restrictions due to this condition: Walking
+                community distances, Walking on different surfaces 
+                <br />
+                <br />Presentation:
+                <br />Characteristics of the clinical presentation
+                as assessed today is described as: evolving
+                clinical presentation with changing characteristics
+                (moderate), evolving presentation due to the
+                following factors: acuity. 
+                <br />
+                <br />Complexity determination:
+                <br />Based on personal factors involved, systems
+                assessed, characteristics of the clinical
+                presentation, and level of clinical decision making
+                required the complexity of the evaluation performed
+                today is determined to be: low complexity
+                <br />
+                <br />
+                <br />Further assessment:
+                <br />
+                <br />Rehabilitation potential is excellent. 
+                <br />
+                <br />GOALS: to be achieved by 6 weeks
+                <br />1. Ambulate on uneven surfaces such as grass
+                without reports of instability and minimal increase
+                in pain 
+                <br />2. Walk community distances with 75% less
+                pain
+                <br />3. Independently ascend/descend steps with
+                75% less pain 
+                <br />
+                <br />Explanation of need for skilled care:
+                <br />Mr.Mandel presents with functional
+                limitations and impairments that would benefit from
+                skilled Physical Therapy services in an outpatient
+                setting in order to reduce symptoms in the context
+                of functional activities, improve functional
+                abilities, maximize their level of independence and
+                achieve the established goals for this episode of
+                care. Education was provided that physical therapy
+                may include performance of a home exercise program;
+                recommendations for behavioral modification,
+                suggestions for lifestyle accommodation,
+                recommendations for resuming life roles; and/or
+                development of techniques for self-management where
+                appropriate. Education included the expectation and
+                importance of active participation in order to
+                obtain the most benefit from the services provided.
+                Joshua indicated a willingness to actively
+                participate in rehabilitation and has expressed or
+                demonstrated an understanding of his role.
+                <br />
+                <br />Barriers to learning and learning preferences
+                were reviewed and documented in the medical record:
+                yes 
+                <br />
+                <br />PLAN 
+                <br />
+                <br />Visit frequency: consultation only, f/u prn
+                <br />
+                <br />Estimated total number of visits: 1
+                <br />
+                <br />Interventions most likely to be used include:
+                Therapeutic Exercise - 97110 and Neuromuscular
+                Re-education - 97112.
+                <br />
+                <br />Plan for next treatment session: NA
+                <br />
+                <br />Recommended Referrals:
+                <br />No additional referrals are recommended at
+                this time.
+                <br />
+                <br />Once patient no longer needs skilled care, a
+                self directed, independent program will be the
+                primary means of management (if needed). 
+                <br />
+                <br />The Goals and Plan of Care were discussed
+                with the patient and agreed upon.The anticipated
+                risks and benefits were discussed with the patient
+                for all treatment options as a component of the
+                elements of informed consent. Consent was obtained
+                verbally and by patient signing the supplied
+                consent form. 
+                <br />
+                <br />Mr. Mandel was encouraged to contact me via
+                MyChart or telephone with any questions or concerns
+                that arise regarding the above assessment or plan
+                of care.
+                <br />
+                <br />James R Cumming, PT
+                <br /></paragraph>
+              </item>
+            </list>
+            <footnote ID="subTitle15"
+            styleCode="xSectionSubTitle xHidden">in this
+            encounter</footnote>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.10"
+          extension="2014-06-09" />
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1"
+          codeSystemName="LOINC" displayName="Treatment plan" />
+          <title>Plan of Treatment</title>
+          <text>
+            <paragraph>Not on file</paragraph>
+            <footnote ID="subTitle16"
+            styleCode="xSectionSubTitle xHidden">as of this
+            encounter</footnote>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.8" />
+          <id root="F04B5902-3C55-11E9-A261-A20DD1EAFB96" />
+          <code code="51848-0" codeSystem="2.16.840.1.113883.6.1"
+          codeSystemName="LOINC" displayName="Assessments" />
+          <title>Visit Diagnoses</title>
+          <text>
+            <table>
+              <colgroup>
+                <col width="100%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Diagnosis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="vdx3" styleCode="normRow">
+                  <td>
+                    <paragraph>
+                      <content ID="vdx3Name">Sprain of left ankle,
+                      unspecified ligament, subsequent
+                      encounter</content>
+                      <content>- Primary</content>
+                    </paragraph>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

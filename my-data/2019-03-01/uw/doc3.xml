@@ -1,1 +1,518 @@
-<ClinicalDocument xmlns="urn:hl7-org:v3"><realmCode code="US" /><typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" /><templateId root="1.2.840.114350.1.72.1.51693" /><templateId root="2.16.840.1.113883.10.20.22.1.1" /><templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01" /><templateId root="2.16.840.1.113883.10.20.22.1.9" /><templateId root="2.16.840.1.113883.10.20.22.1.9" extension="2015-08-01" /><id assigningAuthorityName="EPC" root="1.2.840.114350.1.13.92.2.7.8.688883.299988793" /><code code="11506-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Subsequent evaluation note" /><title>Encounter Summary</title><effectiveTime value="20190301131232-0600" /><confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="Normal" /><languageCode code="en-US" /><setId assigningAuthorityName="EPC" extension="9abaad9e-3c55-11e9-8e2d-a20dd1eafb96" root="1.2.840.114350.1.13.92.2.7.1.1" /><versionNumber value="2" /><recordTarget><patientRole><id root="1.2.840.114350.1.13.92.2.7.3.688884.100" extension="UWH782294W" /><addr use="HP"><streetAddressLine>443 VIRGINIA TER</streetAddressLine><city>MADISON</city><state>WI</state><postalCode>53726-5345</postalCode><country>USA</country><county>DANE</county></addr><telecom use="MC" value="tel:+1-617-500-3253" /><telecom use="HP" value="tel:+1-617-500-3253" /><telecom value="mailto:jmandel@alum.mit.edu" /><patient><name use="L"><given>Joshua</given><given>Craig</given><family>Mandel</family></name><name use="P"><given qualifier="CL">Josh</given><family>Mandel</family></name><name use="P"><given>Joshu</given><given>Craig</given><family>Mandel</family></name><name use="P"><given>Josh</given><family>Mandel</family></name><administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGenderCode" displayName="Male" /><birthTime value="19821026" /><maritalStatusCode nullFlavor="UNK" /><raceCode nullFlavor="UNK" /><ethnicGroupCode nullFlavor="UNK" /><languageCommunication><languageCode code="eng" /><preferenceInd value="true" /></languageCommunication></patient><providerOrganization><id root="1.2.840.114350.1.13.92.2.7.2.688879" extension="3600" /><name>UW Health and Affiliates - Wisconsin and Illinois</name><telecom nullFlavor="NA" /><addr><streetAddressLine nullFlavor="UNK" /><city>Madison</city><state>WI</state><postalCode>53792</postalCode><country>USA</country></addr></providerOrganization></patientRole></recordTarget><author><time value="20190301131232-0600" /><assignedAuthor><id root="1.2.840.114350.1.1" extension="8.3" /><addr nullFlavor="NA" /><telecom nullFlavor="NA" /><assignedAuthoringDevice><manufacturerModelName>Epic - Version 8.3</manufacturerModelName><softwareName>Epic - Version 8.3</softwareName></assignedAuthoringDevice><representedOrganization><id root="1.2.840.114350.1.13.92.2.7.2.688879" extension="3600" /><name>UW Health and Affiliates - Wisconsin and Illinois</name><telecom nullFlavor="NA" /><addr><streetAddressLine nullFlavor="UNK" /><city>Madison</city><state>WI</state><postalCode>53792</postalCode><country>USA</country></addr></representedOrganization></assignedAuthor></author><custodian><assignedCustodian><representedCustodianOrganization><id root="1.2.840.114350.1.13.92.2.7.2.688879" extension="3600" /><name>UW Health and Affiliates - Wisconsin and Illinois</name><telecom nullFlavor="NA" /><addr><streetAddressLine nullFlavor="UNK" /><city>Madison</city><state>WI</state><postalCode>53792</postalCode><country>USA</country></addr></representedCustodianOrganization></assignedCustodian></custodian><participant typeCode="IND"><time value="20190208" /><associatedEntity classCode="ECON"><id nullFlavor="UNK" /><code nullFlavor="OTH"><originalText>Significant other</originalText></code><addr nullFlavor="UNK" /><telecom use="MC" value="tel:+1-478-227-7436" /><associatedPerson><name>NIZIOLEK,CAROLINE</name></associatedPerson></associatedEntity></participant><documentationOf typeCode="DOC"><serviceEvent classCode="PCPR"><templateId root="2.16.840.1.113883.10.20.21.3.1" /><effectiveTime><low value="20190208195916-0600" /><high value="20190208201000-0600" /></effectiveTime><performer typeCode="PRF"><functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" displayName="Primary Care Provider"><originalText>General</originalText></functionCode><time><low value="20190208" /><high nullFlavor="PINF" /></time><assignedEntity><id root="1.2.840.114350.1.13.92.2.7.2.836982" extension="70003411" /><code nullFlavor="UNK"><originalText>Internal Medicine</originalText></code><addr use="WP"><streetAddressLine>4410 REGENT ST</streetAddressLine><city>MADISON</city><state>WI</state><postalCode>53705-4901</postalCode></addr><telecom use="WP" value="tel:+1-608-233-9746" /><telecom value="fax:+1-608-236-1981" /><assignedPerson><name><given>Puneet</given><given>S</given><family>Dhillon</family><suffix>MD</suffix></name></assignedPerson></assignedEntity></performer></serviceEvent></documentationOf><relatedDocument typeCode="RPLC"><parentDocument><id assigningAuthorityName="EPC" root="1.2.840.114350.1.13.92.2.7.8.688883.299988183" /></parentDocument></relatedDocument><componentOf><encompassingEncounter><id root="1.2.840.114350.1.13.92.2.7.3.698084.8" extension="224827029" /><code code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatory"><originalText>Imaging</originalText><translation code="166" codeSystem="1.2.840.114350.1.72.1.30" displayName="Procedure visit" /></code><effectiveTime><low value="20190208195916-0600" /><high value="20190208201000-0600" /></effectiveTime><encounterParticipant typeCode="ATND"><time value="20190208195916-0600" /><assignedEntity><id nullFlavor="UNK" /><addr nullFlavor="UNK" /><telecom nullFlavor="UNK" /><assignedPerson><name><given>XRAY</given><family>WEST TOWNE</family></name></assignedPerson></assignedEntity></encounterParticipant><location><healthCareFacility><id root="1.2.840.114350.1.13.92.2.7.2.686980" extension="18007" /><code nullFlavor="UNK"><originalText>Radiology</originalText></code><location><name>WEST TOWNE RADIOLOGY</name><addr><streetAddressLine>7102 MINERAL POINT RD</streetAddressLine><city>MADISON</city><state>WI</state><postalCode>53717</postalCode></addr></location><serviceProviderOrganization><id root="1.2.840.114350.1.13.92.2.7.2.696570" extension="18000" /><name>WEST TOWNE UW HEALTH</name><addr><streetAddressLine>7102 MINERAL POINT RD</streetAddressLine><city>MADISON</city><state>WI</state><postalCode>53717</postalCode><country nullFlavor="UNK" /></addr><asOrganizationPartOf><wholeOrganization><name>UW Health and Affiliates - Wisconsin and Illinois</name><addr nullFlavor="NA" /></wholeOrganization></asOrganizationPartOf></serviceProviderOrganization></healthCareFacility></location></encompassingEncounter></componentOf><component><structuredBody><component><section><code code="X-DOCCMT" codeSystem="1.2.840.114350.1.72.2" displayName="Document Comments" /><title>Note from UW Health and Affiliates - Wisconsin and Illinois</title><text>This document contains information that was shared with Josh Craig Mandel. It may not contain the entire record from UW Health and Affiliates - Wisconsin and Illinois.</text></section></component><component><section><templateId root="2.16.840.1.113883.10.20.22.2.22" /><templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01" /><templateId root="2.16.840.1.113883.10.20.22.2.22.1" /><templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01" /><code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF ENCOUNTERS" /><title>Encounter Details</title><text><table><colgroup><col width="10%" /><col width="15%" /><col width="25%" /><col width="25%" /></colgroup><thead><tr><th>Date</th><th>Type</th><th>Department</th><th>Care Team</th></tr></thead><tbody><tr ID="encounter2" styleCode="normRow"><td>02/08/2019</td><td ID="encounter2type">Imaging</td><td><paragraph>WEST TOWNE RADIOLOGY</paragraph><paragraph>7102 MINERAL POINT RD</paragraph><paragraph>MADISON, WI 53717</paragraph><paragraph>608-828-7676</paragraph></td><td /></tr></tbody></table></text><entry><encounter classCode="ENC" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.22.4.49" /><templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01" /><id assigningAuthorityName="EPIC" root="1.2.840.114350.1.13.92.2.7.3.698084.8" extension="224827029" /><code code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatory"><originalText><reference value="#encounter2type" /></originalText><translation code="126" codeSystem="1.2.840.114350.1.13.92.2.7.4.698084.30" displayName="Imaging" codeSystemName="Epic.EncounterType" /><translation code="166" codeSystem="1.2.840.114350.1.72.1.30" displayName="Procedure visit" /></code><text><reference value="#encounter2" /></text><statusCode code="normal" /><effectiveTime><low value="20190208195916-0600" /><high value="20190208201000-0600" /></effectiveTime><participant typeCode="LOC"><participantRole classCode="SDLOC"><templateId root="2.16.840.1.113883.10.20.22.4.32" /><id root="1.2.840.114350.1.13.92.2.7.2.686980" extension="18007" /><code nullFlavor="UNK"><originalText>Radiology</originalText></code><addr><streetAddressLine>7102 MINERAL POINT RD</streetAddressLine><city>MADISON</city><state>WI</state><postalCode>53717</postalCode></addr><playingEntity classCode="PLC"><name>WEST TOWNE RADIOLOGY</name><desc>Radiology</desc></playingEntity></participantRole></participant></encounter></entry></section></component><component><section><templateId root="2.16.840.1.113883.10.20.22.2.17" /><templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01" /><code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history" /><title>Social History</title><text><table><colgroup><col width="25%" /><col width="25%" /><col width="13%" /><col width="12%" /><col width="25%" /></colgroup><thead><tr><th>Tobacco Use</th><th>Types</th><th>Packs/Day</th><th>Years Used</th><th>Date</th></tr></thead><tbody><tr><td>Never Smoker</td><td /><td /><td /><td /></tr><tr><td>Smokeless Tobacco: Never Used</td><td /><td colspan="2" /><td /></tr></tbody></table><table><colgroup><col width="25%" /><col width="75%" /></colgroup><thead><tr><th>Sex Assigned at Birth</th><th>Date Recorded</th></tr></thead><tbody><tr ID="BirthSex6"><td ID="BirthSex6Value">Not on file</td><td /></tr></tbody></table><footnote ID="subTitle4" styleCode="xSectionSubTitle xHidden">as of this encounter</footnote></text><entry><observation classCode="OBS" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.22.4.78" /><templateId root="2.16.840.1.113883.10.20.22.4.78" extension="2014-06-09" /><id root="1.2.840.114350.1.13.92.2.7.1.1040.1" extension="Z4061493^65052^72166-2" /><code code="72166-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tobacco smoking status NHIS" /><statusCode code="completed" /><effectiveTime value="20190208" /><value code="266919005" codeSystem="2.16.840.1.113883.6.96" displayName="Never smoker" xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></observation></entry><entry><observation classCode="OBS" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01" /><code code="76689-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sex Assigned At Birth" /><text><reference value="#BirthSex6" /></text><statusCode code="completed" /><value codeSystem="2.16.840.1.113883.5.1" xsi:type="CD" nullFlavor="UNK" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><originalText><reference value="#BirthSex6Value" /></originalText></value></observation></entry></section></component><component><section><templateId root="2.16.840.1.113883.10.20.22.2.10" /><templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09" /><code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan" /><title>Plan of Treatment</title><text><paragraph>Not on file</paragraph><footnote ID="subTitle14" styleCode="xSectionSubTitle xHidden">as of this encounter</footnote></text></section></component><component><section><templateId root="2.16.840.1.113883.10.20.22.2.8" /><id root="F6DF2BA4-3C55-11E9-A261-A20DD1EAFB96" /><code code="51848-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Assessments" /><title>Visit Diagnoses</title><text><content ID="nof20">Not on file</content><footnote ID="subTitle19" styleCode="xSectionSubTitle xHidden">in this encounter</footnote></text></section></component></structuredBody></component></ClinicalDocument>
+<ClinicalDocument xmlns="urn:hl7-org:v3">
+  <realmCode code="US" />
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+  <templateId root="1.2.840.114350.1.72.1.51693" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"
+  extension="2015-08-01" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.9" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.9"
+  extension="2015-08-01" />
+  <id assigningAuthorityName="EPC"
+  root="1.2.840.114350.1.13.92.2.7.8.688883.299988793" />
+  <code code="11506-3" codeSystem="2.16.840.1.113883.6.1"
+  codeSystemName="LOINC"
+  displayName="Subsequent evaluation note" />
+  <title>Encounter Summary</title>
+  <effectiveTime value="20190301131232-0600" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"
+  displayName="Normal" />
+  <languageCode code="en-US" />
+  <setId assigningAuthorityName="EPC"
+  extension="9abaad9e-3c55-11e9-8e2d-a20dd1eafb96"
+  root="1.2.840.114350.1.13.92.2.7.1.1" />
+  <versionNumber value="2" />
+  <recordTarget>
+    <patientRole>
+      <id root="1.2.840.114350.1.13.92.2.7.3.688884.100"
+      extension="UWH782294W" />
+      <addr use="HP">
+        <streetAddressLine>443 VIRGINIA TER</streetAddressLine>
+        <city>MADISON</city>
+        <state>WI</state>
+        <postalCode>53726-5345</postalCode>
+        <country>USA</country>
+        <county>DANE</county>
+      </addr>
+      <telecom use="MC" value="tel:+1-617-500-3253" />
+      <telecom use="HP" value="tel:+1-617-500-3253" />
+      <telecom value="mailto:jmandel@alum.mit.edu" />
+      <patient>
+        <name use="L">
+          <given>Joshua</given>
+          <given>Craig</given>
+          <family>Mandel</family>
+        </name>
+        <name use="P">
+          <given qualifier="CL">Josh</given>
+          <family>Mandel</family>
+        </name>
+        <name use="P">
+          <given>Joshu</given>
+          <given>Craig</given>
+          <family>Mandel</family>
+        </name>
+        <name use="P">
+          <given>Josh</given>
+          <family>Mandel</family>
+        </name>
+        <administrativeGenderCode code="M"
+        codeSystem="2.16.840.1.113883.5.1"
+        codeSystemName="AdministrativeGenderCode"
+        displayName="Male" />
+        <birthTime value="19821026" />
+        <maritalStatusCode nullFlavor="UNK" />
+        <raceCode nullFlavor="UNK" />
+        <ethnicGroupCode nullFlavor="UNK" />
+        <languageCommunication>
+          <languageCode code="eng" />
+          <preferenceInd value="true" />
+        </languageCommunication>
+      </patient>
+      <providerOrganization>
+        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
+        extension="3600" />
+        <name>UW Health and Affiliates - Wisconsin and
+        Illinois</name>
+        <telecom nullFlavor="NA" />
+        <addr>
+          <streetAddressLine nullFlavor="UNK" />
+          <city>Madison</city>
+          <state>WI</state>
+          <postalCode>53792</postalCode>
+          <country>USA</country>
+        </addr>
+      </providerOrganization>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20190301131232-0600" />
+    <assignedAuthor>
+      <id root="1.2.840.114350.1.1" extension="8.3" />
+      <addr nullFlavor="NA" />
+      <telecom nullFlavor="NA" />
+      <assignedAuthoringDevice>
+        <manufacturerModelName>Epic - Version
+        8.3</manufacturerModelName>
+        <softwareName>Epic - Version 8.3</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
+        extension="3600" />
+        <name>UW Health and Affiliates - Wisconsin and
+        Illinois</name>
+        <telecom nullFlavor="NA" />
+        <addr>
+          <streetAddressLine nullFlavor="UNK" />
+          <city>Madison</city>
+          <state>WI</state>
+          <postalCode>53792</postalCode>
+          <country>USA</country>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
+        extension="3600" />
+        <name>UW Health and Affiliates - Wisconsin and
+        Illinois</name>
+        <telecom nullFlavor="NA" />
+        <addr>
+          <streetAddressLine nullFlavor="UNK" />
+          <city>Madison</city>
+          <state>WI</state>
+          <postalCode>53792</postalCode>
+          <country>USA</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <participant typeCode="IND">
+    <time value="20190208" />
+    <associatedEntity classCode="ECON">
+      <id nullFlavor="UNK" />
+      <code nullFlavor="OTH">
+        <originalText>Significant other</originalText>
+      </code>
+      <addr nullFlavor="UNK" />
+      <telecom use="MC" value="tel:+1-478-227-7436" />
+      <associatedPerson>
+        <name>NIZIOLEK,CAROLINE</name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <documentationOf typeCode="DOC">
+    <serviceEvent classCode="PCPR">
+      <templateId root="2.16.840.1.113883.10.20.21.3.1" />
+      <effectiveTime>
+        <low value="20190208195916-0600" />
+        <high value="20190208201000-0600" />
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <functionCode code="PCP"
+        codeSystem="2.16.840.1.113883.5.88"
+        codeSystemName="ParticipationFunction"
+        displayName="Primary Care Provider">
+          <originalText>General</originalText>
+        </functionCode>
+        <time>
+          <low value="20190208" />
+          <high nullFlavor="PINF" />
+        </time>
+        <assignedEntity>
+          <id root="1.2.840.114350.1.13.92.2.7.2.836982"
+          extension="70003411" />
+          <code nullFlavor="UNK">
+            <originalText>Internal Medicine</originalText>
+          </code>
+          <addr use="WP">
+            <streetAddressLine>4410 REGENT ST</streetAddressLine>
+            <city>MADISON</city>
+            <state>WI</state>
+            <postalCode>53705-4901</postalCode>
+          </addr>
+          <telecom use="WP" value="tel:+1-608-233-9746" />
+          <telecom value="fax:+1-608-236-1981" />
+          <assignedPerson>
+            <name>
+              <given>Puneet</given>
+              <given>S</given>
+              <family>Dhillon</family>
+              <suffix>MD</suffix>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <relatedDocument typeCode="RPLC">
+    <parentDocument>
+      <id assigningAuthorityName="EPC"
+      root="1.2.840.114350.1.13.92.2.7.8.688883.299988183" />
+    </parentDocument>
+  </relatedDocument>
+  <componentOf>
+    <encompassingEncounter>
+      <id root="1.2.840.114350.1.13.92.2.7.3.698084.8"
+      extension="224827029" />
+      <code code="AMB" codeSystem="2.16.840.1.113883.5.4"
+      displayName="Ambulatory">
+        <originalText>Imaging</originalText>
+        <translation code="166"
+        codeSystem="1.2.840.114350.1.72.1.30"
+        displayName="Procedure visit" />
+      </code>
+      <effectiveTime>
+        <low value="20190208195916-0600" />
+        <high value="20190208201000-0600" />
+      </effectiveTime>
+      <encounterParticipant typeCode="ATND">
+        <time value="20190208195916-0600" />
+        <assignedEntity>
+          <id nullFlavor="UNK" />
+          <addr nullFlavor="UNK" />
+          <telecom nullFlavor="UNK" />
+          <assignedPerson>
+            <name>
+              <given>XRAY</given>
+              <family>WEST TOWNE</family>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </encounterParticipant>
+      <location>
+        <healthCareFacility>
+          <id root="1.2.840.114350.1.13.92.2.7.2.686980"
+          extension="18007" />
+          <code nullFlavor="UNK">
+            <originalText>Radiology</originalText>
+          </code>
+          <location>
+            <name>WEST TOWNE RADIOLOGY</name>
+            <addr>
+              <streetAddressLine>7102 MINERAL POINT
+              RD</streetAddressLine>
+              <city>MADISON</city>
+              <state>WI</state>
+              <postalCode>53717</postalCode>
+            </addr>
+          </location>
+          <serviceProviderOrganization>
+            <id root="1.2.840.114350.1.13.92.2.7.2.696570"
+            extension="18000" />
+            <name>WEST TOWNE UW HEALTH</name>
+            <addr>
+              <streetAddressLine>7102 MINERAL POINT
+              RD</streetAddressLine>
+              <city>MADISON</city>
+              <state>WI</state>
+              <postalCode>53717</postalCode>
+              <country nullFlavor="UNK" />
+            </addr>
+            <asOrganizationPartOf>
+              <wholeOrganization>
+                <name>UW Health and Affiliates - Wisconsin and
+                Illinois</name>
+                <addr nullFlavor="NA" />
+              </wholeOrganization>
+            </asOrganizationPartOf>
+          </serviceProviderOrganization>
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <code code="X-DOCCMT" codeSystem="1.2.840.114350.1.72.2"
+          displayName="Document Comments" />
+          <title>Note from UW Health and Affiliates - Wisconsin and
+          Illinois</title>
+          <text>This document contains information that was shared
+          with Josh Craig Mandel. It may not contain the entire
+          record from UW Health and Affiliates - Wisconsin and
+          Illinois.</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.22"
+          extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1"
+          extension="2015-08-01" />
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1"
+          codeSystemName="LOINC"
+          displayName="HISTORY OF ENCOUNTERS" />
+          <title>Encounter Details</title>
+          <text>
+            <table>
+              <colgroup>
+                <col width="10%" />
+                <col width="15%" />
+                <col width="25%" />
+                <col width="25%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Department</th>
+                  <th>Care Team</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="encounter2" styleCode="normRow">
+                  <td>02/08/2019</td>
+                  <td ID="encounter2type">Imaging</td>
+                  <td>
+                    <paragraph>WEST TOWNE RADIOLOGY</paragraph>
+                    <paragraph>7102 MINERAL POINT RD</paragraph>
+                    <paragraph>MADISON, WI 53717</paragraph>
+                    <paragraph>608-828-7676</paragraph>
+                  </td>
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"
+              extension="2015-08-01" />
+              <id assigningAuthorityName="EPIC"
+              root="1.2.840.114350.1.13.92.2.7.3.698084.8"
+              extension="224827029" />
+              <code code="AMB" codeSystem="2.16.840.1.113883.5.4"
+              displayName="Ambulatory">
+                <originalText>
+                  <reference value="#encounter2type" />
+                </originalText>
+                <translation code="126"
+                codeSystem="1.2.840.114350.1.13.92.2.7.4.698084.30"
+                displayName="Imaging"
+                codeSystemName="Epic.EncounterType" />
+                <translation code="166"
+                codeSystem="1.2.840.114350.1.72.1.30"
+                displayName="Procedure visit" />
+              </code>
+              <text>
+                <reference value="#encounter2" />
+              </text>
+              <statusCode code="normal" />
+              <effectiveTime>
+                <low value="20190208195916-0600" />
+                <high value="20190208201000-0600" />
+              </effectiveTime>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.32" />
+                  <id root="1.2.840.114350.1.13.92.2.7.2.686980"
+                  extension="18007" />
+                  <code nullFlavor="UNK">
+                    <originalText>Radiology</originalText>
+                  </code>
+                  <addr>
+                    <streetAddressLine>7102 MINERAL POINT
+                    RD</streetAddressLine>
+                    <city>MADISON</city>
+                    <state>WI</state>
+                    <postalCode>53717</postalCode>
+                  </addr>
+                  <playingEntity classCode="PLC">
+                    <name>WEST TOWNE RADIOLOGY</name>
+                    <desc>Radiology</desc>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"
+          extension="2015-08-01" />
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"
+          codeSystemName="LOINC" displayName="Social history" />
+          <title>Social History</title>
+          <text>
+            <table>
+              <colgroup>
+                <col width="25%" />
+                <col width="25%" />
+                <col width="13%" />
+                <col width="12%" />
+                <col width="25%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Tobacco Use</th>
+                  <th>Types</th>
+                  <th>Packs/Day</th>
+                  <th>Years Used</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Never Smoker</td>
+                  <td />
+                  <td />
+                  <td />
+                  <td />
+                </tr>
+                <tr>
+                  <td>Smokeless Tobacco: Never Used</td>
+                  <td />
+                  <td colspan="2" />
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <colgroup>
+                <col width="25%" />
+                <col width="75%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Sex Assigned at Birth</th>
+                  <th>Date Recorded</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="BirthSex6">
+                  <td ID="BirthSex6Value">Not on file</td>
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+            <footnote ID="subTitle4"
+            styleCode="xSectionSubTitle xHidden">as of this
+            encounter</footnote>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.78" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.78"
+              extension="2014-06-09" />
+              <id root="1.2.840.114350.1.13.92.2.7.1.1040.1"
+              extension="Z4061493^65052^72166-2" />
+              <code code="72166-2"
+              codeSystem="2.16.840.1.113883.6.1"
+              codeSystemName="LOINC"
+              displayName="Tobacco smoking status NHIS" />
+              <statusCode code="completed" />
+              <effectiveTime value="20190208" />
+              <value code="266919005"
+              codeSystem="2.16.840.1.113883.6.96"
+              displayName="Never smoker" xsi:type="CD"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.200"
+              extension="2016-06-01" />
+              <code code="76689-9"
+              codeSystem="2.16.840.1.113883.6.1"
+              codeSystemName="LOINC"
+              displayName="Sex Assigned At Birth" />
+              <text>
+                <reference value="#BirthSex6" />
+              </text>
+              <statusCode code="completed" />
+              <value codeSystem="2.16.840.1.113883.5.1"
+              xsi:type="CD" nullFlavor="UNK"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+                <originalText>
+                  <reference value="#BirthSex6Value" />
+                </originalText>
+              </value>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.10"
+          extension="2014-06-09" />
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1"
+          codeSystemName="LOINC" displayName="Treatment plan" />
+          <title>Plan of Treatment</title>
+          <text>
+            <paragraph>Not on file</paragraph>
+            <footnote ID="subTitle14"
+            styleCode="xSectionSubTitle xHidden">as of this
+            encounter</footnote>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.8" />
+          <id root="F6DF2BA4-3C55-11E9-A261-A20DD1EAFB96" />
+          <code code="51848-0" codeSystem="2.16.840.1.113883.6.1"
+          codeSystemName="LOINC" displayName="Assessments" />
+          <title>Visit Diagnoses</title>
+          <text>
+            <content ID="nof20">Not on file</content>
+            <footnote ID="subTitle19"
+            styleCode="xSectionSubTitle xHidden">in this
+            encounter</footnote>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

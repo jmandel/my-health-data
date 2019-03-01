@@ -1,1 +1,116 @@
-{"resourceType":"Patient","birthDate":"1982-10-26","active":true,"gender":"male","deceasedBoolean":false,"id":"TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB","name":[{"use":"usual","text":"Joshua C Mandel","family":["Mandel"],"given":["Joshua","C"]}],"identifier":[{"use":"usual","system":"EPI","value":"E7004467"},{"use":"usual","system":"MAPL","value":"APL324672"},{"use":"usual","system":"urn:oid:1.2.840.114350.1.13.283","value":"96853541"}],"address":[{"use":"home","line":["443 Virginia Terrace"],"city":"MADISON","state":"WI","postalCode":"53726","country":"USA"}],"telecom":[{"system":"phone","value":"617-500-3253","use":"home"},{"system":"phone","value":"617-500-3253","use":"mobile"},{"system":"email","value":"jmandel@alum.mit.edu"},{"system":"email","value":"jmandel@gmail.com"}],"maritalStatus":{"text":"Single"},"communication":[{"preferred":true,"language":{"text":"English","coding":[{"system":"urn:oid:2.16.840.1.113883.6.99","code":"en","display":"English"}]}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/us-core-race","valueCodeableConcept":{"text":"White","coding":[{"system":"2.16.840.1.113883.5.104","code":"2106-3","display":"White"}]}},{"url":"http://hl7.org/fhir/StructureDefinition/us-core-ethnicity","valueCodeableConcept":{"text":"Not Hispanic or Latino","coding":[{"system":"2.16.840.1.113883.5.50","code":"2186-5","display":"Not Hispanic or Latino"}]}}]}
+{
+  "resourceType": "Patient",
+  "birthDate": "1982-10-26",
+  "active": true,
+  "gender": "male",
+  "deceasedBoolean": false,
+  "id": "TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB",
+  "name": [
+    {
+      "use": "usual",
+      "text": "Joshua C Mandel",
+      "family": [
+        "Mandel"
+      ],
+      "given": [
+        "Joshua",
+        "C"
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "EPI",
+      "value": "E7004467"
+    },
+    {
+      "use": "usual",
+      "system": "MAPL",
+      "value": "APL324672"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.283",
+      "value": "96853541"
+    }
+  ],
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "443 Virginia Terrace"
+      ],
+      "city": "MADISON",
+      "state": "WI",
+      "postalCode": "53726",
+      "country": "USA"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "617-500-3253",
+      "use": "home"
+    },
+    {
+      "system": "phone",
+      "value": "617-500-3253",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "jmandel@alum.mit.edu"
+    },
+    {
+      "system": "email",
+      "value": "jmandel@gmail.com"
+    }
+  ],
+  "maritalStatus": {
+    "text": "Single"
+  },
+  "communication": [
+    {
+      "preferred": true,
+      "language": {
+        "text": "English",
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.6.99",
+            "code": "en",
+            "display": "English"
+          }
+        ]
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/us-core-race",
+      "valueCodeableConcept": {
+        "text": "White",
+        "coding": [
+          {
+            "system": "2.16.840.1.113883.5.104",
+            "code": "2106-3",
+            "display": "White"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/us-core-ethnicity",
+      "valueCodeableConcept": {
+        "text": "Not Hispanic or Latino",
+        "coding": [
+          {
+            "system": "2.16.840.1.113883.5.50",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        ]
+      }
+    }
+  ]
+}
