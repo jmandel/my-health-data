@@ -1,0 +1,99 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Immunization?patient=TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Immunization/TF52dFfxVm8obsBVv8jreKgB",
+      "link": [
+        {
+          "relation": "self",
+          "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Immunization/TF52dFfxVm8obsBVv8jreKgB"
+        }
+      ],
+      "search": {
+        "mode": "match"
+      },
+      "resource": {
+        "resourceType": "Immunization",
+        "status": "completed",
+        "date": "2017-10-25",
+        "wasNotGiven": false,
+        "reported": true,
+        "id": "TF52dFfxVm8obsBVv8jreKgB",
+        "vaccineCode": {
+          "text": "Influenza (FLUCELVAX) ccIIV4, prefilled syringe"
+        },
+        "patient": {
+          "display": "Joshua C Mandel",
+          "reference": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Patient/TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB"
+        },
+        "site": {
+          "text": "Left Arm",
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "14",
+              "display": "Left Arm"
+            }
+          ]
+        },
+        "route": {
+          "text": "Intramuscular",
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "search": {
+        "mode": "outcome"
+      },
+      "resource": {
+        "resourceType": "OperationOutcome",
+        "id": "1047952451",
+        "issue": [
+          {
+            "severity": "warning",
+            "code": "informational",
+            "details": {
+              "text": "CVX code for vaccine not found",
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.657369",
+                  "code": "4117",
+                  "display": "CVX code for vaccine not found"
+                }
+              ]
+            }
+          },
+          {
+            "severity": "warning",
+            "code": "informational",
+            "details": {
+              "text": "This response includes information available to the authorized user at the time of the request. It may not contain the entire record available in the system.",
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.657369",
+                  "code": "4119",
+                  "display": "This response includes information available to the authorized user at the time of the request. It may not contain the entire record available in the system."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

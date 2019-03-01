@@ -44,7 +44,7 @@ const authorize = (clientState, fetch = window.fetch) => {
       redirect_uri: clientState.registration.redirect_uri,
       scope: 'launch/patient patient/*.read',
       state,
-      aud: clientState.endpoint.fhirBaseUrl
+      aud: "NOADU"
     }
     console.log("authzreq", authorizeRequest)
 

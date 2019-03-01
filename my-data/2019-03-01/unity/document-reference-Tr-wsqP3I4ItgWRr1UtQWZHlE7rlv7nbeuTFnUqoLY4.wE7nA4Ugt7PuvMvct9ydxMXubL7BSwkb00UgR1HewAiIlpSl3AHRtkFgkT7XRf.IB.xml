@@ -12,51 +12,39 @@
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1" />
   <templateId root="1.2.840.114350.1.72.1.77896772" />
   <id assigningAuthorityName="EPC"
-  root="1.2.840.114350.1.13.92.2.7.8.688883.299988681" />
+  root="1.2.840.114350.1.13.283.2.7.8.688883.188336146" />
   <code code="34133-9" codeSystem="2.16.840.1.113883.6.1"
   codeSystemName="LOINC"
   displayName="Summarization of Episode Note" />
   <title>Patient Health Summary</title>
-  <effectiveTime value="20190301131204-0600" />
+  <effectiveTime value="20190301171836-0600" />
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"
   displayName="Normal" />
   <languageCode code="en-US" />
   <setId assigningAuthorityName="EPC"
-  extension="b6151862-3b07-11e9-b1fe-a20dd1eafb96"
-  root="1.2.840.114350.1.13.92.2.7.1.1" />
-  <versionNumber value="4" />
+  extension="17110982-3c43-11e9-8498-4503b6aa49bb"
+  root="1.2.840.114350.1.13.283.2.7.1.1" />
+  <versionNumber value="3" />
   <recordTarget>
     <patientRole>
-      <id root="1.2.840.114350.1.13.92.2.7.3.688884.100"
-      extension="UWH782294W" />
+      <id root="1.2.840.114350.1.13.283.2.7.3.688884.100"
+      extension="IHS665928U" />
       <addr use="HP">
-        <streetAddressLine>443 VIRGINIA TER</streetAddressLine>
+        <streetAddressLine>443 Virginia Terrace</streetAddressLine>
         <city>MADISON</city>
         <state>WI</state>
-        <postalCode>53726-5345</postalCode>
+        <postalCode>53726</postalCode>
         <country>USA</country>
         <county>DANE</county>
       </addr>
       <telecom use="MC" value="tel:+1-617-500-3253" />
       <telecom use="HP" value="tel:+1-617-500-3253" />
       <telecom value="mailto:jmandel@alum.mit.edu" />
+      <telecom value="mailto:jmandel@gmail.com" />
       <patient>
         <name use="L">
           <given>Joshua</given>
-          <given>Craig</given>
-          <family>Mandel</family>
-        </name>
-        <name use="P">
-          <given qualifier="CL">Josh</given>
-          <family>Mandel</family>
-        </name>
-        <name use="P">
-          <given>Joshu</given>
-          <given>Craig</given>
-          <family>Mandel</family>
-        </name>
-        <name use="P">
-          <given>Josh</given>
+          <given>C</given>
           <family>Mandel</family>
         </name>
         <administrativeGenderCode code="M"
@@ -64,31 +52,38 @@
         codeSystemName="AdministrativeGenderCode"
         displayName="Male" />
         <birthTime value="19821026" />
-        <maritalStatusCode nullFlavor="UNK" />
-        <raceCode nullFlavor="UNK" />
-        <ethnicGroupCode nullFlavor="UNK" />
+        <maritalStatusCode code="S"
+        codeSystem="2.16.840.1.113883.5.2"
+        codeSystemName="MaritalStatusCode" displayName="Single" />
+        <raceCode code="2106-3"
+        codeSystem="2.16.840.1.113883.6.238"
+        codeSystemName="CDC Race and Ethnicity"
+        displayName="White" />
+        <ethnicGroupCode code="2186-5"
+        codeSystem="2.16.840.1.113883.6.238"
+        codeSystemName="CDC Race and Ethnicity"
+        displayName="Not Hispanic or Latino" />
         <languageCommunication>
           <languageCode code="eng" />
           <preferenceInd value="true" />
         </languageCommunication>
       </patient>
       <providerOrganization>
-        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
-        extension="3600" />
-        <name>UW Health and Affiliates - Wisconsin and
-        Illinois</name>
+        <id root="1.2.840.114350.1.13.283.2.7.2.688879"
+        extension="11000" />
+        <name>UnityPoint Health</name>
         <telecom nullFlavor="NA" />
         <addr nullFlavor="NA">
-          <city>Madison</city>
-          <state>WI</state>
-          <postalCode>53792</postalCode>
+          <city>Des Moines</city>
+          <state>IA</state>
+          <postalCode>50309</postalCode>
           <country>USA</country>
         </addr>
       </providerOrganization>
     </patientRole>
   </recordTarget>
   <author>
-    <time value="20190301131204-0600" />
+    <time value="20190301171836-0600" />
     <assignedAuthor>
       <id root="1.2.840.114350.1.1" extension="8.3" />
       <addr nullFlavor="NA" />
@@ -99,15 +94,14 @@
         <softwareName>Epic - Version 8.3</softwareName>
       </assignedAuthoringDevice>
       <representedOrganization>
-        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
-        extension="3600" />
-        <name>UW Health and Affiliates - Wisconsin and
-        Illinois</name>
+        <id root="1.2.840.114350.1.13.283.2.7.2.688879"
+        extension="11000" />
+        <name>UnityPoint Health</name>
         <telecom nullFlavor="NA" />
         <addr nullFlavor="NA">
-          <city>Madison</city>
-          <state>WI</state>
-          <postalCode>53792</postalCode>
+          <city>Des Moines</city>
+          <state>IA</state>
+          <postalCode>50309</postalCode>
           <country>USA</country>
         </addr>
       </representedOrganization>
@@ -116,15 +110,14 @@
   <custodian>
     <assignedCustodian>
       <representedCustodianOrganization>
-        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
-        extension="3600" />
-        <name>UW Health and Affiliates - Wisconsin and
-        Illinois</name>
+        <id root="1.2.840.114350.1.13.283.2.7.2.688879"
+        extension="11000" />
+        <name>UnityPoint Health</name>
         <telecom nullFlavor="NA" />
         <addr nullFlavor="NA">
-          <city>Madison</city>
-          <state>WI</state>
-          <postalCode>53792</postalCode>
+          <city>Des Moines</city>
+          <state>IA</state>
+          <postalCode>50309</postalCode>
           <country>USA</country>
         </addr>
       </representedCustodianOrganization>
@@ -134,16 +127,23 @@
     <templateId root="2.16.840.1.113883.3.88.11.32.3" />
     <templateId root="2.16.840.1.113883.3.88.11.83.3" />
     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4" />
-    <time value="20190208" />
+    <time value="20180717" />
     <associatedEntity classCode="ECON">
       <id nullFlavor="UNK" />
       <code nullFlavor="OTH">
         <originalText>Significant other</originalText>
       </code>
-      <addr nullFlavor="UNK" />
+      <addr>
+        <streetAddressLine>443 Virginia Terrace</streetAddressLine>
+        <city>MADISON</city>
+        <state>WI</state>
+        <postalCode>53726</postalCode>
+        <country>USA</country>
+      </addr>
       <telecom use="MC" value="tel:+1-478-227-7436" />
+      <telecom use="HP" value="tel:+1-478-227-7436" />
       <associatedPerson>
-        <name>NIZIOLEK,CAROLINE</name>
+        <name>Niviolek,Caroline</name>
       </associatedPerson>
     </associatedEntity>
   </participant>
@@ -164,12 +164,12 @@
           <originalText>General</originalText>
         </functionCode>
         <time>
-          <low value="20190208" />
+          <low value="20180717" />
           <high nullFlavor="PINF" />
         </time>
         <assignedEntity>
-          <id root="1.2.840.114350.1.13.92.2.7.2.836982"
-          extension="70003411" />
+          <id root="1.2.840.114350.1.13.283.2.7.2.836982"
+          extension="802011" />
           <code nullFlavor="UNK">
             <originalText>Internal Medicine</originalText>
           </code>
@@ -177,28 +177,25 @@
             <streetAddressLine>4410 REGENT ST</streetAddressLine>
             <city>MADISON</city>
             <state>WI</state>
-            <postalCode>53705-4901</postalCode>
+            <postalCode>53705</postalCode>
           </addr>
           <telecom use="WP" value="tel:+1-608-233-9746" />
-          <telecom value="fax:+1-608-236-1981" />
+          <telecom value="fax:+1-608-233-0026" />
           <assignedPerson>
             <name>
-              <given>Puneet</given>
-              <given>S</given>
+              <given>P</given>
               <family>Dhillon</family>
-              <suffix>MD</suffix>
             </name>
           </assignedPerson>
           <representedOrganization>
-            <id root="1.2.840.114350.1.13.92.2.7.2.688879"
-            extension="3600" />
-            <name>UW Health and Affiliates - Wisconsin and
-            Illinois</name>
+            <id root="1.2.840.114350.1.13.283.2.7.2.688879"
+            extension="11000" />
+            <name>UnityPoint Health</name>
             <telecom nullFlavor="NA" />
             <addr nullFlavor="NA">
-              <city>Madison</city>
-              <state>WI</state>
-              <postalCode>53792</postalCode>
+              <city>Des Moines</city>
+              <state>IA</state>
+              <postalCode>50309</postalCode>
               <country>USA</country>
             </addr>
           </representedOrganization>
@@ -209,7 +206,11 @@
   <relatedDocument typeCode="RPLC">
     <parentDocument>
       <id assigningAuthorityName="EPC"
-      root="1.2.840.114350.1.13.92.2.7.8.688883.299988180" />
+      root="1.2.840.114350.1.13.283.2.7.8.688883.188221825" />
+      <setId assigningAuthorityName="EPC"
+      extension="17110982-3c43-11e9-8498-4503b6aa49bb"
+      root="1.2.840.114350.1.13.283.2.7.8.688883.188221825" />
+      <versionNumber value="2" />
     </parentDocument>
   </relatedDocument>
   <component>
@@ -218,13 +219,11 @@
         <section>
           <code code="X-CE-PFD" codeSystem="2.16.840.1.113883.6.1"
           codeSystemName="LOINC"
-          displayName="Note from UW Health and Affiliates - Wisconsin and Illinois" />
-          <title>Note from UW Health and Affiliates - Wisconsin and
-          Illinois</title>
+          displayName="Note from UnityPoint Health" />
+          <title>Note from UnityPoint Health</title>
           <text>This document contains information that was shared
-          with Josh Craig Mandel. It may not contain the entire
-          record from UW Health and Affiliates - Wisconsin and
-          Illinois.</text>
+          with Joshua C Mandel. It may not contain the entire
+          record from UnityPoint Health.</text>
         </section>
       </component>
       <component>
@@ -232,7 +231,7 @@
           <templateId root="2.16.840.1.113883.10.20.1.2" />
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13" />
           <templateId root="2.16.840.1.113883.3.88.11.83.102" />
-          <id root="E6918986-3C55-11E9-A261-A20DD1EAFB96" />
+          <id root="5714124C-3C78-11E9-B551-4503B6AA49BB" />
           <code code="48765-2" codeSystem="2.16.840.1.113883.6.1"
           codeSystemName="LOINC"
           displayName="Allergies, Adverse Reactions, Alerts" />
@@ -242,20 +241,26 @@
               <item ID="allergy3">
               <content ID="allergy3allergen" styleCode="Bold">
               Peanut Oil</content>(
-              <content ID="allergy3reaction1">HIVES</content>) - 
+              <content ID="allergy3reaction1">Hives</content>) - 
               <content ID="allergy3severity">High
               Severity</content></item>
               <item ID="allergy4">
               <content ID="allergy4allergen" styleCode="Bold">
               Penicillins</content>(
-              <content ID="allergy4reaction1">HIVES</content>) - 
+              <content ID="allergy4reaction1">Hives</content>) - 
               <content ID="allergy4severity">High
               Severity</content></item>
               <item ID="allergy5">
               <content ID="allergy5allergen" styleCode="Bold">Sulfa
-              Drugs</content>(
-              <content ID="allergy5reaction1">HIVES</content>) - 
+              Antibiotics</content>(
+              <content ID="allergy5reaction1">Hives</content>) - 
               <content ID="allergy5severity">High
+              Severity</content></item>
+              <item ID="allergy6">
+              <content ID="allergy6allergen" styleCode="Bold">Tree
+              Nut</content>(
+              <content ID="allergy6reaction1">Hives</content>) - 
+              <content ID="allergy6severity">High
               Severity</content></item>
             </list>
           </text>
@@ -266,8 +271,8 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3" />
               <templateId root="2.16.840.1.113883.3.88.11.32.6" />
               <templateId root="2.16.840.1.113883.3.88.11.83.6" />
-              <id root="1.2.840.114350.1.13.92.2.7.2.768076"
-              extension="36597931" />
+              <id root="1.2.840.114350.1.13.283.2.7.2.768076"
+              extension="30689231" />
               <code nullFlavor="NA" />
               <statusCode code="active" />
               <effectiveTime>
@@ -283,8 +288,8 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1"
                   extension="allergy" />
                   <templateId root="2.16.840.1.113883.10.20.1.28" />
-                  <id root="1.2.840.114350.1.13.92.2.7.2.768076"
-                  extension="36597931" />
+                  <id root="1.2.840.114350.1.13.283.2.7.2.768076"
+                  extension="30689231" />
                   <code code="419511003"
                   codeSystem="2.16.840.1.113883.6.96"
                   codeSystemName="SNOMED CT"
@@ -302,28 +307,36 @@
                   codeSystemName="RxNorm" xsi:type="CD"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
                   <author>
-                    <time value="20190208" />
+                    <time value="20180809" />
                     <assignedAuthor>
-                      <id root="1.2.840.114350.1.13.92.2.7.2.697780"
-                      extension="JVD355" />
-                      <addr nullFlavor="UNK" />
-                      <telecom nullFlavor="UNK" />
+                      <id root="1.2.840.114350.1.13.283.2.7.2.697780"
+                      extension="WENTZTC" />
+                      <addr>
+                        <streetAddressLine>ASSOCIATED
+                        PHYSICIANS</streetAddressLine>
+                        <streetAddressLine>4410 REGENT
+                        ST</streetAddressLine>
+                        <city>MADISON</city>
+                        <state>WI</state>
+                        <postalCode>53705</postalCode>
+                      </addr>
+                      <telecom use="WP"
+                      value="tel:+1-608-233-9746" />
                       <assignedPerson>
                         <name>
-                          <given>James</given>
-                          <family>D</family>
+                          <given>Tracy C</given>
+                          <family>W</family>
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
-                        extension="3600" />
-                        <name>UW Health and Affiliates - Wisconsin
-                        and Illinois</name>
+                        <id root="1.2.840.114350.1.13.283.2.7.2.688879"
+                        extension="11000" />
+                        <name>UnityPoint Health</name>
                         <telecom nullFlavor="UNK" />
                         <addr>
-                          <city>Madison</city>
-                          <state>WI</state>
-                          <postalCode>53792</postalCode>
+                          <city>Des Moines</city>
+                          <state>IA</state>
+                          <postalCode>50309</postalCode>
                           <country>USA</country>
                         </addr>
                       </representedOrganization>
@@ -378,7 +391,7 @@
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"
                       extension="reaction" />
                       <templateId root="2.16.840.1.113883.10.20.1.28" />
-                      <id root="1.2.840.114350.1.13.92.2.7.4.768076.3008"
+                      <id root="1.2.840.114350.1.13.283.2.7.4.768076.3008"
                       extension="2" />
                       <code code="RXNASSESS" />
                       <text>
@@ -392,7 +405,7 @@
                       <value code="126485001"
                       codeSystem="2.16.840.1.113883.6.96"
                       codeSystemName="SNOMED CT" xsi:type="CD"
-                      displayName="HIVES"
+                      displayName="Hives"
                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
                         <originalText>
@@ -447,8 +460,8 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3" />
               <templateId root="2.16.840.1.113883.3.88.11.32.6" />
               <templateId root="2.16.840.1.113883.3.88.11.83.6" />
-              <id root="1.2.840.114350.1.13.92.2.7.2.768076"
-              extension="36597929" />
+              <id root="1.2.840.114350.1.13.283.2.7.2.768076"
+              extension="30689317" />
               <code nullFlavor="NA" />
               <statusCode code="active" />
               <effectiveTime>
@@ -464,8 +477,8 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1"
                   extension="allergy" />
                   <templateId root="2.16.840.1.113883.10.20.1.28" />
-                  <id root="1.2.840.114350.1.13.92.2.7.2.768076"
-                  extension="36597929" />
+                  <id root="1.2.840.114350.1.13.283.2.7.2.768076"
+                  extension="30689317" />
                   <code code="419511003"
                   codeSystem="2.16.840.1.113883.6.96"
                   codeSystemName="SNOMED CT"
@@ -483,28 +496,36 @@
                   codeSystemName="NDF-RT" xsi:type="CD"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
                   <author>
-                    <time value="20190208" />
+                    <time value="20180809" />
                     <assignedAuthor>
-                      <id root="1.2.840.114350.1.13.92.2.7.2.697780"
-                      extension="JVD355" />
-                      <addr nullFlavor="UNK" />
-                      <telecom nullFlavor="UNK" />
+                      <id root="1.2.840.114350.1.13.283.2.7.2.697780"
+                      extension="WENTZTC" />
+                      <addr>
+                        <streetAddressLine>ASSOCIATED
+                        PHYSICIANS</streetAddressLine>
+                        <streetAddressLine>4410 REGENT
+                        ST</streetAddressLine>
+                        <city>MADISON</city>
+                        <state>WI</state>
+                        <postalCode>53705</postalCode>
+                      </addr>
+                      <telecom use="WP"
+                      value="tel:+1-608-233-9746" />
                       <assignedPerson>
                         <name>
-                          <given>James</given>
-                          <family>D</family>
+                          <given>Tracy C</given>
+                          <family>W</family>
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
-                        extension="3600" />
-                        <name>UW Health and Affiliates - Wisconsin
-                        and Illinois</name>
+                        <id root="1.2.840.114350.1.13.283.2.7.2.688879"
+                        extension="11000" />
+                        <name>UnityPoint Health</name>
                         <telecom nullFlavor="UNK" />
                         <addr>
-                          <city>Madison</city>
-                          <state>WI</state>
-                          <postalCode>53792</postalCode>
+                          <city>Des Moines</city>
+                          <state>IA</state>
+                          <postalCode>50309</postalCode>
                           <country>USA</country>
                         </addr>
                       </representedOrganization>
@@ -655,7 +676,7 @@
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"
                       extension="reaction" />
                       <templateId root="2.16.840.1.113883.10.20.1.28" />
-                      <id root="1.2.840.114350.1.13.92.2.7.4.768076.3008"
+                      <id root="1.2.840.114350.1.13.283.2.7.4.768076.3008"
                       extension="2" />
                       <code code="RXNASSESS" />
                       <text>
@@ -669,7 +690,7 @@
                       <value code="126485001"
                       codeSystem="2.16.840.1.113883.6.96"
                       codeSystemName="SNOMED CT" xsi:type="CD"
-                      displayName="HIVES"
+                      displayName="Hives"
                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
                         <originalText>
@@ -724,8 +745,8 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3" />
               <templateId root="2.16.840.1.113883.3.88.11.32.6" />
               <templateId root="2.16.840.1.113883.3.88.11.83.6" />
-              <id root="1.2.840.114350.1.13.92.2.7.2.768076"
-              extension="36597930" />
+              <id root="1.2.840.114350.1.13.283.2.7.2.768076"
+              extension="30689295" />
               <code nullFlavor="NA" />
               <statusCode code="active" />
               <effectiveTime>
@@ -741,8 +762,8 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1"
                   extension="allergy" />
                   <templateId root="2.16.840.1.113883.10.20.1.28" />
-                  <id root="1.2.840.114350.1.13.92.2.7.2.768076"
-                  extension="36597930" />
+                  <id root="1.2.840.114350.1.13.283.2.7.2.768076"
+                  extension="30689295" />
                   <code code="419511003"
                   codeSystem="2.16.840.1.113883.6.96"
                   codeSystemName="SNOMED CT"
@@ -760,28 +781,36 @@
                   codeSystemName="NDF-RT" xsi:type="CD"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
                   <author>
-                    <time value="20190208" />
+                    <time value="20180809" />
                     <assignedAuthor>
-                      <id root="1.2.840.114350.1.13.92.2.7.2.697780"
-                      extension="JVD355" />
-                      <addr nullFlavor="UNK" />
-                      <telecom nullFlavor="UNK" />
+                      <id root="1.2.840.114350.1.13.283.2.7.2.697780"
+                      extension="WENTZTC" />
+                      <addr>
+                        <streetAddressLine>ASSOCIATED
+                        PHYSICIANS</streetAddressLine>
+                        <streetAddressLine>4410 REGENT
+                        ST</streetAddressLine>
+                        <city>MADISON</city>
+                        <state>WI</state>
+                        <postalCode>53705</postalCode>
+                      </addr>
+                      <telecom use="WP"
+                      value="tel:+1-608-233-9746" />
                       <assignedPerson>
                         <name>
-                          <given>James</given>
-                          <family>D</family>
+                          <given>Tracy C</given>
+                          <family>W</family>
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.840.114350.1.13.92.2.7.2.688879"
-                        extension="3600" />
-                        <name>UW Health and Affiliates - Wisconsin
-                        and Illinois</name>
+                        <id root="1.2.840.114350.1.13.283.2.7.2.688879"
+                        extension="11000" />
+                        <name>UnityPoint Health</name>
                         <telecom nullFlavor="UNK" />
                         <addr>
-                          <city>Madison</city>
-                          <state>WI</state>
-                          <postalCode>53792</postalCode>
+                          <city>Des Moines</city>
+                          <state>IA</state>
+                          <postalCode>50309</postalCode>
                           <country>USA</country>
                         </addr>
                       </representedOrganization>
@@ -893,7 +922,7 @@
                           codeSystem="2.16.840.1.113883.3.26.1.5"
                           codeSystemName="NDF-RT" />
                         </code>
-                        <name>SULFA DRUGS</name>
+                        <name>SULFA ANTIBIOTICS</name>
                       </playingEntity>
                     </participantRole>
                   </participant>
@@ -905,7 +934,7 @@
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"
                       extension="reaction" />
                       <templateId root="2.16.840.1.113883.10.20.1.28" />
-                      <id root="1.2.840.114350.1.13.92.2.7.4.768076.3008"
+                      <id root="1.2.840.114350.1.13.283.2.7.4.768076.3008"
                       extension="2" />
                       <code code="RXNASSESS" />
                       <text>
@@ -919,7 +948,7 @@
                       <value code="126485001"
                       codeSystem="2.16.840.1.113883.6.96"
                       codeSystemName="SNOMED CT" xsi:type="CD"
-                      displayName="HIVES"
+                      displayName="Hives"
                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
                         <originalText>
@@ -967,6 +996,164 @@
               </entryRelationship>
             </act>
           </entry>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3" />
+              <templateId root="2.16.840.1.113883.3.88.11.32.6" />
+              <templateId root="2.16.840.1.113883.3.88.11.83.6" />
+              <id root="1.2.840.114350.1.13.283.2.7.2.768076"
+              extension="30689238" />
+              <code nullFlavor="NA" />
+              <statusCode code="active" />
+              <effectiveTime>
+                <low value="20180809" />
+              </effectiveTime>
+              <entryRelationship inversionInd="false"
+              typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN"
+                negationInd="false">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6" />
+                  <templateId root="2.16.840.1.113883.10.20.1.18" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1"
+                  extension="allergy" />
+                  <templateId root="2.16.840.1.113883.10.20.1.28" />
+                  <id root="1.2.840.114350.1.13.283.2.7.2.768076"
+                  extension="30689238" />
+                  <code code="418038007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  codeSystemName="SNOMED CT"
+                  displayName="Propensity to adverse reactions to substance" />
+                  <text>
+                    <reference value="#allergy6" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low value="20180809" />
+                    <high nullFlavor="PINF" />
+                  </effectiveTime>
+                  <value xsi:type="CD" nullFlavor="UNK"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                  <author>
+                    <time value="20180809" />
+                    <assignedAuthor>
+                      <id root="1.2.840.114350.1.13.283.2.7.2.697780"
+                      extension="WENTZTC" />
+                      <addr>
+                        <streetAddressLine>ASSOCIATED
+                        PHYSICIANS</streetAddressLine>
+                        <streetAddressLine>4410 REGENT
+                        ST</streetAddressLine>
+                        <city>MADISON</city>
+                        <state>WI</state>
+                        <postalCode>53705</postalCode>
+                      </addr>
+                      <telecom use="WP"
+                      value="tel:+1-608-233-9746" />
+                      <assignedPerson>
+                        <name>
+                          <given>Tracy C</given>
+                          <family>W</family>
+                        </name>
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="1.2.840.114350.1.13.283.2.7.2.688879"
+                        extension="11000" />
+                        <name>UnityPoint Health</name>
+                        <telecom nullFlavor="UNK" />
+                        <addr>
+                          <city>Des Moines</city>
+                          <state>IA</state>
+                          <postalCode>50309</postalCode>
+                          <country>USA</country>
+                        </addr>
+                      </representedOrganization>
+                    </assignedAuthor>
+                  </author>
+                  <participant typeCode="CSM">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code nullFlavor="UNK">
+                          <originalText>
+                            <reference value="#allergy6allergen" />
+                          </originalText>
+                        </code>
+                        <name>TREE NUT</name>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship inversionInd="true"
+                  typeCode="MFST">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.54" />
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" />
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"
+                      extension="reaction" />
+                      <templateId root="2.16.840.1.113883.10.20.1.28" />
+                      <id root="1.2.840.114350.1.13.283.2.7.4.768076.3008"
+                      extension="2" />
+                      <code code="RXNASSESS" />
+                      <text>
+                        <reference value="#allergy6reaction1" />
+                      </text>
+                      <statusCode code="completed" />
+                      <effectiveTime>
+                        <low value="20180809" />
+                        <high nullFlavor="PINF" />
+                      </effectiveTime>
+                      <value code="126485001"
+                      codeSystem="2.16.840.1.113883.6.96"
+                      codeSystemName="SNOMED CT" xsi:type="CD"
+                      displayName="Hives"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+                        <originalText>
+                          <reference value="#allergy6reaction1" />
+                        </originalText>
+                      </value>
+                      <entryRelationship inversionInd="true"
+                      typeCode="SUBJ">
+                        <observation classCode="OBS"
+                        moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.1.55" />
+                          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1" />
+                          <code code="SEV"
+                          codeSystem="2.16.840.1.113883.5.4"
+                          codeSystemName="ActCode"
+                          displayName="Severity" />
+                          <text>
+                            <reference value="#allergy6severity" />
+                          </text>
+                          <statusCode code="completed" />
+                          <value code="H"
+                          codeSystem="2.16.840.1.113883.5.1063"
+                          codeSystemName="SeverityObservation"
+                          xsi:type="CD" displayName="High"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship inversionInd="true"
+                  typeCode="REFR">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.39" />
+                      <code code="33999-4"
+                      codeSystem="2.16.840.1.113883.6.1"
+                      displayName="Status" />
+                      <statusCode code="completed" />
+                      <value code="55561003"
+                      codeSystem="2.16.840.1.113883.6.96"
+                      xsi:type="CE" displayName="Active"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
         </section>
       </component>
       <component>
@@ -974,13 +1161,13 @@
           <templateId root="2.16.840.1.113883.10.20.1.8" />
           <templateId root="2.16.840.1.113883.3.88.11.83.112" />
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.19" />
-          <id root="E69356C6-3C55-11E9-A261-A20DD1EAFB96" />
+          <id root="57180C08-3C78-11E9-B551-4503B6AA49BB" />
           <code code="10160-0" codeSystem="2.16.840.1.113883.6.1"
           codeSystemName="LOINC"
           displayName="History of Medication Usage" />
           <title>Current Medications</title>
           <text>
-            <content ID="nof7">No known medications</content>
+            <content ID="nof8">No known medications</content>
           </text>
           <entry>
             <substanceAdministration classCode="SBADM"
@@ -1010,7 +1197,7 @@
                     <code codeSystem="2.16.840.1.113883.6.88"
                     nullFlavor="NI">
                       <originalText>
-                        <reference value="#nof7" />
+                        <reference value="#nof8" />
                       </originalText>
                     </code>
                   </manufacturedMaterial>
@@ -1025,13 +1212,17 @@
           <templateId root="2.16.840.1.113883.10.20.1.11" />
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6" />
           <templateId root="2.16.840.1.113883.3.88.11.83.103" />
-          <id root="E6938902-3C55-11E9-A261-A20DD1EAFB96" />
+          <id root="57189BAA-3C78-11E9-B551-4503B6AA49BB" />
           <code code="11450-4" codeSystem="2.16.840.1.113883.6.1"
           codeSystemName="LOINC" displayName="PROBLEM LIST" />
           <title>Active Problems</title>
           <text>
-            <paragraph ID="nof9">No known active
-            problems</paragraph>
+            <list>
+              <item ID="problem10">
+              <content ID="problem10name" styleCode="Bold">
+              Gastroesophageal reflux disease</content>(Noted
+              8/9/2018)</item>
+            </list>
           </text>
           <entry>
             <act classCode="ACT" moodCode="EVN">
@@ -1040,43 +1231,172 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2" />
               <templateId root="2.16.840.1.113883.3.88.11.32.7" />
               <templateId root="2.16.840.1.113883.3.88.11.83.7" />
-              <id nullFlavor="NI" />
+              <id root="1.2.840.114350.1.13.283.2.7.2.768076"
+              extension="30694847" />
               <code nullFlavor="NA" />
               <statusCode code="active" />
               <effectiveTime>
-                <low nullFlavor="UNK" />
+                <low value="20180809" />
               </effectiveTime>
               <entryRelationship inversionInd="false"
               typeCode="SUBJ">
-                <observation classCode="OBS" moodCode="EVN"
-                negationInd="true">
+                <observation classCode="OBS" moodCode="EVN">
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" />
                   <templateId root="2.16.840.1.113883.10.20.1.28" />
-                  <id nullFlavor="NI" />
+                  <id root="1.2.840.114350.1.13.283.2.7.2.768076"
+                  extension="30694847" />
                   <code code="64572001"
                   codeSystem="2.16.840.1.113883.6.96"
                   codeSystemName="SNOMED CT"
                   displayName="Condition" />
                   <text>
-                    <reference value="#nof9" />
+                    <reference value="#problem10name" />
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime>
-                    <low nullFlavor="UNK" />
+                    <low value="20180809" />
                   </effectiveTime>
-                  <value code="55607006"
+                  <value code="235595009"
                   codeSystem="2.16.840.1.113883.6.96"
                   codeSystemName="SNOMED CT" xsi:type="CD"
-                  displayName="Problem"
+                  displayName="Gastroesophageal reflux disease"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
                     <originalText>
-                      <reference value="#nof9" />
+                      <reference value="#problem10name" />
                     </originalText>
+                    <translation code="K21.9"
+                    codeSystem="2.16.840.1.113883.6.90"
+                    codeSystemName="ICD-10-CM"
+                    displayName="Gastroesophageal reflux disease" />
+                    <translation code="530.81"
+                    codeSystem="2.16.840.1.113883.6.103"
+                    codeSystemName="ICD-9CM"
+                    displayName="Gastroesophageal reflux disease" />
+                    <translation code="8169"
+                    codeSystem="2.16.840.1.113883.3.247.1.1"
+                    codeSystemName="Intelligent Medical Objects ProblemIT"
+                    displayName="Gastroesophageal reflux disease" />
                   </value>
+                  <author>
+                    <time value="20180809161030+0000" />
+                    <assignedAuthor>
+                      <id root="1.2.840.114350.1.13.283.2.7.2.697780"
+                      extension="DHILLOPS" />
+                      <addr>
+                        <streetAddressLine>ASSOCIATED
+                        PHYSICIANS</streetAddressLine>
+                        <streetAddressLine>4410 REGENT
+                        ST</streetAddressLine>
+                        <city>MADISON</city>
+                        <state>WI</state>
+                        <postalCode>53705</postalCode>
+                      </addr>
+                      <telecom use="WP"
+                      value="tel:+1-608-233-9746" />
+                      <assignedPerson>
+                        <name>
+                          <given>P</given>
+                          <family>Dhillon</family>
+                        </name>
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="1.2.840.114350.1.13.283.2.7.2.688879"
+                        extension="11000" />
+                        <name>UnityPoint Health</name>
+                        <telecom nullFlavor="UNK" />
+                        <addr>
+                          <city>Des Moines</city>
+                          <state>IA</state>
+                          <postalCode>50309</postalCode>
+                          <country>USA</country>
+                        </addr>
+                      </representedOrganization>
+                    </assignedAuthor>
+                  </author>
+                  <entryRelationship typeCode="REFR">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.50" />
+                      <code code="33999-4"
+                      codeSystem="2.16.840.1.113883.6.1"
+                      displayName="Status" />
+                      <statusCode code="completed" />
+                      <effectiveTime>
+                        <low value="20180809" />
+                      </effectiveTime>
+                      <value code="55561003"
+                      codeSystem="2.16.840.1.113883.6.96"
+                      xsi:type="CD" displayName="Active"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                    </observation>
+                  </entryRelationship>
                 </observation>
               </entryRelationship>
             </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.6" />
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.23" />
+          <templateId root="2.16.840.1.113883.3.88.11.83.117" />
+          <id root="57194B2C-3C78-11E9-B551-4503B6AA49BB" />
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1"
+          codeSystemName="LOINC"
+          displayName="HISTORY OF IMMUNIZATIONS" />
+          <title>Immunizations</title>
+          <text>
+            <list>
+              <item ID="immunization12">
+              <content ID="immunization12Name" styleCode="Bold">
+              Influenza (FLUCELVAX) ccIIV4, prefilled
+              syringe</content>(Given 10/25/2017)</item>
+            </list>
+          </text>
+          <entry>
+            <substanceAdministration classCode="SBADM"
+            moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.1.24" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12" />
+              <templateId root="2.16.840.1.113883.3.88.11.83.13" />
+              <id root="1.2.840.114350.1.13.283.2.7.2.768076"
+              extension="30666377" />
+              <code code="IMMUNIZ"
+              codeSystem="2.16.840.1.113883.5.4"
+              codeSystemName="ActCode" />
+              <text mediaType="text/xml">
+                <reference value="#immunization12" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime value="20171025" />
+              <routeCode code="C28161"
+              codeSystem="2.16.840.1.113883.3.26.1.1"
+              codeSystemName="NCI Thesaurus"
+              displayName="Intramuscular" />
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2" />
+                  <templateId root="2.16.840.1.113883.10.20.1.53" />
+                  <templateId root="2.16.840.1.113883.3.88.11.32.9" />
+                  <templateId root="2.16.840.1.113883.3.88.11.83.8.2" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2" />
+                  <templateId root="2.16.840.1.113883.3.249.11.100.13" />
+                  <manufacturedMaterial>
+                    <code code="171"
+                    codeSystem="2.16.840.1.113883.12.292"
+                    codeSystemName="CVX"
+                    displayName="INFLUENZA (FLUCELVAX) CCIIV4, PREFILLED SYRINGE">
+
+                      <originalText>
+                        <reference value="#immunization12Name" />
+                      </originalText>
+                    </code>
+                    <lotNumberText nullFlavor="UNK" />
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
           </entry>
         </section>
       </component>
@@ -1086,105 +1406,65 @@
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.27" />
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.28" />
           <templateId root="2.16.840.1.113883.3.88.11.83.122" />
-          <id root="E6965B1E-3C55-11E9-A261-A20DD1EAFB96" />
+          <id root="571C8FBC-3C78-11E9-B551-4503B6AA49BB" />
           <code code="30954-2" codeSystem="2.16.840.1.113883.6.1"
           codeSystemName="LOINC" displayName="STUDIES SUMMARY" />
           <title>Results</title>
           <text>
             <list styleCode="TOC">
-              <item ID="Result355955032">
-                <caption>X-RAY ANKLE &gt;= 3 VIEWS, LEFT (X-RAY
-                ANKLE &gt;= 3 VIEWS LEFT) - Final result
-                (02/08/2019 8:05 PM)</caption>
+              <item ID="Result439060607">
+                <caption>HELICOBACTER PYLORI ANTIGEN (H. PYLORI
+                ANTIGEN, STOOL) - Final result (08/18/2018 9:30
+                AM)</caption>
                 <table>
                   <colgroup>
-                    <col width="80%" />
+                    <col width="25%" />
+                    <col width="30%" />
+                    <col width="25%" />
                     <col width="20%" />
                   </colgroup>
                   <thead>
                     <tr>
-                      <th>Impressions</th>
+                      <th>Component</th>
+                      <th>Value</th>
+                      <th>Ref Range</th>
                       <th>Performed At</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td ID="Result355955032Impression"
-                      styleCode="pre">
-                        <paragraph>IMPRESSION:</paragraph>
-                        <paragraph>No acute osseous
-                        abnormality.</paragraph>
-                        <paragraph></paragraph>
-                        <paragraph></paragraph>
+                    <tr ID="Result439060607Comp1">
+                      <td ID="Result439060607Comp1Name">H. pylori
+                      Ag, Stool</td>
+                      <td>
+                        <content>NEGATIVE FOR H PYLORI STOOL
+                        ANTIGEN</content>
+                        <content styleCode="allIndent">
+                          <content styleCode="cellHeader">
+                          Comment:</content>
+                          <content ID="Result439060607Comp1Comment">
+                          Testing performed at Meriter
+                          Laboratories, 36 S Brooks St Madison, WI
+                          53715, unless otherwise stated in
+                          result.</content>
+                        </content>
                       </td>
-                      <td styleCode="pre">
-                        <paragraph>UWHC RADIOLOGY</paragraph>
-                      </td>
+                      <td>NEGATIVE FOR H PYLORI STOOL ANTIGEN</td>
+                      <td>UPH MADISON SUNQUEST LAB</td>
                     </tr>
                   </tbody>
                 </table>
                 <table>
+                  <colgroup>
+                    <col width="25%" />
+                  </colgroup>
                   <thead>
                     <tr>
-                      <th>Procedure Note</th>
+                      <th>Specimen</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td ID="Result355955032ProcedureNote1016015336"
-                      styleCode="noIndent">
-                        <paragraph styleCode="header">Interface,
-                        Results - 02/08/2019 8:22 PM
-                        CST</paragraph>
-                        <paragraph>
-                          <content>X-RAY ANKLE &gt;= 3 VIEWS LEFT
-                          2/8/2019</content>
-                          <br />
-                          <br />
-                          <content>INDICATION: Acute left ankle
-                          pain distal fibular fracture.
-                          Inversion</content>
-                          <content>injury at</content>
-                          <br />
-                          <content>6:30 pm.</content>
-                          <br />
-                          <br />
-                          <content>COMPARISON: None.</content>
-                          <br />
-                          <br />
-                          <content>TECHNIQUE: Frontal, lateral and
-                          mortise views of the left
-                          ankle.</content>
-                          <br />
-                          <br />
-                          <content>FINDINGS: No fracture or osseous
-                          lesion is evident. Joint alignment
-                          is</content>
-                          <content>normal.</content>
-                          <br />
-                          <content>Joint spaces are
-                          well-maintained. No ankle joint effusion
-                          is seen. Soft</content>
-                          <content>tissues</content>
-                          <br />
-                          <content>are unremarkable.</content>
-                          <br />
-                          <br />
-                          <content></content>
-                          <br />
-                          <content>Electronically signed by: Amar
-                          Patel on 02/08/2019 08:16PM</content>
-                          <br />
-                          <content>IMPRESSION</content>
-                          <br />
-                          <content>IMPRESSION:</content>
-                          <br />
-                          <content>No acute osseous
-                          abnormality.</content>
-                          <br />
-                          <br />
-                        </paragraph>
-                      </td>
+                      <td ID="Result439060607Specimen">Stool</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1205,13 +1485,183 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td ID="Result355955032PerformingLab">
-                        <paragraph>UWHC RADIOLOGY</paragraph>
+                      <td ID="Result439060607PerformingLab">
+                        <paragraph>UPH MADISON MERITER SUNQUEST
+                        LAB</paragraph>
+                      </td>
+                      <td>
+                        <paragraph>36 S Brooks Street</paragraph>
+                      </td>
+                      <td>
+                        <content>Madison, WI</content>
                       </td>
                       <td>
                         <paragraph />
                       </td>
-                      <td />
+                    </tr>
+                    <tr>
+                      <td>
+                        <paragraph>UPH MADISON SUNQUEST
+                        LAB</paragraph>
+                      </td>
+                      <td>
+                        <paragraph />
+                      </td>
+                      <td>
+                        <content>Madison, WI</content>
+                      </td>
+                      <td>
+                        <paragraph />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </item>
+              <item ID="Result439060606">
+                <caption>LIPID PANEL - Final result (08/09/2018
+                10:16 AM)</caption>
+                <table>
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="30%" />
+                    <col width="25%" />
+                    <col width="20%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>Component</th>
+                      <th>Value</th>
+                      <th>Ref Range</th>
+                      <th>Performed At</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ID="Result439060606Comp1">
+                      <td ID="Result439060606Comp1Name">
+                      Cholesterol</td>
+                      <td>
+                        <content>159</content>
+                        <content styleCode="allIndent">
+                          <content styleCode="cellHeader">
+                          Comment:</content>
+                          <content ID="Result439060606Comp1Comment">
+                          PATIENT FASTING</content>
+                        </content>
+                      </td>
+                      <td>0 - 199 mg/dL</td>
+                      <td>UPH MADISON SUNQUEST LAB</td>
+                    </tr>
+                    <tr ID="Result439060606Comp2">
+                      <td ID="Result439060606Comp2Name">
+                      Triglycerides</td>
+                      <td>88</td>
+                      <td>0 - 149 mg/dL</td>
+                      <td>UPH MADISON SUNQUEST LAB</td>
+                    </tr>
+                    <tr ID="Result439060606Comp3">
+                      <td ID="Result439060606Comp3Name">HDL</td>
+                      <td>52</td>
+                      <td>40 - 125 mg/dL</td>
+                      <td>UPH MADISON SUNQUEST LAB</td>
+                    </tr>
+                    <tr ID="Result439060606Comp4">
+                      <td ID="Result439060606Comp4Name">LDL,
+                      Calculated</td>
+                      <td>
+                        <content>89</content>
+                        <br />
+                        <content styleCode="allIndent">
+                          <content styleCode="cellHeader">
+                          Comment:</content>
+                          <br />
+                          <content ID="Result439060606Comp4Comment"
+                          styleCode="pre">LDL less than 100 is
+                          considered optimal.
+                          <br />LDL between 100-129 is considered
+                          above to near optimal.
+                          <br />
+                          <br /></content>
+                        </content>
+                      </td>
+                      <td>60 - 129 mg/dL</td>
+                      <td>UPH MADISON SUNQUEST LAB</td>
+                    </tr>
+                    <tr ID="Result439060606Comp5">
+                      <td ID="Result439060606Comp5Name">
+                      Cholesterol/HDL Ratio</td>
+                      <td>
+                        <content>3.1</content>
+                        <content styleCode="allIndent">
+                          <content styleCode="cellHeader">
+                          Comment:</content>
+                          <content ID="Result439060606Comp5Comment">
+                          Testing performed at Associated
+                          Physicians LLP, 4410 Regent Street,
+                          Madison, WI 53705</content>
+                        </content>
+                      </td>
+                      <td>0.0 - 5.0</td>
+                      <td>UPH MADISON SUNQUEST LAB</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <colgroup>
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>Specimen</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td ID="Result439060606Specimen">BLOOD</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="30%" />
+                    <col width="25%" />
+                    <col width="20%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>Performing Organization</th>
+                      <th>Address</th>
+                      <th>City/State/Zipcode</th>
+                      <th>Phone Number</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td ID="Result439060606PerformingLab">
+                        <paragraph>UPH MADISON MERITER SUNQUEST
+                        LAB</paragraph>
+                      </td>
+                      <td>
+                        <paragraph>36 S Brooks Street</paragraph>
+                      </td>
+                      <td>
+                        <content>Madison, WI</content>
+                      </td>
+                      <td>
+                        <paragraph />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <paragraph>UPH MADISON SUNQUEST
+                        LAB</paragraph>
+                      </td>
+                      <td>
+                        <paragraph />
+                      </td>
+                      <td>
+                        <content>Madison, WI</content>
+                      </td>
                       <td>
                         <paragraph />
                       </td>
@@ -1224,35 +1674,146 @@
           <entry typeCode="DRIV">
             <organizer classCode="BATTERY" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.32" />
-              <id root="1.2.840.114350.1.13.92.2.7.2.798268"
-              extension="355955032" />
-              <code code="340878"
-              codeSystem="1.2.840.114350.1.13.92.2.7.2.696580"
+              <id root="1.2.840.114350.1.13.283.2.7.2.798268"
+              extension="439060606" />
+              <code code="684"
+              codeSystem="1.2.840.114350.1.13.283.2.7.2.696580"
               codeSystemName="Epic.EAP.ID"
-              displayName="X-RAY ANKLE &gt;= 3 VIEWS, LEFT (X-RAY ANKLE &gt;= 3 VIEWS LEFT) - Final result" />
+              displayName="LIPID PANEL - Final result" />
               <statusCode code="completed" />
-              <effectiveTime value="20190209021422+0000" />
+              <effectiveTime value="20180809151600+0000" />
               <component>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.31" />
                   <templateId root="2.16.840.1.113883.3.88.11.83.15.1" />
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <id root="1.2.840.114350.1.13.92.2.7.2.798268"
-                  extension="355955032" />
-                  <code code="261665006"
-                  codeSystem="2.16.840.1.113883.6.96"
-                  codeSystemName="SNOMED CT"
-                  displayName="Unknown" />
+                  <id root="1.2.840.114350.1.13.283.2.7.6.798268.2000"
+                  extension="439060606.1" />
+                  <code code="2093-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  codeSystemName="LOINC"
+                  displayName="Cholesterol" />
                   <text>
-                    <reference value="#Result355955032"
-                    nullFlavor="UNK" />
+                    <reference value="#Result439060606Comp1" />
                   </text>
                   <statusCode code="completed" />
-                  <effectiveTime>
-                    <low nullFlavor="UNK" />
+                  <effectiveTime value="20180809165909+0000">
+                    <low value="20180809165909+0000" />
                   </effectiveTime>
-                  <value xsi:type="ED" nullFlavor="NA"
+                  <value xsi:type="PQ" unit="mg/dL" value="159"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>0 - 199 mg/dL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31" />
+                  <templateId root="2.16.840.1.113883.3.88.11.83.15.1" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="1.2.840.114350.1.13.283.2.7.6.798268.2000"
+                  extension="439060606.2" />
+                  <code code="2571-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  codeSystemName="LOINC"
+                  displayName="Triglycerides" />
+                  <text>
+                    <reference value="#Result439060606Comp2" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20180809165909+0000">
+                    <low value="20180809165909+0000" />
+                  </effectiveTime>
+                  <value xsi:type="PQ" unit="mg/dL" value="88"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>0 - 149 mg/dL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31" />
+                  <templateId root="2.16.840.1.113883.3.88.11.83.15.1" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="1.2.840.114350.1.13.283.2.7.6.798268.2000"
+                  extension="439060606.3" />
+                  <code code="2085-9"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  codeSystemName="LOINC" displayName="HDL" />
+                  <text>
+                    <reference value="#Result439060606Comp3" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20180809165909+0000">
+                    <low value="20180809165909+0000" />
+                  </effectiveTime>
+                  <value xsi:type="PQ" unit="mg/dL" value="52"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>40 - 125 mg/dL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31" />
+                  <templateId root="2.16.840.1.113883.3.88.11.83.15.1" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="1.2.840.114350.1.13.283.2.7.6.798268.2000"
+                  extension="439060606.4" />
+                  <code code="2089-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  codeSystemName="LOINC"
+                  displayName="LDL, Calculated" />
+                  <text>
+                    <reference value="#Result439060606Comp4" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20180809165909+0000">
+                    <low value="20180809165909+0000" />
+                  </effectiveTime>
+                  <value xsi:type="PQ" unit="mg/dL" value="89"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>60 - 129 mg/dL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31" />
+                  <templateId root="2.16.840.1.113883.3.88.11.83.15.1" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="1.2.840.114350.1.13.283.2.7.6.798268.2000"
+                  extension="439060606.5" />
+                  <code code="9830-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  codeSystemName="LOINC"
+                  displayName="Cholesterol/HDL Ratio" />
+                  <text>
+                    <reference value="#Result439060606Comp5" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20180809165909+0000">
+                    <low value="20180809165909+0000" />
+                  </effectiveTime>
+                  <value xsi:type="PQ" value="3.1"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>0.0 - 5.0</text>
+                    </observationRange>
+                  </referenceRange>
                 </observation>
               </component>
               <component>
@@ -1260,23 +1821,89 @@
                   <templateId root="2.16.840.1.113883.10.20.1.29" />
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" />
                   <templateId root="2.16.840.1.113883.3.88.11.83.17" />
-                  <id root="1.2.840.114350.1.13.92.2.7.2.798268"
-                  extension="355955032" />
-                  <code code="340878"
-                  codeSystem="1.2.840.114350.1.13.92.2.7.2.696580"
+                  <id root="1.2.840.114350.1.13.283.2.7.2.798268"
+                  extension="439060606" />
+                  <code code="684"
+                  codeSystem="1.2.840.114350.1.13.283.2.7.2.696580"
                   codeSystemName="Epic.EAP.ID"
-                  displayName="X-RAY ANKLE &gt;= 3 VIEWS, LEFT (X-RAY ANKLE &gt;= 3 VIEWS LEFT) - Final result">
-
+                  displayName="LIPID PANEL - Final result">
                     <originalText>
-                      <reference value="#Result355955032Procedure" />
+                      <reference value="#Result439060606Procedure" />
                     </originalText>
                   </code>
                   <text>
-                    <reference value="#Result355955032" />
+                    <reference value="#Result439060606" />
                   </text>
                   <statusCode code="completed" />
-                  <effectiveTime value="20190209021422+0000">
-                    <low value="20190209021422+0000" />
+                  <effectiveTime value="20180809151600+0000">
+                    <low value="20180809151600+0000" />
+                  </effectiveTime>
+                </procedure>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.32" />
+              <id root="1.2.840.114350.1.13.283.2.7.2.798268"
+              extension="439060607" />
+              <code code="35289"
+              codeSystem="1.2.840.114350.1.13.283.2.7.2.696580"
+              codeSystemName="Epic.EAP.ID"
+              displayName="HELICOBACTER PYLORI ANTIGEN (H. PYLORI ANTIGEN, STOOL) - Final result" />
+              <statusCode code="completed" />
+              <effectiveTime value="20180818143000+0000" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31" />
+                  <templateId root="2.16.840.1.113883.3.88.11.83.15.1" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="1.2.840.114350.1.13.283.2.7.6.798268.2000"
+                  extension="439060607.1" />
+                  <code code="17780-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  codeSystemName="LOINC"
+                  displayName="H. pylori Ag, Stool" />
+                  <text>
+                    <reference value="#Result439060607Comp1" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20180818192533+0000">
+                    <low value="20180818192533+0000" />
+                  </effectiveTime>
+                  <value xsi:type="ST"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  NEGATIVE FOR H PYLORI STOOL ANTIGEN</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>NEGATIVE FOR H PYLORI STOOL
+                      ANTIGEN</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <procedure classCode="PROC" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.29" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" />
+                  <templateId root="2.16.840.1.113883.3.88.11.83.17" />
+                  <id root="1.2.840.114350.1.13.283.2.7.2.798268"
+                  extension="439060607" />
+                  <code code="35289"
+                  codeSystem="1.2.840.114350.1.13.283.2.7.2.696580"
+                  codeSystemName="Epic.EAP.ID"
+                  displayName="HELICOBACTER PYLORI ANTIGEN (H. PYLORI ANTIGEN, STOOL) - Final result">
+
+                    <originalText>
+                      <reference value="#Result439060607Procedure" />
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#Result439060607" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20180818143000+0000">
+                    <low value="20180818143000+0000" />
                   </effectiveTime>
                 </procedure>
               </component>

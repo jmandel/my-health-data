@@ -5,7 +5,7 @@
   "link": [
     {
       "relation": "self",
-      "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Observation?patient=TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB&category=vital-signs"
+      "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Observation?category=vital-signs&patient=TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB"
     }
   ],
   "entry": [

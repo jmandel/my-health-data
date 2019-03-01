@@ -1,0 +1,89 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Observation?category=social-history&patient=TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Observation/TiyxTbXtRBBpqtDPzrXFF0JNq5wzvxoW5sNIpA8aqcg9uMXvd6jvHgdrzVl6hh3VzB",
+      "link": [
+        {
+          "relation": "self",
+          "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Observation/TiyxTbXtRBBpqtDPzrXFF0JNq5wzvxoW5sNIpA8aqcg9uMXvd6jvHgdrzVl6hh3VzB"
+        }
+      ],
+      "search": {
+        "mode": "match"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "issued": "2018-08-09T00:00:00Z",
+        "status": "final",
+        "id": "TiyxTbXtRBBpqtDPzrXFF0JNq5wzvxoW5sNIpA8aqcg9uMXvd6jvHgdrzVl6hh3VzB",
+        "code": {
+          "text": "Smoking History",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status NHIS"
+            }
+          ]
+        },
+        "subject": {
+          "display": "Joshua C Mandel",
+          "reference": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Patient/TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB"
+        },
+        "valueCodeableConcept": {
+          "text": "Never Smoker",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266919005",
+              "display": "Never smoker"
+            }
+          ]
+        },
+        "category": {
+          "text": "Social History",
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "search": {
+        "mode": "outcome"
+      },
+      "resource": {
+        "resourceType": "OperationOutcome",
+        "issue": [
+          {
+            "severity": "warning",
+            "code": "informational",
+            "details": {
+              "text": "This response includes information available to the authorized user at the time of the request. It may not contain the entire record available in the system.",
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.657369",
+                  "code": "4119",
+                  "display": "This response includes information available to the authorized user at the time of the request. It may not contain the entire record available in the system."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

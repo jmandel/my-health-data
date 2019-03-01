@@ -1,0 +1,89 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://epicproxy.hosp.wisc.edu/FhirProxy/api/FHIR/DSTU2/Observation?category=social-history&patient=TITdhHEfYtlRbx9v37LFiEOc1-ntCEuzjFeL91S4oI7UB"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://epicproxy.hosp.wisc.edu/FhirProxy/api/FHIR/DSTU2/Observation/TZDmEElEnd.TLmKAgcX292BzZFPb-b40BUjUJeg0hYO9JK07ckCGI7fLPIri08u9RB",
+      "link": [
+        {
+          "relation": "self",
+          "url": "https://epicproxy.hosp.wisc.edu/FhirProxy/api/FHIR/DSTU2/Observation/TZDmEElEnd.TLmKAgcX292BzZFPb-b40BUjUJeg0hYO9JK07ckCGI7fLPIri08u9RB"
+        }
+      ],
+      "search": {
+        "mode": "match"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "issued": "2019-02-08T00:00:00Z",
+        "status": "final",
+        "id": "TZDmEElEnd.TLmKAgcX292BzZFPb-b40BUjUJeg0hYO9JK07ckCGI7fLPIri08u9RB",
+        "code": {
+          "text": "Smoking History",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status NHIS"
+            }
+          ]
+        },
+        "subject": {
+          "display": "Joshua Craig Mandel",
+          "reference": "https://epicproxy.hosp.wisc.edu/FhirProxy/api/FHIR/DSTU2/Patient/TITdhHEfYtlRbx9v37LFiEOc1-ntCEuzjFeL91S4oI7UB"
+        },
+        "valueCodeableConcept": {
+          "text": "Never Smoker",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266919005",
+              "display": "Never smoker"
+            }
+          ]
+        },
+        "category": {
+          "text": "Social History",
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "search": {
+        "mode": "outcome"
+      },
+      "resource": {
+        "resourceType": "OperationOutcome",
+        "issue": [
+          {
+            "severity": "warning",
+            "code": "informational",
+            "details": {
+              "text": "This response includes information available to the authorized user at the time of the request. It may not contain the entire record available in the system.",
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.92.2.7.2.657369",
+                  "code": "4119",
+                  "display": "This response includes information available to the authorized user at the time of the request. It may not contain the entire record available in the system."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

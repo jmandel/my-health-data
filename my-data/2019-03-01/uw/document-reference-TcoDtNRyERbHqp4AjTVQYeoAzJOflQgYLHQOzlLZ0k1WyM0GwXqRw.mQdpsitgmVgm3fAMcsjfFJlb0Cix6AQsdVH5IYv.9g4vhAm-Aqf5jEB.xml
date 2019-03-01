@@ -9,19 +9,19 @@
   <templateId root="2.16.840.1.113883.10.20.22.1.9"
   extension="2015-08-01" />
   <id assigningAuthorityName="EPC"
-  root="1.2.840.114350.1.13.92.2.7.8.688883.299988754" />
+  root="1.2.840.114350.1.13.92.2.7.8.688883.300062717" />
   <code code="11506-3" codeSystem="2.16.840.1.113883.6.1"
   codeSystemName="LOINC"
   displayName="Subsequent evaluation note" />
   <title>Encounter Summary</title>
-  <effectiveTime value="20190301131221-0600" />
+  <effectiveTime value="20190301171731-0600" />
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"
   displayName="Normal" />
   <languageCode code="en-US" />
   <setId assigningAuthorityName="EPC"
   extension="9ab8d532-3c55-11e9-8e2d-a20dd1eafb96"
   root="1.2.840.114350.1.13.92.2.7.1.1" />
-  <versionNumber value="2" />
+  <versionNumber value="4" />
   <recordTarget>
     <patientRole>
       <id root="1.2.840.114350.1.13.92.2.7.3.688884.100"
@@ -86,7 +86,7 @@
     </patientRole>
   </recordTarget>
   <author>
-    <time value="20190301131221-0600" />
+    <time value="20190301171731-0600" />
     <assignedAuthor>
       <id root="1.2.840.114350.1.1" extension="8.3" />
       <addr nullFlavor="NA" />
@@ -617,7 +617,7 @@
           <templateId root="2.16.840.1.113883.10.20.22.2.45" />
           <templateId root="2.16.840.1.113883.10.20.22.2.45"
           extension="2014-06-09" />
-          <id root="F0439866-3C55-11E9-A261-A20DD1EAFB96" />
+          <id root="3009EBFE-3C78-11E9-9C03-A20DD1EAFB96" />
           <code code="69730-0" codeSystem="2.16.840.1.113883.6.1"
           codeSystemName="LOINC" displayName="Instructions" />
           <title>Instructions</title>
@@ -685,7 +685,7 @@
       <component>
         <section>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4" />
-          <id root="F043E3FC-3C55-11E9-A261-A20DD1EAFB96" />
+          <id root="300A35D2-3C78-11E9-9C03-A20DD1EAFB96" />
           <code code="10164-2" codeSystem="2.16.840.1.113883.6.1"
           codeSystemName="LOINC"
           displayName="History of Present Illness" />
@@ -1020,7 +1020,7 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.22.2.8" />
-          <id root="F04B5902-3C55-11E9-A261-A20DD1EAFB96" />
+          <id root="30115B64-3C78-11E9-9C03-A20DD1EAFB96" />
           <code code="51848-0" codeSystem="2.16.840.1.113883.6.1"
           codeSystemName="LOINC" displayName="Assessments" />
           <title>Visit Diagnoses</title>

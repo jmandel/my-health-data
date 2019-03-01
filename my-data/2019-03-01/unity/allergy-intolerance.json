@@ -1,0 +1,232 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 4,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/AllergyIntolerance?patient=TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/AllergyIntolerance/Tt1FWzRK-u5MrXQ99WCD4LAB",
+      "link": [
+        {
+          "relation": "self",
+          "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/AllergyIntolerance/Tt1FWzRK-u5MrXQ99WCD4LAB"
+        }
+      ],
+      "search": {
+        "mode": "match"
+      },
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "recordedDate": "2018-08-09T14:44:58Z",
+        "status": "confirmed",
+        "criticality": "CRITH",
+        "onset": "2018-08-09",
+        "id": "Tt1FWzRK-u5MrXQ99WCD4LAB",
+        "recorder": {
+          "display": "Tracy C W",
+          "reference": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Practitioner/TvNZ7FJcsjY1zDlNW4NPZ9wB"
+        },
+        "patient": {
+          "display": "Joshua C Mandel",
+          "reference": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Patient/TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB"
+        },
+        "substance": {
+          "text": "PEANUT OIL",
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "18235",
+              "display": "PEANUT OIL"
+            },
+            {
+              "system": "http://fdasis.nlm.nih.gov",
+              "code": "2EUM6926ZI",
+              "display": "PEANUT OIL"
+            }
+          ]
+        },
+        "reaction": [
+          {
+            "certainty": "confirmed",
+            "onset": "2018-08-09",
+            "manifestation": [
+              {
+                "text": "Hives"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/AllergyIntolerance/TgVbL6JR6IMJrsuByq.IvOAB",
+      "link": [
+        {
+          "relation": "self",
+          "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/AllergyIntolerance/TgVbL6JR6IMJrsuByq.IvOAB"
+        }
+      ],
+      "search": {
+        "mode": "match"
+      },
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "recordedDate": "2018-08-09T14:45:23Z",
+        "status": "confirmed",
+        "criticality": "CRITH",
+        "onset": "2018-08-09",
+        "id": "TgVbL6JR6IMJrsuByq.IvOAB",
+        "recorder": {
+          "display": "Tracy C W",
+          "reference": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Practitioner/TvNZ7FJcsjY1zDlNW4NPZ9wB"
+        },
+        "patient": {
+          "display": "Joshua C Mandel",
+          "reference": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Patient/TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB"
+        },
+        "substance": {
+          "text": "TREE NUT"
+        },
+        "reaction": [
+          {
+            "certainty": "confirmed",
+            "onset": "2018-08-09",
+            "manifestation": [
+              {
+                "text": "Hives"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/AllergyIntolerance/TiduTM3NqBeVsB2-PLbw9xwB",
+      "link": [
+        {
+          "relation": "self",
+          "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/AllergyIntolerance/TiduTM3NqBeVsB2-PLbw9xwB"
+        }
+      ],
+      "search": {
+        "mode": "match"
+      },
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "recordedDate": "2018-08-09T14:45:51Z",
+        "status": "confirmed",
+        "criticality": "CRITH",
+        "onset": "2018-08-09",
+        "id": "TiduTM3NqBeVsB2-PLbw9xwB",
+        "recorder": {
+          "display": "Tracy C W",
+          "reference": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Practitioner/TvNZ7FJcsjY1zDlNW4NPZ9wB"
+        },
+        "patient": {
+          "display": "Joshua C Mandel",
+          "reference": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Patient/TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB"
+        },
+        "substance": {
+          "text": "SULFA ANTIBIOTICS",
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ndfrt",
+              "code": "N0000006054",
+              "display": "SULFA ANTIBIOTICS"
+            }
+          ]
+        },
+        "reaction": [
+          {
+            "certainty": "confirmed",
+            "onset": "2018-08-09",
+            "manifestation": [
+              {
+                "text": "Hives"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/AllergyIntolerance/ToU1u5ERWHNH.SOFrW2aH.wB",
+      "link": [
+        {
+          "relation": "self",
+          "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/AllergyIntolerance/ToU1u5ERWHNH.SOFrW2aH.wB"
+        }
+      ],
+      "search": {
+        "mode": "match"
+      },
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "recordedDate": "2018-08-09T14:46:07Z",
+        "status": "confirmed",
+        "criticality": "CRITH",
+        "onset": "2018-08-09",
+        "id": "ToU1u5ERWHNH.SOFrW2aH.wB",
+        "recorder": {
+          "display": "Tracy C W",
+          "reference": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Practitioner/TvNZ7FJcsjY1zDlNW4NPZ9wB"
+        },
+        "patient": {
+          "display": "Joshua C Mandel",
+          "reference": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/DSTU2/Patient/TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB"
+        },
+        "substance": {
+          "text": "PENICILLINS",
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ndfrt",
+              "code": "N0000005840",
+              "display": "PENICILLINS"
+            }
+          ]
+        },
+        "reaction": [
+          {
+            "certainty": "confirmed",
+            "onset": "2018-08-09",
+            "manifestation": [
+              {
+                "text": "Hives"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "search": {
+        "mode": "outcome"
+      },
+      "resource": {
+        "resourceType": "OperationOutcome",
+        "id": "1047952446",
+        "issue": [
+          {
+            "severity": "warning",
+            "code": "informational",
+            "details": {
+              "text": "This response includes information available to the authorized user at the time of the request. It may not contain the entire record available in the system.",
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.657369",
+                  "code": "4119",
+                  "display": "This response includes information available to the authorized user at the time of the request. It may not contain the entire record available in the system."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

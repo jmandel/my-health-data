@@ -9,19 +9,19 @@
   <templateId root="2.16.840.1.113883.10.20.22.1.9"
   extension="2015-08-01" />
   <id assigningAuthorityName="EPC"
-  root="1.2.840.114350.1.13.283.2.7.8.688883.188223305" />
+  root="1.2.840.114350.1.13.283.2.7.8.688883.188336151" />
   <code code="11506-3" codeSystem="2.16.840.1.113883.6.1"
   codeSystemName="LOINC"
   displayName="Subsequent evaluation note" />
   <title>Encounter Summary</title>
-  <effectiveTime value="20190301110041-0600" />
+  <effectiveTime value="20190301171837-0600" />
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"
   displayName="Normal" />
   <languageCode code="en-US" />
   <setId assigningAuthorityName="EPC"
   extension="171ff58c-3c43-11e9-8498-4503b6aa49bb"
   root="1.2.840.114350.1.13.283.2.7.1.1" />
-  <versionNumber value="2" />
+  <versionNumber value="3" />
   <recordTarget>
     <patientRole>
       <id root="1.2.840.114350.1.13.283.2.7.3.688884.100"
@@ -81,7 +81,7 @@
     </patientRole>
   </recordTarget>
   <author>
-    <time value="20190301110041-0600" />
+    <time value="20190301171837-0600" />
     <assignedAuthor>
       <id root="1.2.840.114350.1.1" extension="8.3" />
       <addr nullFlavor="NA" />
@@ -193,7 +193,7 @@
       <setId assigningAuthorityName="EPC"
       extension="171ff58c-3c43-11e9-8498-4503b6aa49bb"
       root="1.2.840.114350.1.13.283.2.7.8.688883.188221830" />
-      <versionNumber value="1" />
+      <versionNumber value="2" />
     </parentDocument>
   </relatedDocument>
   <componentOf>
@@ -1067,7 +1067,7 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.22.2.8" />
-          <id root="8BFA53E8-3C43-11E9-B24B-4503B6AA49BB" />
+          <id root="5799033A-3C78-11E9-922D-4503B6AA49BB" />
           <code code="51848-0" codeSystem="2.16.840.1.113883.6.1"
           codeSystemName="LOINC" displayName="Assessments" />
           <title>Visit Diagnoses</title>

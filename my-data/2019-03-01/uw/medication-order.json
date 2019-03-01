@@ -5,7 +5,7 @@
   "link": [
     {
       "relation": "self",
-      "url": "https://epicproxy.hosp.wisc.edu/FhirProxy/api/FHIR/DSTU2/Condition?patient=TITdhHEfYtlRbx9v37LFiEOc1-ntCEuzjFeL91S4oI7UB"
+      "url": "https://epicproxy.hosp.wisc.edu/FhirProxy/api/FHIR/DSTU2/MedicationOrder?patient=TITdhHEfYtlRbx9v37LFiEOc1-ntCEuzjFeL91S4oI7UB"
     }
   ],
   "entry": [
