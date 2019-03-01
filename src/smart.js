@@ -42,14 +42,16 @@ const authorize = (clientState, fetch = window.fetch) => {
       response_type: 'code',
       client_id: clientState.registration.client_id,
       redirect_uri: clientState.registration.redirect_uri,
-      scope: 'patient/*.read',
+      scope: 'launch/patient patient/*.read',
       state,
       aud: clientState.endpoint.fhirBaseUrl
     }
+    console.log("authzreq", authorizeRequest)
 
     const authorizeLink = clientState.oauth.authorize +
       '?' +
       queryString.stringify(authorizeRequest)
+    console.log("authzreq", authorizeLink)
     const authorizeWindow = window.open(authorizeLink)
     const channel = new BroadcastChannel(state)
     channel.onmessage = e => resolve({
