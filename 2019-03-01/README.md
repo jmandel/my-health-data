@@ -1,0 +1,10 @@
+# My personal data
+
+These are some data retrieved by patient-facing API from from providers where I've received care. The records include:
+
+* 2018 annual physical exam
+* 2019 ankle sprain -- urgent care visit + follow-up physical therapy eppointment
+
+# Why?
+
+Finding examples of real-world health record exports is hard. These files can serve as an example for developers who want to undesrtand files formats, variations in data representation and quality.
