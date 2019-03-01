@@ -3,16 +3,24 @@ import queryString from "query-string"
 
 const smartOAuthExtension = 'http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris';
 
-const client = async (endpoint, registrations, fetch = window.fetch) => {
-  const clientDetails = registrations[endpoint]
-  const metadata = await fetch(
-    endpoint + (endpoint.slice(-1) === '/' ? '' : '/') + 'metadata', {
+const oauthUris = async (clientState, fetch = window.fetch) => {
+  const {
+    endpoint,
+    registration
+  } = clientState
+
+  const fhirBaseUrl = endpoint.fhirBaseUrl + (
+    endpoint.fhirBaseUrl.slice(-1) === '/' ? '' : '/'
+  )
+
+  const metadataResponse = await fetch(
+    fhirBaseUrl + 'metadata', {
       headers: {
         'Accept': 'application/json+fhir'
       }
     }).then(r => r.json())
 
-  const serverUrls = metadata.rest[0].security
+  const oauthUris = metadataResponse.rest[0].security
     .extension
     .filter(e => e.url === smartOAuthExtension)[0]
     .extension
@@ -22,10 +30,9 @@ const client = async (endpoint, registrations, fetch = window.fetch) => {
     }), {})
 
   return {
-    endpoint,
-    clientDetails,
-    serverUrls,
-    metadata
+    ...clientState,
+    oauthUris,
+    metadataRaw: metadataResponse
   }
 }
 
@@ -34,17 +41,16 @@ const authorize = (clientState, fetch = window.fetch) => {
     const state = uuid()
     const authorizeRequest = {
       response_type: 'code',
-      client_id: clientState.clientDetails.client_id,
-      redirect_uri: clientState.clientDetails.redirect_uri,
+      client_id: clientState.registration.client_id,
+      redirect_uri: clientState.registration.redirect_uri,
       scope: 'patient/*.read',
       state,
-      aud: clientState.endpoint
+      aud: clientState.endpoint.fhirBaseUrl
     }
 
-    const authorizeLink = clientState.serverUrls.authorize +
+    const authorizeLink = clientState.oauthUris.authorize +
       '?' +
       queryString.stringify(authorizeRequest)
-
     const authorizeWindow = window.open(authorizeLink)
     const channel = new BroadcastChannel(state)
     channel.onmessage = e => resolve({
@@ -56,12 +62,12 @@ const authorize = (clientState, fetch = window.fetch) => {
 }
 
 const token = async (clientState, fetch = window.fetch) => {
-  const tokenUrl = clientState.serverUrls.token
+  const tokenUrl = clientState.oauthUris.token
   const tokenRequest = {
     grant_type: 'authorization_code',
     code: clientState.authorizeResponse.code,
-    redirect_uri: clientState.clientDetails.redirect_uri,
-    client_id: clientState.clientDetails.client_id
+    redirect_uri: clientState.registration.redirect_uri,
+    client_id: clientState.registration.client_id
   }
 
   const tokenResponse = await fetch(tokenUrl, {
@@ -80,8 +86,12 @@ const token = async (clientState, fetch = window.fetch) => {
   }
 }
 
+export const matchTags = (tags, matchers) => matchers
+  .map(([matchFn, value]) => matchFn(tags) ? value : null)
+  .filter(x => x !== null)[0]
+
 export default {
-  client,
+  oauthUris,
   authorize,
   token
 }
