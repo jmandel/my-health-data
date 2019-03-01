@@ -34,7 +34,7 @@ const getRegistration = (endpoint) => ({
   ])
 })
 
-async function makeClient(fhirBaseUrl, steps = ['oauthUris', 'authorize', 'token']) {
+async function makeClient(fhirBaseUrl, steps = ['oauth', 'authorize', 'token']) {
   let endpoint = endpoints.filter(r => r.fhirBaseUrl === fhirBaseUrl)[0]
   let registration = getRegistration(endpoint)
 

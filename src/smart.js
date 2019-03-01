@@ -3,7 +3,7 @@ import queryString from "query-string"
 
 const smartOAuthExtension = 'http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris';
 
-const oauthUris = async (clientState, fetch = window.fetch) => {
+const oauth = async (clientState, fetch = window.fetch) => {
   const {
     endpoint,
     registration
@@ -20,7 +20,7 @@ const oauthUris = async (clientState, fetch = window.fetch) => {
       }
     }).then(r => r.json())
 
-  const oauthUris = metadataResponse.rest[0].security
+  const oauth = metadataResponse.rest[0].security
     .extension
     .filter(e => e.url === smartOAuthExtension)[0]
     .extension
@@ -31,7 +31,7 @@ const oauthUris = async (clientState, fetch = window.fetch) => {
 
   return {
     ...clientState,
-    oauthUris,
+    oauth,
     metadataRaw: metadataResponse
   }
 }
@@ -48,7 +48,7 @@ const authorize = (clientState, fetch = window.fetch) => {
       aud: clientState.endpoint.fhirBaseUrl
     }
 
-    const authorizeLink = clientState.oauthUris.authorize +
+    const authorizeLink = clientState.oauth.authorize +
       '?' +
       queryString.stringify(authorizeRequest)
     const authorizeWindow = window.open(authorizeLink)
@@ -62,7 +62,7 @@ const authorize = (clientState, fetch = window.fetch) => {
 }
 
 const token = async (clientState, fetch = window.fetch) => {
-  const tokenUrl = clientState.oauthUris.token
+  const tokenUrl = clientState.oauth.token
   const tokenRequest = {
     grant_type: 'authorization_code',
     code: clientState.authorizeResponse.code,
@@ -91,7 +91,7 @@ export const matchTags = (tags, matchers) => matchers
   .filter(x => x !== null)[0]
 
 export default {
-  oauthUris,
+  oauth,
   authorize,
   token
 }
