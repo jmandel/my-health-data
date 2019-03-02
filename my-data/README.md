@@ -3,7 +3,7 @@
 These are some data retrieved by patient-facing API from providers where I've received care. The records include:
 
 * 2018 annual physical exam
-* 2019 ankle sprain -- urgent care visit + follow-up physical therapy eppointment
+* 2019 ankle sprain -- urgent care visit + follow-up physical therapy appointment
 
 # Why?
 
