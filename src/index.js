@@ -10,7 +10,7 @@ const redirectUri = window.location.href
   .replace(/#.*/, '')
 
 const getRegistration = (endpoint) => ({
-  redirect_uri: "https://joshuamandel.com/my-health-data/redirect.html",
+  redirect_uri: redirectUri, // "https://joshuamandel.com/my-health-data/redirect.html",
   client_id: matchTags(endpoint.tags, [
     [tags => tags.includes('smart') && tags.includes('sandbox'), 'default_client_id'],
     [tags => tags.includes('epic') && tags.includes('sandbox'), 'c09dc775-96b6-4fd0-828a-5c2daf481ff1'],
