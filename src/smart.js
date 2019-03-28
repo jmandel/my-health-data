@@ -48,10 +48,8 @@ const authorize = (clientState, fetch = window.fetch) => {
     }
     console.log("authzreq", authorizeRequest)
 
-    const authorizeLink = clientState.oauth.authorize +
-      '?' +
-      queryString.stringify(authorizeRequest)
-    console.log("authzreq", authorizeLink)
+    const authorizeLink = clientState.oauth.authorize + '?' + queryString.stringify(authorizeRequest)
+
     const authorizeWindow = window.open(authorizeLink)
     const channel = new BroadcastChannel(state)
     channel.onmessage = e => resolve({
