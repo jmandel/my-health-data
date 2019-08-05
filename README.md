@@ -12,4 +12,14 @@ No one other than me (Josh Mandel) should share their records with it.
 * `yarn install`
 * `parcel src/*.html`
 * browse to http://localhost:1234/index.html
+
+```
 parcel build src/*.html  --public-url https://joshuamandel.com/my-health-data/
+git checkout gh-pages
+git rm *.html *.js *.map
+cp -r dist/* .
+git add *.js *.html *.map
+git commit -m "Build"
+git push
+git checkout master
+```
