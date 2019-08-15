@@ -18,10 +18,12 @@ jobs:
     - name: npm install, build
       run: |
         npm install
-        ./node_modules/.bin/parcel  build src/*.html --public-url https://joshuamandel.com/my-health-data/
+        ./node_modules/.bin/parcel build src/*.html --public-url https://joshuamandel.com/my-health-data/
     - name: deploy
       if: startsWith(matrix.node-version, '12')
       run: |
+        git config user.email "gh-actions@joshuamandel.com"
+        git config user.name "GitHub Actions"
         git checkout gh-pages
         git rm *.html *.js *.map
         cp -r dist/* .
