@@ -1,0 +1,29 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, build, and test
+      run: |
+        ./node_modules/.bin/parcel  build src/*.html --public-url https://joshuamandel.com/my-health-data/
+    - name: deploy
+      if: startsWith(matrix.node-version, "10")
+      run: |
+        git checkout gh-pages
+        git rm *.html *.js *.map
+        cp -r dist/* .
+        git add *.js *.html *.map
+        git commit -m "Build"
+        git push
