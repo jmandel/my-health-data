@@ -19,7 +19,7 @@ jobs:
       run: |
         ./node_modules/.bin/parcel  build src/*.html --public-url https://joshuamandel.com/my-health-data/
     - name: deploy
-      if: startsWith(matrix.node-version, "10")
+      if: startsWith(matrix.node-version, '12')
       run: |
         git checkout gh-pages
         git rm *.html *.js *.map
