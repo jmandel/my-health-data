@@ -15,8 +15,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: npm install, build
       run: |
+        npm install
         ./node_modules/.bin/parcel  build src/*.html --public-url https://joshuamandel.com/my-health-data/
     - name: deploy
       if: startsWith(matrix.node-version, '12')
