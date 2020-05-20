@@ -1,0 +1,22 @@
+{
+	"gender": "male",
+	"id": "5355772",
+	"resourceType": "Patient",
+	"identifier": [
+		{
+			"system": "http://labcorp.com/ers/patientId",
+			"value": "5355772"
+		}
+	],
+	"name": [
+		{
+			"given": [
+				"Joshua"
+			],
+			"family": [
+				"Mandel"
+			]
+		}
+	],
+	"birthDate": "1982-10-26"
+}

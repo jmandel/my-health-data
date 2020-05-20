@@ -1,0 +1,102 @@
+{
+	"id": "13730512560.2020.LCLS.32047170.2020-05-16.164055",
+	"category": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/v2/0074",
+				"code": "LAB"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/5355772"
+	},
+	"effectiveDateTime": "2020-05-16T11:05:00+00:00",
+	"resourceType": "DiagnosticReport",
+	"contained": [
+		{
+			"id": "1",
+			"category": {
+				"coding": [
+					{
+						"system": "http://hl7.org/fhir/observation-category",
+						"code": "laboratory"
+					}
+				]
+			},
+			"subject": {
+				"reference": "Patient/5355772"
+			},
+			"effectiveDateTime": "2020-05-16T11:05:00+00:00",
+			"comments": "This sample does not contain detectable SARS-CoV-2 IgG antibodies.\nThis negative result does not rule out SARS-CoV-2 infection.\nCorrelation with epidemiologic risk factors and other clinical and\nlaboratory findings is recommended. Serologic results should not be\nused as the sole basis to diagnose or exclude recent SARS-CoV-2\ninfection.\nThis assay was performed using the Abbott SARS-CoV-2 IgG assay.",
+			"resourceType": "Observation",
+			"code": {
+				"coding": [
+					{
+						"system": "http://labcorp.com/ers/testCodes",
+						"display": "SARS-CoV-2 Antibody, IgG",
+						"code": "164057"
+					},
+					{
+						"system": "http://loinc.org",
+						"display": "SARS-CoV-2 Antibody, IgG",
+						"code": "94563-4"
+					}
+				]
+			},
+			"interpretation": {
+				"coding": [
+					{
+						"system": "http://hl7.org/fhir/v2/0078",
+						"code": "N"
+					}
+				]
+			},
+			"referenceRange": [
+				{
+					"text": "Negative "
+				}
+			],
+			"meta": {
+				"profile": [
+					"http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"
+				]
+			},
+			"valueString": "Negative",
+			"status": "final",
+			"issued": "2020-05-19T01:05:00.000+00:00"
+		}
+	],
+	"identifier": [
+		{
+			"id": "13730512560.2020.LCLS.32047170.2020-05-16.164055",
+			"system": "http://labcorp.com/ers/diagnosticReport"
+		}
+	],
+	"code": {
+		"text": "SARS-CoV-2 Antibody, IgG",
+		"coding": [
+			{
+				"system": "http://labcorp.com/ers/testCodes",
+				"display": "SARS-CoV-2 Antibody, IgG",
+				"code": "164055"
+			}
+		]
+	},
+	"performer": {
+		"display": "Organization/Labcorp"
+	},
+	"meta": {
+		"profile": [
+			"http://fhir.org/guides/argonaut/StructureDefinition/argo-diagnosticreport"
+		],
+		"lastUpdated": "2020-05-19T01:06:24.000+00:00"
+	},
+	"result": [
+		{
+			"reference": "#1"
+		}
+	],
+	"status": "final",
+	"issued": "2020-05-19T01:05:00.000+00:00"
+}
