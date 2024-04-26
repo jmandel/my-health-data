@@ -1,0 +1,1490 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/MedicationRequest/e-5zPnOnYWHzasymFzMzQMLxej5CYXQHKvSEbsSey5Uo3",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "e-5zPnOnYWHzasymFzMzQMLxej5CYXQHKvSEbsSey5Uo3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.798268",
+            "value": "772179266"
+          }
+        ],
+        "status": "stopped",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ],
+            "text": "Community"
+          }
+        ],
+        "medicationReference": {
+          "reference": "#eDO6E2jpqXXkkRFNTmOTCVOeIDXAMIPLdErYsFoh2D5-YSXkGkLJwcqLdnvuHpmNfe2fNbnn8LZPJE9KXGk3DdaQuLRFIyUTRhizUT87qGNc3",
+          "display": "nortriptyline 10 MG capsule"
+        },
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/eaczqSTIxEFgrkvi.zMgWQQ3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "974614965"
+          },
+          "display": "Office Visit"
+        },
+        "authoredOn": "2022-12-01",
+        "requester": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "recorder": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "40425004",
+                "display": "Postconcussion syndrome (disorder)"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm/diagnosis",
+                "code": "310.2",
+                "display": "Post concussion syndrome"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "F07.81",
+                "display": "Post concussion syndrome"
+              }
+            ],
+            "text": "Post concussion syndrome"
+          }
+        ],
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "acute",
+              "display": "Short course (acute) therapy"
+            }
+          ],
+          "text": "Short course (acute) therapy"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Take 1 (one) capsule by mouth nightly. Start with 10 mg at night; can increase to 20 mg after 1-2 weeks if no side effects, Starting Thu 12/1/2022, Until Mon 2/20/2023, Normal",
+            "patientInstruction": "Take 1 (one) capsule by mouth nightly. Start with 10 mg at night; can increase to 20 mg after 1-2 weeks if no side effects",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2022-12-01",
+                  "end": "2023-02-20"
+                },
+                "timeOfDay": [
+                  "21:00:00"
+                ]
+              },
+              "code": {
+                "text": "nightly"
+              }
+            },
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "738956005",
+                  "display": "Oral (intended site)"
+                },
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.798268.7025",
+                  "code": "15",
+                  "display": "Oral"
+                }
+              ],
+              "text": "Oral"
+            },
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "419652001",
+                  "display": "Take"
+                }
+              ],
+              "text": "Take"
+            },
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://epic.com/CodeSystem/dose-rate-type",
+                      "code": "calculated",
+                      "display": "calculated"
+                    }
+                  ],
+                  "text": "calculated"
+                },
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              },
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://epic.com/CodeSystem/dose-rate-type",
+                      "code": "admin-amount",
+                      "display": "admin-amount"
+                    }
+                  ],
+                  "text": "admin-amount"
+                },
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "capsule",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{capsule}"
+                }
+              },
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://epic.com/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "ordered"
+                    }
+                  ],
+                  "text": "ordered"
+                },
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-12-01",
+            "end": "2023-02-20"
+          },
+          "numberOfRepeatsAllowed": 1,
+          "quantity": {
+            "value": 90,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 90,
+            "unit": "Day",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "eDO6E2jpqXXkkRFNTmOTCVOeIDXAMIPLdErYsFoh2D5-YSXkGkLJwcqLdnvuHpmNfe2fNbnn8LZPJE9KXGk3DdaQuLRFIyUTRhizUT87qGNc3",
+            "identifier": [
+              {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.698288",
+                "value": "5674"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://www.whocc.no/atc",
+                  "code": "N06AA10"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.253",
+                  "code": "15185"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.68",
+                  "code": "58200060100105"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.162",
+                  "code": "03053"
+                },
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "7531"
+                },
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "198045"
+                },
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "203130"
+                }
+              ],
+              "text": "nortriptyline 10 MG capsule"
+            },
+            "form": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.698288.310",
+                  "code": "CAPS",
+                  "display": "Cap"
+                }
+              ],
+              "text": "Cap"
+            },
+            "ingredient": [
+              {
+                "itemCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.whocc.no/atc",
+                      "code": "N06AA10"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.253",
+                      "code": "15185"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.68",
+                      "code": "58200060100105"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.162",
+                      "code": "03053"
+                    },
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7531"
+                    },
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "198045"
+                    },
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "203130"
+                    }
+                  ],
+                  "text": "nortriptyline 10 MG capsule"
+                },
+                "strength": {
+                  "numerator": {
+                    "value": 10,
+                    "unit": "MG",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  },
+                  "denominator": {
+                    "value": 10,
+                    "unit": "MG",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/MedicationRequest/eAipZq.-v6EnRuhs.bbo2eTdNbf.bPsSJt1fFTYLEzwo3",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "eAipZq.-v6EnRuhs.bbo2eTdNbf.bPsSJt1fFTYLEzwo3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.798268",
+            "value": "945468373"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ],
+            "text": "Community"
+          }
+        ],
+        "medicationReference": {
+          "reference": "#eDO6E2jpqXXkkRFNTmOTCVFIm1sguHwlLiHSXRa0D34T5Kxuh6FuWTa0POOqIKnU4y0co3fPTWhbGFtv9duo7BLZgksNvZCu9X8LUSLp2DwA3",
+          "display": "nortriptyline 10 MG capsule"
+        },
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/e11nNZcqXJO0l2dCoFgZkKQ3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "1043034397"
+          },
+          "display": "Refill"
+        },
+        "authoredOn": "2023-12-22",
+        "requester": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "recorder": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "40425004",
+                "display": "Postconcussion syndrome (disorder)"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm/diagnosis",
+                "code": "310.2",
+                "display": "Post concussion syndrome"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "F07.81",
+                "display": "Post concussion syndrome"
+              }
+            ],
+            "text": "Post concussion syndrome"
+          }
+        ],
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "acute",
+              "display": "Short course (acute) therapy"
+            }
+          ],
+          "text": "Short course (acute) therapy"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Take 3 (three) capsules by mouth nightly., Starting Fri 12/22/2023, Normal",
+            "patientInstruction": "Take 3 (three) capsules by mouth nightly.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2023-12-22"
+                },
+                "timeOfDay": [
+                  "21:00:00"
+                ]
+              },
+              "code": {
+                "text": "nightly"
+              }
+            },
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "738956005",
+                  "display": "Oral (intended site)"
+                },
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.798268.7025",
+                  "code": "15",
+                  "display": "Oral"
+                }
+              ],
+              "text": "Oral"
+            },
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "419652001",
+                  "display": "Take"
+                }
+              ],
+              "text": "Take"
+            },
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://epic.com/CodeSystem/dose-rate-type",
+                      "code": "calculated",
+                      "display": "calculated"
+                    }
+                  ],
+                  "text": "calculated"
+                },
+                "doseQuantity": {
+                  "value": 30,
+                  "unit": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              },
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://epic.com/CodeSystem/dose-rate-type",
+                      "code": "admin-amount",
+                      "display": "admin-amount"
+                    }
+                  ],
+                  "text": "admin-amount"
+                },
+                "doseQuantity": {
+                  "value": 3,
+                  "unit": "capsule",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{capsule}"
+                }
+              },
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://epic.com/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "ordered"
+                    }
+                  ],
+                  "text": "ordered"
+                },
+                "doseQuantity": {
+                  "value": 30,
+                  "unit": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2023-12-22"
+          },
+          "numberOfRepeatsAllowed": 3,
+          "quantity": {
+            "value": 270,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 90,
+            "unit": "Day",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        },
+        "priorPrescription": {
+          "reference": "MedicationRequest/esPtAZIVMSBpGaQre467SYe-ap5n.OehBQylLeH099Ok3",
+          "display": "nortriptyline 10 MG capsule"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "eDO6E2jpqXXkkRFNTmOTCVFIm1sguHwlLiHSXRa0D34T5Kxuh6FuWTa0POOqIKnU4y0co3fPTWhbGFtv9duo7BLZgksNvZCu9X8LUSLp2DwA3",
+            "identifier": [
+              {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.698288",
+                "value": "5674"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://www.whocc.no/atc",
+                  "code": "N06AA10"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.253",
+                  "code": "15185"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.68",
+                  "code": "58200060100105"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.162",
+                  "code": "03053"
+                },
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "7531"
+                },
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "198045"
+                },
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "203130"
+                }
+              ],
+              "text": "nortriptyline 10 MG capsule"
+            },
+            "form": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.698288.310",
+                  "code": "CAPS",
+                  "display": "Cap"
+                }
+              ],
+              "text": "Cap"
+            },
+            "ingredient": [
+              {
+                "itemCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.whocc.no/atc",
+                      "code": "N06AA10"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.253",
+                      "code": "15185"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.68",
+                      "code": "58200060100105"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.162",
+                      "code": "03053"
+                    },
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7531"
+                    },
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "198045"
+                    },
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "203130"
+                    }
+                  ],
+                  "text": "nortriptyline 10 MG capsule"
+                },
+                "strength": {
+                  "numerator": {
+                    "value": 10,
+                    "unit": "MG",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  },
+                  "denominator": {
+                    "value": 10,
+                    "unit": "MG",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/MedicationRequest/eBPBhpAYtVsPKz1faayD3hPk3IykhF4PrhCAqivplNM43",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "eBPBhpAYtVsPKz1faayD3hPk3IykhF4PrhCAqivplNM43",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.798268",
+            "value": "945468375"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ],
+            "text": "Community"
+          }
+        ],
+        "medicationReference": {
+          "reference": "#ePn03ge..laA21H5D6jjUKhjayt2Z-0xmaFPxrSdlGmMrMFXifct3ABcpmvAy-.hUss2wwMPiQGx.9M4XqPUAOPxfDqUp8PN2eirp0LWFdfM3",
+          "display": "FreeStyle Libre 3 Reader Devi"
+        },
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/eCDP-q.4XctJegL0vv.aSqg3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "1056709125"
+          },
+          "display": "Patient Message"
+        },
+        "authoredOn": "2024-03-12",
+        "requester": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "recorder": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "acute",
+              "display": "Short course (acute) therapy"
+            }
+          ],
+          "text": "Short course (acute) therapy"
+        },
+        "dosageInstruction": [
+          {
+            "text": "For use as indicated every 14 days, Normal",
+            "patientInstruction": "For use as indicated every 14 days",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2024-03-12"
+                }
+              }
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2024-03-12"
+          },
+          "numberOfRepeatsAllowed": 0,
+          "quantity": {
+            "value": 2,
+            "unit": "each"
+          }
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "ePn03ge..laA21H5D6jjUKhjayt2Z-0xmaFPxrSdlGmMrMFXifct3ABcpmvAy-.hUss2wwMPiQGx.9M4XqPUAOPxfDqUp8PN2eirp0LWFdfM3",
+            "identifier": [
+              {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.698288",
+                "value": "170050"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.253",
+                  "code": "225056"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.68",
+                  "code": "97202012026200"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.162",
+                  "code": "15054"
+                }
+              ],
+              "text": "FreeStyle Libre 3 Reader Devi"
+            },
+            "form": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.698288.310",
+                  "code": "DEVI",
+                  "display": "Device"
+                }
+              ],
+              "text": "Device"
+            },
+            "ingredient": [
+              {
+                "itemCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.253",
+                      "code": "225056"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.68",
+                      "code": "97202012026200"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.162",
+                      "code": "15054"
+                    }
+                  ],
+                  "text": "FreeStyle Libre 3 Reader Devi"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/MedicationRequest/esPtAZIVMSBpGaQre467SYe-ap5n.OehBQylLeH099Ok3",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "esPtAZIVMSBpGaQre467SYe-ap5n.OehBQylLeH099Ok3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.798268",
+            "value": "772179269"
+          }
+        ],
+        "status": "stopped",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ],
+            "text": "Community"
+          }
+        ],
+        "medicationReference": {
+          "reference": "#eDO6E2jpqXXkkRFNTmOTCVOt.jRufeZKSGmdNHGchOFDCkJZPnPmBrLI4n-SWW4JqdQfNlXb9J.S92ylrjY0RnYP0zYQ3KQ2LgKvyre3Bcwk3",
+          "display": "nortriptyline 10 MG capsule"
+        },
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/eLKaHYMOm07VFJ0Z8xJcOlA3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "988126821"
+          },
+          "display": "Refill"
+        },
+        "authoredOn": "2023-02-20",
+        "requester": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "recorder": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "40425004",
+                "display": "Postconcussion syndrome (disorder)"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm/diagnosis",
+                "code": "310.2",
+                "display": "Post concussion syndrome"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "F07.81",
+                "display": "Post concussion syndrome"
+              }
+            ],
+            "text": "Post concussion syndrome"
+          }
+        ],
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "acute",
+              "display": "Short course (acute) therapy"
+            }
+          ],
+          "text": "Short course (acute) therapy"
+        },
+        "dosageInstruction": [
+          {
+            "text": "TAKE 1 CAPSULE BY MOUTH EVERY NIGHT. START WITH 1 CAPSULE AT NIGHT; CAN. INCREASE TO 2 CAPSULES AFTER 1-2 WEEKS IF NO SIDE EFFECTS, Normal",
+            "patientInstruction": "TAKE 1 CAPSULE BY MOUTH EVERY NIGHT. START WITH 1 CAPSULE AT NIGHT; CAN. INCREASE TO 2 CAPSULES AFTER 1-2 WEEKS IF NO SIDE EFFECTS",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2023-02-20",
+                  "end": "2023-12-22"
+                }
+              }
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2023-02-20",
+            "end": "2023-12-22"
+          },
+          "numberOfRepeatsAllowed": 3,
+          "quantity": {
+            "value": 180,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 305,
+            "unit": "Day",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        },
+        "priorPrescription": {
+          "reference": "MedicationRequest/e-5zPnOnYWHzasymFzMzQMLxej5CYXQHKvSEbsSey5Uo3",
+          "display": "nortriptyline 10 MG capsule"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "eDO6E2jpqXXkkRFNTmOTCVOt.jRufeZKSGmdNHGchOFDCkJZPnPmBrLI4n-SWW4JqdQfNlXb9J.S92ylrjY0RnYP0zYQ3KQ2LgKvyre3Bcwk3",
+            "identifier": [
+              {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.698288",
+                "value": "5674"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://www.whocc.no/atc",
+                  "code": "N06AA10"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.253",
+                  "code": "15185"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.68",
+                  "code": "58200060100105"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.162",
+                  "code": "03053"
+                },
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "7531"
+                },
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "198045"
+                },
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "203130"
+                }
+              ],
+              "text": "nortriptyline 10 MG capsule"
+            },
+            "form": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.698288.310",
+                  "code": "CAPS",
+                  "display": "Cap"
+                }
+              ],
+              "text": "Cap"
+            },
+            "ingredient": [
+              {
+                "itemCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.whocc.no/atc",
+                      "code": "N06AA10"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.253",
+                      "code": "15185"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.68",
+                      "code": "58200060100105"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.162",
+                      "code": "03053"
+                    },
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7531"
+                    },
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "198045"
+                    },
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "203130"
+                    }
+                  ],
+                  "text": "nortriptyline 10 MG capsule"
+                },
+                "strength": {
+                  "numerator": {
+                    "value": 10,
+                    "unit": "MG",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  },
+                  "denominator": {
+                    "value": 10,
+                    "unit": "MG",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/MedicationRequest/ewXfIDONoeXpfFDuK8BKYwoxeZHeaTdRFqVD3Q2wMf783",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "ewXfIDONoeXpfFDuK8BKYwoxeZHeaTdRFqVD3Q2wMf783",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.798268",
+            "value": "772179261"
+          }
+        ],
+        "status": "stopped",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ],
+            "text": "Community"
+          }
+        ],
+        "medicationReference": {
+          "reference": "#e9fvpnj3WyE-H2BtI7XPll4rBD00w9avMoKkakH9Dvo4tFRYaZnfO0R6wmJUNwCsbXE7QMWR4uUztj5A5ElQEg1D1u6arc0sLlRIK.ssJSYY3",
+          "display": "lisinopril 10 MG tablet"
+        },
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/e9Yth5IquIww-psZE1ZqiPQ3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "948004323"
+          },
+          "display": "Office Visit"
+        },
+        "authoredOn": "2022-08-29",
+        "requester": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "recorder": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "59621000",
+                "display": "Essential hypertension (disorder)"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm/diagnosis",
+                "code": "401.9",
+                "display": "Primary hypertension"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I10",
+                "display": "Primary hypertension"
+              }
+            ],
+            "text": "Primary hypertension"
+          }
+        ],
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "acute",
+              "display": "Short course (acute) therapy"
+            }
+          ],
+          "text": "Short course (acute) therapy"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Take 1 (one) tablet by mouth daily., Starting Mon 8/29/2022, Until Thu 9/28/2023, Normal",
+            "patientInstruction": "Take 1 (one) tablet by mouth daily.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2022-08-29",
+                  "end": "2023-09-28"
+                },
+                "timeOfDay": [
+                  "09:00:00"
+                ]
+              },
+              "code": {
+                "text": "daily"
+              }
+            },
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "738956005",
+                  "display": "Oral (intended site)"
+                },
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.798268.7025",
+                  "code": "15",
+                  "display": "Oral"
+                }
+              ],
+              "text": "Oral"
+            },
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "419652001",
+                  "display": "Take"
+                }
+              ],
+              "text": "Take"
+            },
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://epic.com/CodeSystem/dose-rate-type",
+                      "code": "calculated",
+                      "display": "calculated"
+                    }
+                  ],
+                  "text": "calculated"
+                },
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              },
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://epic.com/CodeSystem/dose-rate-type",
+                      "code": "admin-amount",
+                      "display": "admin-amount"
+                    }
+                  ],
+                  "text": "admin-amount"
+                },
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{tbl}"
+                }
+              },
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://epic.com/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "ordered"
+                    }
+                  ],
+                  "text": "ordered"
+                },
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-08-29",
+            "end": "2023-09-28"
+          },
+          "numberOfRepeatsAllowed": 1,
+          "quantity": {
+            "value": 90,
+            "unit": "tablet"
+          },
+          "expectedSupplyDuration": {
+            "value": 90,
+            "unit": "Day",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "e9fvpnj3WyE-H2BtI7XPll4rBD00w9avMoKkakH9Dvo4tFRYaZnfO0R6wmJUNwCsbXE7QMWR4uUztj5A5ElQEg1D1u6arc0sLlRIK.ssJSYY3",
+            "identifier": [
+              {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.698288",
+                "value": "10449"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://www.whocc.no/atc",
+                  "code": "C09AA03"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.253",
+                  "code": "28360"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.68",
+                  "code": "36100030000310"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.162",
+                  "code": "01213"
+                },
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "29046"
+                },
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "314076"
+                }
+              ],
+              "text": "lisinopril 10 MG tablet"
+            },
+            "form": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.698288.310",
+                  "code": "TABS",
+                  "display": "Tab"
+                }
+              ],
+              "text": "Tab"
+            },
+            "ingredient": [
+              {
+                "itemCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.whocc.no/atc",
+                      "code": "C09AA03"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.253",
+                      "code": "28360"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.68",
+                      "code": "36100030000310"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.162",
+                      "code": "01213"
+                    },
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "29046"
+                    },
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "314076"
+                    }
+                  ],
+                  "text": "lisinopril 10 MG tablet"
+                },
+                "strength": {
+                  "numerator": {
+                    "value": 10,
+                    "unit": "MG",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  },
+                  "denominator": {
+                    "value": 10,
+                    "unit": "MG",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/MedicationRequest/ex54m1TOhc0nKuw6bdQA2z7N-1KyV7t64TcPsHOHCBEE3",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "ex54m1TOhc0nKuw6bdQA2z7N-1KyV7t64TcPsHOHCBEE3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.798268",
+            "value": "945468374"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ],
+            "text": "Community"
+          }
+        ],
+        "medicationReference": {
+          "reference": "#eLmilK3Rw9PZAb9uoMGzD1MZDg3HnFaqzkOL9nEGgS9uDD97BP5XBBwmqu3gZyDlSv1HdHPU-EtMGdE5sb0hWvzUuUGiSzsu6Hzktn95B3RU3",
+          "display": "FreeStyle Libre 3 Sensor Misc"
+        },
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/eCDP-q.4XctJegL0vv.aSqg3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "1056709125"
+          },
+          "display": "Patient Message"
+        },
+        "authoredOn": "2024-03-12",
+        "requester": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "recorder": {
+          "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "acute",
+              "display": "Short course (acute) therapy"
+            }
+          ],
+          "text": "Short course (acute) therapy"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Apply every two weeks, Normal",
+            "patientInstruction": "Apply every two weeks",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2024-03-12"
+                }
+              }
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2024-03-12"
+          },
+          "numberOfRepeatsAllowed": 0,
+          "quantity": {
+            "value": 2,
+            "unit": "each"
+          }
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "eLmilK3Rw9PZAb9uoMGzD1MZDg3HnFaqzkOL9nEGgS9uDD97BP5XBBwmqu3gZyDlSv1HdHPU-EtMGdE5sb0hWvzUuUGiSzsu6Hzktn95B3RU3",
+            "identifier": [
+              {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.698288",
+                "value": "163506"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.253",
+                  "code": "219069"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.68",
+                  "code": "97202012046300"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.162",
+                  "code": "15056"
+                }
+              ],
+              "text": "FreeStyle Libre 3 Sensor Misc"
+            },
+            "form": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.698288.310",
+                  "code": "MISC",
+                  "display": "Misc"
+                }
+              ],
+              "text": "Misc"
+            },
+            "ingredient": [
+              {
+                "itemCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.253",
+                      "code": "219069"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.68",
+                      "code": "97202012046300"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.6.162",
+                      "code": "15056"
+                    }
+                  ],
+                  "text": "FreeStyle Libre 3 Sensor Misc"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "total": 6,
+  "type": "collection"
+}

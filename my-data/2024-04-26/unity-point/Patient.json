@@ -1,0 +1,328 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+        "extension": [
+          {
+            "extension": [
+              {
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2106-3",
+                  "display": "White"
+                },
+                "url": "ombCategory"
+              },
+              {
+                "valueString": "White",
+                "url": "text"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+          },
+          {
+            "extension": [
+              {
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2186-5",
+                  "display": "Not Hispanic or Latino"
+                },
+                "url": "ombCategory"
+              },
+              {
+                "valueString": "Not Hispanic or Latino",
+                "url": "text"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.130.657370.750999123",
+                  "code": "male",
+                  "display": "male"
+                }
+              ]
+            },
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/legal-sex"
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/gender-identity",
+                  "code": "male",
+                  "display": "male"
+                }
+              ]
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "text": "APL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.955",
+            "value": "APL324672"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "CEID"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.688884.100",
+            "value": "IHSW7R37ZRF9SQK"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "EPI"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.0",
+            "value": "E7004467"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "EXTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.698084",
+            "value": "Z7004242"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "FHIR"
+            },
+            "system": "http://open.epic.com/FHIR/StructureDefinition/patient-dstu2-fhir-id",
+            "value": "TmI-PYc6jAfH6Yfyp62Z3ZO2h0JlDM31r3YW3j7xuNhIB"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "FHIR STU3"
+            },
+            "system": "http://open.epic.com/FHIR/StructureDefinition/patient-fhir-id",
+            "value": "euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "IHSMRN"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283",
+            "value": "96853541"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "INTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.698084",
+            "value": "  Z7004242"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "MYCHARTLOGIN"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.878082.110",
+            "value": "JMANDEL"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "WPRINTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.878082",
+            "value": "389635"
+          },
+          {
+            "use": "usual",
+            "system": "https://open.epic.com/FHIR/StructureDefinition/PayerMemberId",
+            "value": "MSJ60249687901"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "old",
+            "text": "MANDEL,JOSH",
+            "family": "Mandel",
+            "given": [
+              "Josh"
+            ]
+          },
+          {
+            "use": "official",
+            "text": "Joshua C Mandel",
+            "family": "Mandel",
+            "given": [
+              "Joshua",
+              "C"
+            ]
+          },
+          {
+            "use": "usual",
+            "text": "Josh C Mandel",
+            "family": "Mandel",
+            "given": [
+              "Josh",
+              "C"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "REDACTED",
+            "use": "home"
+          },
+          {
+            "system": "phone",
+            "value": "617-500-3253",
+            "use": "mobile",
+            "rank": 1
+          },
+          {
+            "system": "email",
+            "value": "jmandel@alum.mit.edu",
+            "rank": 1
+          },
+          {
+            "system": "email",
+            "value": "REDACTED"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1982-10-26",
+        "deceasedBoolean": false,
+        "address": [
+          {
+            "use": "old",
+            "line": [
+              "443 Virginia Ter"
+            ],
+            "city": "MADISON",
+            "district": "DANE",
+            "state": "WI",
+            "postalCode": "53726",
+            "country": "USA"
+          },
+          {
+            "use": "home",
+            "line": [
+              "443 Virginia Terrace"
+            ],
+            "city": "MADISON",
+            "district": "DANE",
+            "state": "WI",
+            "postalCode": "53726",
+            "country": "USA"
+          }
+        ],
+        "maritalStatus": {
+          "text": "Single"
+        },
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.827665.1000",
+                    "code": "17",
+                    "display": "Spouse"
+                  }
+                ],
+                "text": "Spouse"
+              }
+            ],
+            "name": {
+              "use": "usual",
+              "text": "REDACTED"
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "REDACTED",
+                "use": "mobile"
+              }
+            ],
+            "address": {
+              "use": "home",
+              "line": [
+                "REDACTED"
+              ],
+              "city": "Madison",
+              "district": "REDACTED",
+              "state": "WI",
+              "postalCode": "REDACTED",
+              "country": "USA"
+            }
+          },
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                    "code": "E",
+                    "display": "Employer"
+                  }
+                ]
+              }
+            ],
+            "address": {
+              "use": "work",
+              "country": "USA"
+            },
+            "organization": {
+              "display": "Microsoft "
+            }
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "en",
+                  "display": "English"
+                }
+              ],
+              "text": "English"
+            },
+            "preferred": true
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+            "type": "Practitioner",
+            "display": "Dr. Z Rammelkamp"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/eoyD-w3fnt2ZkEv0tYqBLxA3",
+          "display": "Mac Associated Physicians LLP"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    }
+  ],
+  "total": 1,
+  "type": "collection"
+}

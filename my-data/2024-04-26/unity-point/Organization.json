@@ -1,0 +1,83 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Organization/eXbUbhQG51PNKID42nZi3TyKfX2lmO9P5AlrB18.TJ9o3",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "eXbUbhQG51PNKID42nZi3TyKfX2lmO9P5AlrB18.TJ9o3",
+        "active": true,
+        "name": "UPH MADISON SUNQUEST LAB",
+        "alias": [
+          "MHMLAB"
+        ],
+        "address": [
+          {
+            "use": "work",
+            "city": "Madison",
+            "state": "WI",
+            "period": {
+              "start": "2015-07-30T13:12:04Z",
+              "end": "2018-11-28T14:14:26Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Organization/enk5XdAJ6yKtd2xciPLHS-2dttYa7K3BwHW6r2FkK9DA3",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "enk5XdAJ6yKtd2xciPLHS-2dttYa7K3BwHW6r2FkK9DA3",
+        "active": true,
+        "name": "MISC REFERENCE LAB",
+        "alias": [
+          "MREF"
+        ],
+        "contact": [
+          {
+            "name": {
+              "text": "-"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Organization/eXbUbhQG51PNKID42nZi3T8Zjg-3KGK4kBQCVb3YmLVo3",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "eXbUbhQG51PNKID42nZi3T8Zjg-3KGK4kBQCVb3YmLVo3",
+        "active": true,
+        "name": "UPH MADISON MERITER SUNQUEST LAB",
+        "alias": [
+          "MHMLAB"
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "608-417-6529",
+            "use": "work",
+            "period": {
+              "start": "2020-12-29T19:43:44Z"
+            }
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "36 S Brooks Street"
+            ],
+            "city": "Madison",
+            "state": "WI",
+            "period": {
+              "start": "2020-12-29T19:43:44Z"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "total": 3,
+  "type": "collection"
+}

@@ -1,0 +1,546 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/AllergyIntolerance/epKjDjZ5BLPDM4U.rKxTb6lHGa3NrjRsxODT8fsUA4dY3",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "epKjDjZ5BLPDM4U.rKxTb6lHGa3NrjRsxODT8fsUA4dY3",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "version": "4.0.0",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "version": "4.0.0",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          "biologic",
+          "food"
+        ],
+        "criticality": "high",
+        "code": {
+          "text": "TREE NUT"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "onsetPeriod": {
+          "start": "2018-08-09"
+        },
+        "recordedDate": "2018-08-09T14:45:23Z",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "text": "Hives"
+              }
+            ],
+            "description": "Hives"
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/AllergyIntolerance/eQf710LNMWJTcUjUHYdYM7PzPTHWZhufQZeydcxQ1Al43",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "eQf710LNMWJTcUjUHYdYM7PzPTHWZhufQZeydcxQ1Al43",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "version": "4.0.0",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "version": "4.0.0",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          "medication"
+        ],
+        "criticality": "high",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "372788003",
+              "display": "SULFA ANTIBIOTICS"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006329"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006675"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006849"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006868"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006871"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006879"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006886"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006888"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006904"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006913"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006967"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000007270"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000007968"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000008034"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000008036"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000008048"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166861"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166862"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166863"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166864"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166866"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166867"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166868"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166869"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166870"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166871"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000167190"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000178934"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000178992"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000178993"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179258"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179292"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179452"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006054"
+            }
+          ],
+          "text": "SULFA ANTIBIOTICS"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "onsetPeriod": {
+          "start": "2018-08-09"
+        },
+        "recordedDate": "2018-08-09T14:45:51Z",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "text": "Hives"
+              }
+            ],
+            "description": "Hives"
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/AllergyIntolerance/edYUJ6FxON9TmZgMuLj.3TgQY74ujSGsAKNEKnnd8mx83",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "edYUJ6FxON9TmZgMuLj.3TgQY74ujSGsAKNEKnnd8mx83",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "version": "4.0.0",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "version": "4.0.0",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          "medication"
+        ],
+        "criticality": "high",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "764146007",
+              "display": "PENICILLINS"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000005863"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000005873"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000005940"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006138"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006459"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006487"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000006583"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000007002"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000007253"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000007337"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000007418"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000007468"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000007469"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000007471"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000007481"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000007482"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000011281"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000011298"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166995"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166996"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166997"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166998"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000166999"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000167000"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000167001"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000167685"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000178976"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000178981"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000178983"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000178984"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179370"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179395"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179429"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179548"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179587"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179599"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179600"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179641"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179710"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179727"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000179730"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+              "code": "N0000005840"
+            }
+          ],
+          "text": "PENICILLINS"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "onsetPeriod": {
+          "start": "2018-08-09"
+        },
+        "recordedDate": "2018-08-09T14:46:07Z",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "text": "Hives"
+              }
+            ],
+            "description": "Hives"
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/AllergyIntolerance/e0lwtE5Yo8T6gC8rM45AeUe7cC8TQSOwxjBnH5OmttU43",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "e0lwtE5Yo8T6gC8rM45AeUe7cC8TQSOwxjBnH5OmttU43",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "version": "4.0.0",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "version": "4.0.0",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          "food",
+          "medication"
+        ],
+        "criticality": "high",
+        "code": {
+          "text": "PEANUT (DIAGNOSTIC)"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "onsetPeriod": {
+          "start": "2020-07-14"
+        },
+        "recordedDate": "2020-07-14T19:34:58Z",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "text": "Hives"
+              }
+            ],
+            "description": "Hives"
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    }
+  ],
+  "total": 4,
+  "type": "collection"
+}

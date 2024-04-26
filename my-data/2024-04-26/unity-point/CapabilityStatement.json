@@ -1,0 +1,2915 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/metadata",
+      "resource": {
+        "resourceType": "CapabilityStatement",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-04-26T14:46:41Z",
+        "copyright": "Copyright Epic 1979-2023",
+        "kind": "instance",
+        "instantiates": [
+          "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data"
+        ],
+        "software": {
+          "name": "Epic",
+          "version": "February 2023",
+          "releaseDate": "2023-06-07"
+        },
+        "implementation": {
+          "description": "UnityPoint Health FHIR Server",
+          "url": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4"
+        },
+        "fhirVersion": "4.0.1",
+        "format": [
+          "xml",
+          "json"
+        ],
+        "rest": [
+          {
+            "mode": "server",
+            "security": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "valueUri": "https://epicfhir.unitypoint.org/ProdFHIR/oauth2/authorize",
+                      "url": "authorize"
+                    },
+                    {
+                      "valueUri": "https://epicfhir.unitypoint.org/ProdFHIR/oauth2/token",
+                      "url": "token"
+                    }
+                  ],
+                  "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"
+                }
+              ],
+              "cors": true,
+              "service": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+                      "code": "OAuth",
+                      "display": "OAuth"
+                    }
+                  ],
+                  "text": "OAuth"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+                      "code": "SMART-on-FHIR",
+                      "display": "SMART-on-FHIR"
+                    }
+                  ],
+                  "text": "SMART-on-FHIR"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+                      "code": "Basic",
+                      "display": "Basic"
+                    }
+                  ],
+                  "text": "Basic"
+                }
+              ]
+            },
+            "resource": [
+              {
+                "type": "Account",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "A FHIR ID for a patient resource"
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "AdverseEvent",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "seriousness",
+                    "type": "token",
+                    "documentation": "Refine a search for AdverseEvent resources by seriousness of the event. Serious and Non-serious are the only supported values."
+                  },
+                  {
+                    "name": "study",
+                    "type": "reference",
+                    "documentation": "Search for AdverseEvent resources for a specified study ID."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for AdverseEvent resources for a specified patient ID."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "AllergyIntolerance",
+                "interaction": [
+                  {
+                    "code": "create"
+                  },
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "clinical-status",
+                    "type": "token",
+                    "documentation": "Refine a search for AllergyIntolerance resources by clinicalStatus. Active is the only supported clinical status to search by."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for AllergyIntolerance resources for a specified patient ID."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Appointment",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "date",
+                    "type": "date",
+                    "documentation": "Refine a search for Appointment resources by date. By default, all Appointments are returned. Not supported for scheduled surgeries."
+                  },
+                  {
+                    "name": "identifier",
+                    "type": "token",
+                    "documentation": "Refine a search for Appointment resources by identifier. Not supported for scheduled surgeries."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Appointment resources for a specified patient ID."
+                  },
+                  {
+                    "name": "service-category",
+                    "type": "token",
+                    "documentation": "Search on the type of appointment. Enter 'surgery' for scheduled surgery appointments, and 'appointment' for all other types of appointments."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Refine a search for Appointment resources by status. By default, all Appointments are returned. Not supported for scheduled surgeries."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Binary",
+                "interaction": [
+                  {
+                    "code": "read"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported"
+              },
+              {
+                "type": "BodyStructure",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "location",
+                    "type": "token",
+                    "documentation": "Refine a search for BodyStructure resources by identifier. Enter using the structure \"[system]|[search string]\"."
+                  },
+                  {
+                    "name": "morphology",
+                    "type": "token",
+                    "documentation": "Refine a search for BodyStructure resources by morphology."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for BodyStructure resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for BodyStructure resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "CarePlan",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "activity-date",
+                    "type": "date",
+                    "documentation": "Search for CarePlan resources with questionaires due before the provided date."
+                  },
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Search for CarePlans of the given type. This is a required search parameter."
+                  },
+                  {
+                    "name": "encounter",
+                    "type": "reference",
+                    "documentation": "Refine a search for Encounter CarePlans to search only the encounters provided. Ignored if not searching for Encounter CarePlans."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for CarePlan resources using a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "part-of",
+                    "type": "reference",
+                    "documentation": "Refine a search for Education CarePlans to include only Education CarePlans that are part of the given Education CarePlans. Ignored if not searching for Education CarePlans."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Refine a search for Encounter, Education, and Care Path CarePlans to search only for encounters, education, or Care Paths with the provided status. Ignored if not searching for Encounter, Education, or Care Path CarePlans."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for CarePlan resources using a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "CareTeam",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for CareTeam resources using a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Refine a search based on the CareTeam's status. Currently only active is supported."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for CareTeam resources using a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Communication",
+                "interaction": [
+                  {
+                    "code": "create"
+                  },
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "based-on",
+                    "type": "reference",
+                    "documentation": "Refine a search for Education Communication resources to include only Education Communication resources that are documentation for the given Education CarePlans. These should be CarePlans with an education-subcategory of point. Ignored if not searching for Education Communication resources."
+                  },
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Refine a search to include only Communication resources with the given categories."
+                  },
+                  {
+                    "name": "encounter",
+                    "type": "reference",
+                    "documentation": "Refine a search to include Communication resources from only the encounters provided."
+                  },
+                  {
+                    "name": "part-of",
+                    "type": "reference",
+                    "documentation": "Refine a search for Communication resources \"part of\" a specified Task ID. If not provided, all Communications are returned."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Communication resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for Communication resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "ConceptMap",
+                "interaction": [
+                  {
+                    "code": "create"
+                  },
+                  {
+                    "code": "read"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported"
+              },
+              {
+                "type": "Condition",
+                "interaction": [
+                  {
+                    "code": "create"
+                  },
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "abatement-date",
+                    "type": "date",
+                    "documentation": "Search for Conditions with a specified abatement date. This is only used when searching for infections."
+                  },
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Search for Condition resources by category."
+                  },
+                  {
+                    "name": "clinical-status",
+                    "type": "token",
+                    "documentation": "Refine a search for Condition resources by clinicalStatus. Only clinical statuses of 'inactive', 'resolved' and 'active' are supported for health concerns and problem list items. Only clinical statuses of 'inactive' and 'active' are supported for infections."
+                  },
+                  {
+                    "name": "code",
+                    "type": "token",
+                    "documentation": "Search for Conditions with a specified code. This is only used when searching for infections."
+                  },
+                  {
+                    "name": "encounter",
+                    "type": "reference",
+                    "documentation": "Search for Condition resources for specific encounters."
+                  },
+                  {
+                    "name": "onset-date",
+                    "type": "date",
+                    "documentation": "Search for Conditions with a specified onset date. This is only used when searching for infections."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Condition resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "recorded-date",
+                    "type": "date",
+                    "documentation": "Search for Conditions with a specified recorded date. This is only used when searching for infections."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for Condition resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Consent",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Search for Consent resources by category."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Consent resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Search for Consent resources by status."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for Consent resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Coverage",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "beneficiary",
+                    "type": "reference",
+                    "documentation": "Search for Coverage resource for a specific patient ID. You can use \"patient\" or \"beneficiary\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Coverage resource for a specific patient ID. You can use \"patient\" or \"beneficiary\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Device",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "device-name",
+                    "type": "string",
+                    "documentation": "A string that will match the Device.deviceName.name field. Not case sensitive."
+                  },
+                  {
+                    "name": "manufacturer",
+                    "type": "string",
+                    "documentation": "Manufacturer of the device."
+                  },
+                  {
+                    "name": "model",
+                    "type": "string",
+                    "documentation": "Model number of the device."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "The patient in whom this device is implanted. This is a required parameter."
+                  },
+                  {
+                    "name": "udi-carrier",
+                    "type": "string",
+                    "documentation": "The UDI barcode string - matches static UDI."
+                  },
+                  {
+                    "name": "udi-di",
+                    "type": "string",
+                    "documentation": "The UDI device identifier (DI)."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "DeviceRequest",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for DeviceRequest resource for a specified patient ID."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Search for a DeviceRequest based on a device request status"
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "DeviceUseStatement",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for DeviceUseStatement resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for DeviceUseStatement resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "DiagnosticReport",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  },
+                  {
+                    "code": "update"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Refine a search for DiagnosticReport resources by category."
+                  },
+                  {
+                    "name": "code",
+                    "type": "token",
+                    "documentation": "Refine a search for DiagnosticReport resources by code."
+                  },
+                  {
+                    "name": "date",
+                    "type": "date",
+                    "documentation": "Refine a search for DiagnosticReport resources by specifying a date or date range that a DiagnosticReport was resulted or recorded. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included. Not supported by Care Plan Goal."
+                  },
+                  {
+                    "name": "identifier",
+                    "type": "token",
+                    "documentation": "Refine search by specifying an identifier, such as the internal order ID or the accession number. Not supported by Care Plan Goal."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for DiagnosticReport resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for DiagnosticReport resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "DocumentReference",
+                "interaction": [
+                  {
+                    "code": "create"
+                  },
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  },
+                  {
+                    "code": "update"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "author",
+                    "type": "reference",
+                    "documentation": "Further refine a search for a given set of DocumentReferences on a patient by specifying a Practitioner ID that corresponds to the author of the document. Currently only supported for correspondence, imaging-result, and summary-document search."
+                  },
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Refine a search for DocumentReference resources by category."
+                  },
+                  {
+                    "name": "date",
+                    "type": "date",
+                    "documentation": "Further refine a search for a given set of DocumentReferences on a patient by specifying a date or date range in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]]) that corresponds to the document creation time. Local server time is assumed if time zone information is not included."
+                  },
+                  {
+                    "name": "docstatus",
+                    "type": "token",
+                    "documentation": "Further refine a search for a given set of DocumentReferences on a patient by specifying a docStatus. By default, all docStatuses are returned. Not supported for correspondence, imaging-result, or questionnaire-response search."
+                  },
+                  {
+                    "name": "encounter",
+                    "type": "reference",
+                    "documentation": "Search for DocumentReference resources for a specified encounter ID. Not supported for correspondence, imaging-result, or questionnaire-response search."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for DocumentReference resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "period",
+                    "type": "date",
+                    "documentation": "Further refine a search for a given set of DocumentReferences on a patient by specifying a date or date range in ISO format (YYYY[-MM[-DD]]) that corresponds to the time of the service that is being documented. Not supported for questionnaire-response search."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Further refine a search for a given set of DocumentReferences on a patient by specifying a status of the document. Currently only supported for correspondence, imaging-result, questionnaire-response, and summary-document."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for DocumentReference resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "type",
+                    "type": "token",
+                    "documentation": "Further refine a search for a given set of DocumentReferences on a patient by specifying a type code to return only documents of that type. Use the format: type=<code> to search all supported systems with that code or type=<system>|<code> to further refine the search to one code system. Not supported for questionnaire-response search."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Encounter",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "class",
+                    "type": "token",
+                    "documentation": "Refine a search for Encounter resources by class. By default, all classes are returned."
+                  },
+                  {
+                    "name": "date",
+                    "type": "date",
+                    "documentation": "Refine a search for Encounter resources by date. By default, all Encounters are returned. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]]). Local server time is assumed if time zone information is not included."
+                  },
+                  {
+                    "name": "identifier",
+                    "type": "token",
+                    "documentation": "Search for Encounter resources by encounter identifier in the format <code system>|<code>"
+                  },
+                  {
+                    "name": "onlyscannable",
+                    "type": "token",
+                    "documentation": "Refine a search for Encounter resources to scannable encounters only. By default, all Encounters are returned. Use a value of \"true\" to only return scannable encounters. Can only be used when the application is launched from Hyperspace."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Encounter resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for difference references."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for Encounter resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for difference references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Endpoint",
+                "interaction": [
+                  {
+                    "code": "read"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported"
+              },
+              {
+                "type": "EpisodeOfCare",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for EpisodeOfCare resources for a specified patient ID."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Refine a search for EpisodeOfCare resources by status. Active, finished, and cancelled are the only supported statuses."
+                  },
+                  {
+                    "name": "type",
+                    "type": "token",
+                    "documentation": "Refine a search for EpisodeOfCare resources by type."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "ExplanationOfBenefit",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "created",
+                    "type": "date",
+                    "documentation": "Refine a search for ExplanationOfBenefit resources by creation date for the claim. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for ExplanationOfBenefit resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "FamilyMemberHistory",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Required: the patient whose family history you'd like to search."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Flag",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Refine a search for Flag resources by category."
+                  },
+                  {
+                    "name": "encounter",
+                    "type": "reference",
+                    "documentation": "Refine a search for Flag resources by encounter. This is currently only supported for the isolation category."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Flag resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Refine a search for Flag resources by status."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for Flag resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Goal",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Refines a search by Goal category."
+                  },
+                  {
+                    "name": "lifecycle-status",
+                    "type": "token",
+                    "documentation": "Refines a search based on Goal lifecycle status."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Patient resources for a specific patient ID. You can use \"patient\" or \"subject\" equivalently but they can't be used at the same time for different references."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for Patient resources for a specific patient ID. You can use \"patient\" or \"subject\" equivalently but they can't be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Group",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ],
+                "operation": [
+                  {
+                    "name": "group-export",
+                    "definition": "http://hl7.org/fhir/uv/bulkdata/OperationDefinition/group-export"
+                  }
+                ]
+              },
+              {
+                "type": "ImagingStudy",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "identifier",
+                    "type": "token",
+                    "documentation": "Search for ImagingStudy resources by a study's identifier. You can use the identifier parameter as the only parameter in a search or in conjunction with other parameters. An ImagingStudy's identifier must be in the format <code system>|<code> or <ID Type>|<ID>."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for ImagingStudy resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for ImagingStudy resources for a specified patient ID. You can use \"patient\" and \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Immunization",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "date",
+                    "type": "date",
+                    "documentation": "Refine a search for Immunization resources by vaccine administration date. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Immunization resources for a specified patient ID."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Refine a search for Immunization resources by status."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "ImmunizationRecommendation",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "The FHIR id of a patient whose immunization recommendations you'd like to obtain. Only one of either patient or subject needs to be specified."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "List",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "code",
+                    "type": "token",
+                    "documentation": "Refine a search for List resources by list type. Accepted values include \"medications,\" \"allergies,\" \"immunizations,\" \"problems,\" \"pedigree-list,\" and \"hospital-problems.\""
+                  },
+                  {
+                    "name": "encounter",
+                    "type": "reference",
+                    "documentation": "Refine a search for List resources by encounter."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Refine a search for List resources by patient. You can use \"patient\" or \"subject\" equivalently, but not at the same time with different references."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Refine a search for List resources by patient. You can use \"patient\" or \"subject\" equivalently, but not at the same time with different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Location",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "type",
+                    "type": "token",
+                    "documentation": "Search for Location resources with a specified location type."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Measure",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "MeasureReport",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Medication",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "MedicationAdministration",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "context",
+                    "type": "reference",
+                    "documentation": "Refine a search for MedicationAdministration resources with one or more linked encounters."
+                  },
+                  {
+                    "name": "effective-time",
+                    "type": "date",
+                    "documentation": "Refine a search for MedicationAdministration resources for a given patient by specifying a date or a range of dates for the administration."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for MedicationAdministration resources for a specified patient ID. You can use \"patient\" and \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "performer",
+                    "type": "reference",
+                    "documentation": "Refine a search for MedicationAdministration resources by one or more associated Practitioners."
+                  },
+                  {
+                    "name": "request",
+                    "type": "reference",
+                    "documentation": "Refine a search for MedicationAdministration resources by associated MedicationRequests."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Refine a search for MedicationAdministration resources with one or more statuses."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for MedicationAdministration resources for a specified patient ID. You can use \"patient\" and \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "MedicationDispense",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for MedicationDispense resources for a specified patient ID."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for MedicationDispense resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for difference references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "MedicationRequest",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "authoredon",
+                    "type": "date",
+                    "documentation": "Further refine a search for MedicationRequest resources for a given patient by specifying a date or range of dates for when the medication was ordered. Note: all medications will be returned regardless of date range provided on the search."
+                  },
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Refine a search for MedicationRequest resources by category. By default, the search returns all categories. Categories of inpatient, outpatient, community, and discharge are supported."
+                  },
+                  {
+                    "name": "date",
+                    "type": "date",
+                    "documentation": "Refine a search for MedicationRequest resources for a given patient by specifying a date or a range of dates for when the medication was active."
+                  },
+                  {
+                    "name": "intent",
+                    "type": "token",
+                    "documentation": "Refine a search for MedicationRequest resources by one or more intents."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for MedicationRequest resources for a specified patient ID. You can use \"patient\" and \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Refine a search for MedicationRequest resources by one or more statuses."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for MedicationRequest resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "NutritionOrder",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for NutritionOrder resources for the specified patient ID."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Observation",
+                "interaction": [
+                  {
+                    "code": "create"
+                  },
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  },
+                  {
+                    "code": "update"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "based-on",
+                    "type": "reference",
+                    "documentation": "Refine a search for Observation resources by specifying a ServiceRequest associated with the Observation. (currently Genomics-only)"
+                  },
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Refine a search for Observation resources by category or SNOMED code. Epic categories are laboratory, vital-signs, social-history, core-characteristics, LDA, LDA-property, LDA-assessment, functional-mental-status, periodontal, labor-delivery, newborn-delivery, and obstetrics-gynecology. Supported SNOMED codes include 384821006, 118228005, 252275004, 275711006, 68793005, 395124008, 314076009, 19851009, and 405825005."
+                  },
+                  {
+                    "name": "code",
+                    "type": "token",
+                    "documentation": "Refine a search for Observation resources by code, including but not limited to LOINC code, SNOMED code, flowsheet row IDs, or SmartData Identifiers. Codes associated with the labor-delivery and newborn-delivery categories require that the category be specified."
+                  },
+                  {
+                    "name": "date",
+                    "type": "date",
+                    "documentation": "Refine a search for Observation resources by specifying a date or date range that a result- or vital sign-based Observation was resulted or recorded. This can also be used to refine the search results for labor-delivery, obstetrics-gynecology, and LDA based Observation searches. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included."
+                  },
+                  {
+                    "name": "focus",
+                    "type": "reference",
+                    "documentation": "Refine a search for Observation resources by specifying a Reference associated with the Observation. (currently only SmartData and obstetrics-gynecology)"
+                  },
+                  {
+                    "name": "issued",
+                    "type": "date",
+                    "documentation": "Refine a search for Observation resources by specifying a date or date range that a social-history-based Observation was made available. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Observation resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for Observation resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Organization",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Patient",
+                "interaction": [
+                  {
+                    "code": "create"
+                  },
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "address",
+                    "type": "string",
+                    "documentation": "Search for Patient resources using an address string."
+                  },
+                  {
+                    "name": "address-city",
+                    "type": "string",
+                    "documentation": "Search for Patient resources using the city for a patient's home address. You can use this parameter along with other address parameters."
+                  },
+                  {
+                    "name": "address-postalcode",
+                    "type": "string",
+                    "documentation": "Search for Patient resources using the postal code for a patient's home address. You can use this parameter along with other address parameters."
+                  },
+                  {
+                    "name": "address-state",
+                    "type": "string",
+                    "documentation": "Search for Patient resources using the state for a patient's home address. You can use this parameter along with other address parameters."
+                  },
+                  {
+                    "name": "birthdate",
+                    "type": "date",
+                    "documentation": "Search for Patient resources using a date of birth in ISO format (YYYY-MM-DD)."
+                  },
+                  {
+                    "name": "doc-type",
+                    "type": "token",
+                    "documentation": "Search for Patient resources using Singapore document type. This parameter is only used in Singapore environment and is only respected if a Singapore document ID is passed in as one of the identifiers."
+                  },
+                  {
+                    "name": "family",
+                    "type": "string",
+                    "documentation": "Search for Patient resources by family (last) name. You can use the family parameter along with other name parameters to search by a patient's name. Family name searching supports exact matching, \"sounds like\" matching, and patient aliases."
+                  },
+                  {
+                    "name": "gender",
+                    "type": "token",
+                    "documentation": "Search for Patient resources using the following gender codes: female, male, other, or unknown."
+                  },
+                  {
+                    "name": "given",
+                    "type": "string",
+                    "documentation": "Search for Patient resources by given (first) name.  You can use the given parameter along with other name parameters to search by a patient's name. Given name searching supports both exact and \"sounds like\" matches. Patient aliases and dominant name aliases (ex. Bob for Robert) are also supported."
+                  },
+                  {
+                    "name": "identifier",
+                    "type": "token",
+                    "documentation": "Search for Patient resources by a patient's identifier. You can use the identifier parameter as the only parameter in a search or in conjunction with other parameters. A patient's identifier must be in the format {<code system>|}<code> or {<ID Type>|}<ID>."
+                  },
+                  {
+                    "name": "legal-sex",
+                    "type": "token",
+                    "documentation": "Search for Patient resources using the following gender codes: female, male, nonbinary, x, other, or unknown."
+                  },
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "documentation": "Search for Patient resources by a patient's name. To search on specific name parts use the name part parameters, such as family or given. This parameter is ignored if any name part parameters are used."
+                  },
+                  {
+                    "name": "own-name",
+                    "type": "string",
+                    "documentation": "Search for Patient resources by patient's own last name, usually used in non-US names. You can use the own-name parameter along with other name parameters to search by a patient's name."
+                  },
+                  {
+                    "name": "own-prefix",
+                    "type": "string",
+                    "documentation": "Search for Patient resources by patient's own last name prefix, usually used in non-US names. You can use the own-prefix parameter along with other name parameters to search by a patient's name, but own-name must also be included."
+                  },
+                  {
+                    "name": "partner-name",
+                    "type": "string",
+                    "documentation": "Search for Patient resources by patient's spouse's last name, usually used in non-US names. You can use the partner-name parameter along with other name parameters to search by a patient's name, but own-name must also be included."
+                  },
+                  {
+                    "name": "partner-prefix",
+                    "type": "string",
+                    "documentation": "Search for Patient resources by patient's spouse's last name prefix, usually used in non-US names. You can use the partner-prefix parameter along with other name parameters to search by a patient's name, but own-name must also be included."
+                  },
+                  {
+                    "name": "telecom",
+                    "type": "token",
+                    "documentation": "Search for Patient resources using a patient's home phone number, cell phone number, or email address."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Practitioner",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "address",
+                    "type": "string",
+                    "documentation": "Any part of an address (street, city, etc.) where a practitioner can be visited. When used, family is also required.  Only respected if no other address parameters are populated. Only the first instance of this parameter is respected."
+                  },
+                  {
+                    "name": "address-city",
+                    "type": "string",
+                    "documentation": "The city where a practitioner can be visited. When used, address-state is also required. Only the first instance of this parameter is respected."
+                  },
+                  {
+                    "name": "address-postalcode",
+                    "type": "string",
+                    "documentation": "The zip code where a practitioner can be found. When used, family is also required."
+                  },
+                  {
+                    "name": "address-state",
+                    "type": "string",
+                    "documentation": "The state where a practitioner can be found.  When used, family is also required.  Only the first instance of this parameter is respected."
+                  },
+                  {
+                    "name": "family",
+                    "type": "string",
+                    "documentation": "A practitioner's family (last) name. Only the first instance of this parameter is respected."
+                  },
+                  {
+                    "name": "given",
+                    "type": "string",
+                    "documentation": "A practitioner's given (first) name.  When used, family is also required. Only the first instance of this parameter is respected."
+                  },
+                  {
+                    "name": "identifier",
+                    "type": "token",
+                    "documentation": "A practitioner's identifier in the format <code system>|<code>.  When this parameter is provided, all others (except _id) are ignored."
+                  },
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "documentation": "Any part of a practitioner's name.  For full names, format should be first last. When specified, family and given are ignored. Only the first instance of this parameter is respected."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "PractitionerRole",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "email",
+                    "type": "token",
+                    "documentation": "Refine a search for a PractitionerRole by entering a valid email address.  Code system is ignored."
+                  },
+                  {
+                    "name": "identifier",
+                    "type": "token",
+                    "documentation": "Search for PractitionerRoles using identifiers. A code system is required. The code must be prepended with URN:OID.  Some codes may need to be URL encoded prior to query."
+                  },
+                  {
+                    "name": "location",
+                    "type": "reference",
+                    "documentation": "Search for PractitionerRoles using a Location ID. Only the first instance of this parameter is respected."
+                  },
+                  {
+                    "name": "organization",
+                    "type": "reference",
+                    "documentation": "Search for PractitionerRoles using an Organization ID. Only the first instance of this parameter is respected."
+                  },
+                  {
+                    "name": "phone",
+                    "type": "token",
+                    "documentation": "Refine a search for a PractitionerRole by entering a valid phone number.  Code system is ignored."
+                  },
+                  {
+                    "name": "practitioner",
+                    "type": "reference",
+                    "documentation": "Search for PractitionerRoles for a specified Practitioner ID. Only the first instance of this parameter is respected."
+                  },
+                  {
+                    "name": "role",
+                    "type": "token",
+                    "documentation": "Refine a search for a PractitionerRole by entering a valid role.  System must be included."
+                  },
+                  {
+                    "name": "specialty",
+                    "type": "token",
+                    "documentation": "Search for PractitionerRoles for a given specialty.  A code system is required.  Depending on the organization, NUCC may be supported."
+                  },
+                  {
+                    "name": "telecom",
+                    "type": "token",
+                    "documentation": "Refine a search for a PractitionerRole for a specific telecom.  System must be specified as either 'phone' or 'email'"
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Procedure",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Refine a search for Procedure resources by category. Only the following values are supported: 103693007 (diagnostic procedures), 387713003 (surgical procedures), 9632001 (nursing procedures, Netherlands only), and 225317005 or freedom-restricting-intervention (restricting intervention, Netherlands only) are supported."
+                  },
+                  {
+                    "name": "date",
+                    "type": "date",
+                    "documentation": "Refine a search for Procedure resources by specifying a date or date range that a Procedure was resulted. Enter dates in ISO format (YYYY[-MM[-DD]]). Not supported by nursing procedures or restricting interventions."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Procedure resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for Procedure resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Provenance",
+                "interaction": [
+                  {
+                    "code": "read"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported"
+              },
+              {
+                "type": "Questionnaire",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "QuestionnaireResponse",
+                "interaction": [
+                  {
+                    "code": "create"
+                  },
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "encounter",
+                    "type": "reference",
+                    "documentation": "Search for QuestionnaireResponses by encounter"
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for QuestionnaireResponses for a specified patient. You can also use \"subject\" equivalently"
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for QuestionnaireResponses for a specified patient. You can also use \"patient\" equivalently"
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "RelatedPerson",
+                "interaction": [
+                  {
+                    "code": "read"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported"
+              },
+              {
+                "type": "RequestGroup",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "ResearchStudy",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "identifier",
+                    "type": "token",
+                    "documentation": "Search for the ResearchStudy resource for a specified study code."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Search for the ResearchStudy resource for a specified status"
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "ResearchSubject",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for the ResearchSubject resources related to a specified patient"
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Search for the ResearchSubject resources for a specified status."
+                  },
+                  {
+                    "name": "study",
+                    "type": "reference",
+                    "documentation": "Search for the ResearchSubject resources related to a specified study"
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "ServiceRequest",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "category",
+                    "type": "token",
+                    "documentation": "Refine a search for ServiceRequests of a particular category. By default, all ServiceRequests are returned."
+                  },
+                  {
+                    "name": "encounter",
+                    "type": "reference",
+                    "documentation": "Search for ServiceRequest resources for specific encounters. If not provided, all ServiceRequest results are returned."
+                  },
+                  {
+                    "name": "onlyscannable",
+                    "type": "token",
+                    "documentation": "Refine a search for ServiceRequest resources to scannable only. By default, all ServiceRequests are returned. Use a value of \"true\" to only return scannable ServiceRequests. Can only be used when the application is launched from Hyperspace."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search ServiceRequest resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "requester",
+                    "type": "reference",
+                    "documentation": "Refine a search for ServiceRequest resources by individual making the request. By default, all ServiceRequests are returned."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Refine a search for ServiceRequest resources by status. By default, all ServiceRequests are returned. Statuses of draft, active, completed, revoked, and unknown are supported."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search ServiceRequest resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Specimen",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Substance",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "Task",
+                "interaction": [
+                  {
+                    "code": "read"
+                  },
+                  {
+                    "code": "search-type"
+                  },
+                  {
+                    "code": "update"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported",
+                "searchInclude": [
+                  "*"
+                ],
+                "searchRevInclude": [
+                  "Provenance:target"
+                ],
+                "searchParam": [
+                  {
+                    "name": "code",
+                    "type": "token",
+                    "documentation": "Specify community-resource for CRRN tasks, episode-checklist for Episode Checklist tasks. When nothing is specified, all valid tasks are returned."
+                  },
+                  {
+                    "name": "encounter",
+                    "type": "reference",
+                    "documentation": "Further refine the search for a task by specifying the encounter associated with the task. For Episode Checklist tasks, only tasks created in this encounter will be returned."
+                  },
+                  {
+                    "name": "focus",
+                    "type": "reference",
+                    "documentation": "Specify the EpisodeOfCare FHIR ID to search for Episode Checklist tasks."
+                  },
+                  {
+                    "name": "patient",
+                    "type": "reference",
+                    "documentation": "Search for Task resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "status",
+                    "type": "token",
+                    "documentation": "Restrict the search for tasks based on task status. Only respected by Episode Checklist tasks."
+                  },
+                  {
+                    "name": "subject",
+                    "type": "reference",
+                    "documentation": "Search for Task resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references."
+                  },
+                  {
+                    "name": "_id",
+                    "type": "token",
+                    "documentation": "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."
+                  },
+                  {
+                    "name": "_count",
+                    "type": "number",
+                    "documentation": "Number of results per page."
+                  }
+                ]
+              },
+              {
+                "type": "ValueSet",
+                "interaction": [
+                  {
+                    "code": "read"
+                  }
+                ],
+                "readHistory": false,
+                "updateCreate": false,
+                "conditionalCreate": false,
+                "conditionalRead": "not-supported",
+                "conditionalUpdate": false,
+                "conditionalDelete": "not-supported"
+              }
+            ]
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    }
+  ],
+  "total": 1,
+  "type": "collection"
+}

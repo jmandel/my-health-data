@@ -1,0 +1,59 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/CareTeam/eN9zRz9dhN-PLtJtxgAZE4BZanmfO1QXptzEJDtztzTc3",
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "eN9zRz9dhN-PLtJtxgAZE4BZanmfO1QXptzEJDtztzTc3",
+        "status": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "LA28865-6",
+                "display": "Longitudinal care-coordination focused care team"
+              }
+            ],
+            "text": "Longitudinal care-coordination focused care team"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "role": [
+              {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.836982.1050",
+                    "code": "17",
+                    "display": "Internal Medicine"
+                  },
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.698084.5655",
+                    "code": "1",
+                    "display": "General"
+                  }
+                ],
+                "text": "Internal Medicine"
+              }
+            ],
+            "member": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "type": "Practitioner",
+              "display": "Dr. Z Rammelkamp"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    }
+  ],
+  "total": 1,
+  "type": "collection"
+}

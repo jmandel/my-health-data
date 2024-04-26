@@ -1,0 +1,910 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/ey.jfNmDicqgnux4FmcgrDkj1S8Tdp4dHEQ3j84Sya8A3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "ey.jfNmDicqgnux4FmcgrDkj1S8Tdp4dHEQ3j84Sya8A3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "30666377"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "171"
+            }
+          ],
+          "text": "Influenza (FLUCELVAX) ccIIV4, prefilled syringe"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "occurrenceDateTime": "2017-10-25",
+        "primarySource": false,
+        "reportOrigin": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4082"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "14",
+              "display": "Left Arm"
+            }
+          ],
+          "text": "Left Arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/e3Gydwq-y6izb.-3lfh1EJSnDPowNtciBqcrlpB6zAn83",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "e3Gydwq-y6izb.-3lfh1EJSnDPowNtciBqcrlpB6zAn83",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "59265744"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "101"
+            }
+          ],
+          "text": "Typhoid Inactivated (Typhim Vi)"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/ek3hekULAwEXPvhfbYIc2Gg3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "832464108"
+          },
+          "display": "Abstract"
+        },
+        "occurrenceDateTime": "2019-02-05",
+        "primarySource": false,
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "14",
+              "display": "Left Arm"
+            }
+          ],
+          "text": "Left Arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/eApdkZBa-mhq3Y1-E-Ctk9N.LdK4Q6ZjohHXb9AZ0O.U3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "eApdkZBa-mhq3Y1-E-Ctk9N.LdK4Q6ZjohHXb9AZ0O.U3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "59265745"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "115"
+            }
+          ],
+          "text": "Tdap"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/ek3hekULAwEXPvhfbYIc2Gg3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "832464108"
+          },
+          "display": "Abstract"
+        },
+        "occurrenceDateTime": "2019-02-05",
+        "primarySource": false,
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "14",
+              "display": "Left Arm"
+            }
+          ],
+          "text": "Left Arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/efpuVNvj9IV..BchTP9wXkCdqwZona3KXOyL5hqPGI3Y3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "efpuVNvj9IV..BchTP9wXkCdqwZona3KXOyL5hqPGI3Y3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "59265746"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "171"
+            }
+          ],
+          "text": "Influenza (FLUCELVAX) ccIIV4, prefilled syringe"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/ek3hekULAwEXPvhfbYIc2Gg3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "832464108"
+          },
+          "display": "Abstract"
+        },
+        "occurrenceDateTime": "2019-11-13",
+        "primarySource": false,
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "6",
+              "display": "Right Deltoid"
+            }
+          ],
+          "text": "Right Deltoid"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/eR6I2LpVQSeVBNMgDaFKpQpKhrGaju-.vjz-tObGSgsI3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "eR6I2LpVQSeVBNMgDaFKpQpKhrGaju-.vjz-tObGSgsI3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "59265747"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "52"
+            }
+          ],
+          "text": "Hepatitis A (Havrix) HepA adult"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/ek3hekULAwEXPvhfbYIc2Gg3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "832464108"
+          },
+          "display": "Abstract"
+        },
+        "occurrenceDateTime": "2019-02-05",
+        "primarySource": false,
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "15",
+              "display": "Right Arm"
+            }
+          ],
+          "text": "Right Arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/e1wafr747q.mdCzCWe1C1X8uaosDnmyO4gJL9ghZaXCs3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "e1wafr747q.mdCzCWe1C1X8uaosDnmyO4gJL9ghZaXCs3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "59265748"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "88"
+            }
+          ],
+          "text": "Influenza, unspecified formulation"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/ek3hekULAwEXPvhfbYIc2Gg3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "832464108"
+          },
+          "display": "Abstract"
+        },
+        "occurrenceDateTime": "2018-10-08",
+        "primarySource": false,
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "14",
+              "display": "Left Arm"
+            }
+          ],
+          "text": "Left Arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/ehK-uG-eUygE9khGzoCTGyb-V2nckbXwRbdnRSSSbijY3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "ehK-uG-eUygE9khGzoCTGyb-V2nckbXwRbdnRSSSbijY3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "82049278"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "207"
+            }
+          ],
+          "text": "COVID-19 (MODERNA) mRNA ages 12+"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "occurrenceDateTime": "2021-04-18",
+        "primarySource": false,
+        "reportOrigin": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4082"
+            }
+          ],
+          "text": "MyChart Entered"
+        },
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "15",
+              "display": "Right Arm"
+            }
+          ],
+          "text": "Right Arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/e7CEgm33XEIU9xkHqtZDgocyVyez0Sf182vweneafXbQ3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "e7CEgm33XEIU9xkHqtZDgocyVyez0Sf182vweneafXbQ3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "82049279"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "207"
+            }
+          ],
+          "text": "COVID-19 (MODERNA) mRNA ages 12+"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "occurrenceDateTime": "2021-05-16",
+        "primarySource": false,
+        "reportOrigin": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4082"
+            }
+          ],
+          "text": "MyChart Entered"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/e2SCGaVFbFVgYLd376jUCibhGRFAH9.EG4H8VXlOA4J03",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "e2SCGaVFbFVgYLd376jUCibhGRFAH9.EG4H8VXlOA4J03",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "82049323"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "207"
+            }
+          ],
+          "text": "COVID-19 (MODERNA) mRNA ages 12+"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "occurrenceDateTime": "2021-12-03",
+        "primarySource": false,
+        "reportOrigin": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4082"
+            }
+          ],
+          "text": "MyChart Entered"
+        },
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "7",
+              "display": "Left Deltoid"
+            }
+          ],
+          "text": "Left Deltoid"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/eqU0uNWFQ6EtkXIVF0v.tzmiSud0nbs87Zl3rKCJZdMM3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "eqU0uNWFQ6EtkXIVF0v.tzmiSud0nbs87Zl3rKCJZdMM3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "90573906"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "150"
+            }
+          ],
+          "text": "Influenza, inactivated, quadrivalent, ALL AGES 6 months and older, single dose syringe/vial"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/e9Yth5IquIww-psZE1ZqiPQ3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "948004323"
+          },
+          "display": "Office Visit"
+        },
+        "occurrenceDateTime": "2018-10-08",
+        "primarySource": false,
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "14",
+              "display": "Left Arm"
+            }
+          ],
+          "text": "Left Arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/eDA4A.cfjY8dAx.qUAGZE7ucqw5ve2U9A7MSEoevb0tg3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "eDA4A.cfjY8dAx.qUAGZE7ucqw5ve2U9A7MSEoevb0tg3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "90573907"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "150"
+            }
+          ],
+          "text": "Influenza, inactivated, quadrivalent, ALL AGES 6 months and older, single dose syringe/vial"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/e9Yth5IquIww-psZE1ZqiPQ3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "948004323"
+          },
+          "display": "Office Visit"
+        },
+        "occurrenceDateTime": "2021-10-24",
+        "primarySource": false,
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "14",
+              "display": "Left Arm"
+            }
+          ],
+          "text": "Left Arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/eYUB7Q6RVSGue-Boh8qz2n1lvrZ-cPQTRdefPlzmuMlc3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "eYUB7Q6RVSGue-Boh8qz2n1lvrZ-cPQTRdefPlzmuMlc3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "91906111"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "300"
+            }
+          ],
+          "text": "COVID-19 (PFIZER-BIVALENT) MRNA ages 12+"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "occurrenceDateTime": "2022-09-25",
+        "primarySource": false,
+        "reportOrigin": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4082"
+            }
+          ],
+          "text": "MyChart Entered"
+        },
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "14",
+              "display": "Left Arm"
+            }
+          ],
+          "text": "Left Arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/eu9Tsaw1ohjdS.ezKkTLePimztLnl6nKGvXsS5Sf9-sg3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "eu9Tsaw1ohjdS.ezKkTLePimztLnl6nKGvXsS5Sf9-sg3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "94544282"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "150"
+            }
+          ],
+          "text": "Influenza, inactivated, quadrivalent, ALL AGES 6 months and older, single dose syringe/vial"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/eaczqSTIxEFgrkvi.zMgWQQ3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "974614965"
+          },
+          "display": "Office Visit"
+        },
+        "occurrenceDateTime": "2022-10-26",
+        "primarySource": false,
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "7",
+              "display": "Left Deltoid"
+            }
+          ],
+          "text": "Left Deltoid"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Immunization/e4HupMfVVIHtQXr4LX66yoiUKdV1aik3-PBCGySY9klU3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "e4HupMfVVIHtQXr4LX66yoiUKdV1aik3-PBCGySY9klU3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.768076",
+            "value": "104512005"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "150"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/ndc",
+              "code": "58160-909-52"
+            }
+          ],
+          "text": "Influenza (FLUARIX) IIV4"
+        },
+        "patient": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/e1yIAPla.j8qkqnU275BH4w3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "991225117"
+          },
+          "display": "Office Visit"
+        },
+        "occurrenceDateTime": "2023-09-28",
+        "primarySource": true,
+        "manufacturer": {
+          "display": "GLAXO SMITH KLINE"
+        },
+        "lotNumber": "5ME77",
+        "expirationDate": "2024-06-30",
+        "site": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4040",
+              "code": "7",
+              "display": "Left Deltoid"
+            }
+          ],
+          "text": "Left Deltoid"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4030",
+              "code": "2",
+              "display": "Intramuscular"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "doseQuantity": {
+          "value": 0.5,
+          "unit": "mL",
+          "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.768076.4019",
+          "code": "1"
+        },
+        "performer": [
+          {
+            "function": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ],
+              "text": "Administering Provider"
+            },
+            "actor": {
+              "reference": "Practitioner/ec2pifA.qX7iOuRSPi2DB0w3",
+              "type": "Practitioner",
+              "display": "Mary S"
+            }
+          },
+          {
+            "function": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                  "code": "OP",
+                  "display": "Ordering Provider"
+                }
+              ],
+              "text": "Ordering Provider"
+            },
+            "actor": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "type": "Practitioner",
+              "display": "Dr. Z Rammelkamp"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    }
+  ],
+  "total": 14,
+  "type": "collection"
+}

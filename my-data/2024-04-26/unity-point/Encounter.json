@@ -1,0 +1,2487 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/e5pq5X5n7-vBQ51ilwiBDow3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "e5pq5X5n7-vBQ51ilwiBDow3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "1031703883"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "13",
+          "display": "Support OP Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "70",
+                "display": "Telephone"
+              }
+            ],
+            "text": "Telephone"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "type": "Practitioner",
+              "display": "Dr. Z Rammelkamp"
+            }
+          }
+        ],
+        "period": {
+          "start": "2023-10-20",
+          "end": "2023-10-20"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "160492",
+                "display": "Rib Injury"
+              }
+            ],
+            "text": "Rib Injury"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "16034",
+                "display": "Rib Pain"
+              }
+            ],
+            "text": "Rib Pain"
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eIJD3pIhxpMN4Kk981kLcxA3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eIJD3pIhxpMN4Kk981kLcxA3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "1028743701"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "5",
+          "display": "Appointment"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "2513",
+                "display": "Lab"
+              }
+            ],
+            "text": "Lab"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "570824604",
+                "display": "Lab"
+              }
+            ],
+            "text": "Lab"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "type": "Practitioner",
+              "display": "Dr. Z Rammelkamp"
+            }
+          }
+        ],
+        "period": {
+          "start": "2023-09-28T16:00:00Z",
+          "end": "2023-09-28T16:10:00Z"
+        },
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "2",
+                "display": "Clinic or Physician"
+              }
+            ],
+            "text": "Clinic or Physician"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-EOOCptq8VIkP6x3qgcOQY3",
+              "display": "Associated Physicians Laboratory"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/e1yIAPla.j8qkqnU275BH4w3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "e1yIAPla.j8qkqnU275BH4w3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "991225117"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "5",
+          "display": "Appointment"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "101",
+                "display": "Office Visit"
+              }
+            ],
+            "text": "Office Visit"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "570821123",
+                "display": "Office Visit"
+              }
+            ],
+            "text": "Office Visit"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "type": "Practitioner",
+              "display": "Dr. Z Rammelkamp"
+            }
+          },
+          {
+            "period": {
+              "start": "2023-09-28T14:30:00Z",
+              "end": "2023-09-28T15:00:00Z"
+            },
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "display": "Dr. Z Rammelkamp"
+            }
+          }
+        ],
+        "period": {
+          "start": "2023-09-28T14:30:00Z",
+          "end": "2023-09-28T15:00:00Z"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "83",
+                "display": "Annual Exam"
+              }
+            ],
+            "text": "Annual Exam"
+          }
+        ],
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/egqST94UsHyyNnIDYMk6mvA3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "egqST94UsHyyNnIDYMk6mvA3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "1020583168"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "13",
+          "display": "Support OP Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "70",
+                "display": "Telephone"
+              }
+            ],
+            "text": "Telephone"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "type": "Practitioner",
+              "display": "Dr. Z Rammelkamp"
+            }
+          }
+        ],
+        "period": {
+          "start": "2023-08-21",
+          "end": "2023-08-21"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "160564",
+                "display": "Tailbone Pain"
+              }
+            ],
+            "text": "Tailbone Pain"
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eMwIgHPJe9mGD4QJWjwpyng3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eMwIgHPJe9mGD4QJWjwpyng3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "958148810"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "5",
+          "display": "Appointment"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "101",
+                "display": "Office Visit"
+              }
+            ],
+            "text": "Office Visit"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "570821122",
+                "display": "Office Visit"
+              }
+            ],
+            "text": "Office Visit"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "type": "Practitioner",
+              "display": "Dr. Z Rammelkamp"
+            }
+          },
+          {
+            "period": {
+              "start": "2023-03-02T20:45:00Z",
+              "end": "2023-03-02T21:00:00Z"
+            },
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "display": "Dr. Z Rammelkamp"
+            }
+          }
+        ],
+        "period": {
+          "start": "2023-03-02T20:45:00Z",
+          "end": "2023-03-02T21:00:00Z"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "110033",
+                "display": "Follow-up"
+              }
+            ],
+            "text": "Follow-up"
+          }
+        ],
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eaczqSTIxEFgrkvi.zMgWQQ3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eaczqSTIxEFgrkvi.zMgWQQ3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "974614965"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "5",
+          "display": "Appointment"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "101",
+                "display": "Office Visit"
+              }
+            ],
+            "text": "Office Visit"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "570821122",
+                "display": "Office Visit"
+              }
+            ],
+            "text": "Office Visit"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "type": "Practitioner",
+              "display": "Dr. Z Rammelkamp"
+            }
+          },
+          {
+            "period": {
+              "start": "2022-12-01T15:30:00Z",
+              "end": "2022-12-01T15:45:00Z"
+            },
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "display": "Dr. Z Rammelkamp"
+            }
+          }
+        ],
+        "period": {
+          "start": "2022-12-01T15:30:00Z",
+          "end": "2022-12-01T15:45:00Z"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "210404000004",
+                "display": "Referral"
+              }
+            ],
+            "text": "Referral"
+          }
+        ],
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eicq6YSSv0NiweXOdV3a2fA3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eicq6YSSv0NiweXOdV3a2fA3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "958147754"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "5",
+          "display": "Appointment"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "2513",
+                "display": "Lab"
+              }
+            ],
+            "text": "Lab"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "570824604",
+                "display": "Lab"
+              }
+            ],
+            "text": "Lab"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "type": "Practitioner",
+              "display": "Dr. Z Rammelkamp"
+            }
+          }
+        ],
+        "period": {
+          "start": "2022-08-29T20:50:00Z",
+          "end": "2022-08-29T21:00:00Z"
+        },
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-EOOCptq8VIkP6x3qgcOQY3",
+              "display": "Associated Physicians Laboratory"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/e9Yth5IquIww-psZE1ZqiPQ3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "e9Yth5IquIww-psZE1ZqiPQ3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "948004323"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "5",
+          "display": "Appointment"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "101",
+                "display": "Office Visit"
+              }
+            ],
+            "text": "Office Visit"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "570821125",
+                "display": "Physical Exam"
+              }
+            ],
+            "text": "Physical Exam"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "type": "Practitioner",
+              "display": "Dr. Z Rammelkamp"
+            }
+          },
+          {
+            "period": {
+              "start": "2022-08-29T18:30:00Z",
+              "end": "2022-08-29T19:15:00Z"
+            },
+            "individual": {
+              "reference": "Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+              "display": "Dr. Z Rammelkamp"
+            }
+          }
+        ],
+        "period": {
+          "start": "2022-08-29T18:30:00Z",
+          "end": "2022-08-29T19:15:00Z"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "42",
+                "display": "Establish Care"
+              }
+            ],
+            "text": "Establish Care"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "83",
+                "display": "Annual Exam"
+              }
+            ],
+            "text": "Annual Exam"
+          }
+        ],
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eXbKPEi0Qs6PRTp3JmAg1XQ3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eXbKPEi0Qs6PRTp3JmAg1XQ3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "922943112"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "4",
+          "display": "HOV"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10110",
+                "code": "115",
+                "display": "Therapies Series"
+              }
+            ],
+            "text": "Therapies Series"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "3",
+                "display": "Hospital Encounter"
+              }
+            ],
+            "text": "Hospital Encounter"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "410119150",
+                "display": "FOLLOW UP VISIT"
+              }
+            ],
+            "text": "FOLLOW UP VISIT"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/el9L1d9z77kDO27pg1Bczqg3",
+              "type": "Practitioner",
+              "display": "Dr. B Gillespie"
+            }
+          },
+          {
+            "period": {
+              "start": "2022-03-22T22:00:00Z",
+              "end": "2022-03-22T23:00:00Z"
+            },
+            "individual": {
+              "reference": "Practitioner/e6.0Tn8CqIe1d1HdnS2dOkw3",
+              "display": "A Gilmour"
+            }
+          }
+        ],
+        "period": {
+          "start": "2022-03-22T21:42:55Z",
+          "end": "2022-03-23T04:59:00Z"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "429656004",
+                "display": "Late effect of traumatic injury to brain (disorder)"
+              }
+            ],
+            "text": "Late effect of traumatic injury to brain"
+          }
+        ],
+        "account": [
+          {
+            "identifier": {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.726582",
+              "value": "376684810"
+            },
+            "display": "MANDEL,JOSHUA C"
+          }
+        ],
+        "hospitalization": {
+          "extension": [
+            {
+              "valueDateTime": "2022-03-22T21:42:00Z",
+              "url": "http://open.epic.com/FHIR/StructureDefinition/extension/observation-datetime"
+            }
+          ],
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          },
+          "dischargeDisposition": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18888",
+                "code": "1",
+                "display": "Home - Discharge to Home or Self Care"
+              }
+            ],
+            "text": "Home - Discharge to Home or Self Care"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eCefE.QMiywJF20KZeH7FF.otuzM.qcubZaIBnfQmJ5I3",
+              "display": "UnityPoint Health-MeriterTherapy-Central"
+            }
+          },
+          {
+            "location": {
+              "reference": "Location/eCefE.QMiywJF20KZeH7FF.otuzM.qcubZaIBnfQmJ5I3",
+              "display": "UnityPoint Health-MeriterTherapy-Central"
+            }
+          },
+          {
+            "location": {
+              "reference": "Location/egjpywdJOoeSn5JpmOHLRKA3",
+              "display": "UnityPoint Health"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/ec9vlX7WhP16uHS1z8ahJ6w3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "ec9vlX7WhP16uHS1z8ahJ6w3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "922942674"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "4",
+          "display": "HOV"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10110",
+                "code": "115",
+                "display": "Therapies Series"
+              }
+            ],
+            "text": "Therapies Series"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "3",
+                "display": "Hospital Encounter"
+              }
+            ],
+            "text": "Hospital Encounter"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "410119162",
+                "display": "Therapy Evaluation"
+              }
+            ],
+            "text": "Therapy Evaluation"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/el9L1d9z77kDO27pg1Bczqg3",
+              "type": "Practitioner",
+              "display": "Dr. B Gillespie"
+            }
+          },
+          {
+            "period": {
+              "start": "2022-03-11T20:50:00Z",
+              "end": "2022-03-11T21:50:00Z"
+            },
+            "individual": {
+              "reference": "Practitioner/e6.0Tn8CqIe1d1HdnS2dOkw3",
+              "display": "A Gilmour"
+            }
+          }
+        ],
+        "period": {
+          "start": "2022-03-11T20:41:09Z",
+          "end": "2022-03-12T05:59:00Z"
+        },
+        "account": [
+          {
+            "identifier": {
+              "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.726582",
+              "value": "376684810"
+            },
+            "display": "MANDEL,JOSHUA C"
+          }
+        ],
+        "hospitalization": {
+          "extension": [
+            {
+              "valueDateTime": "2022-03-11T20:41:00Z",
+              "url": "http://open.epic.com/FHIR/StructureDefinition/extension/observation-datetime"
+            }
+          ],
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          },
+          "dischargeDisposition": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18888",
+                "code": "1",
+                "display": "Home - Discharge to Home or Self Care"
+              }
+            ],
+            "text": "Home - Discharge to Home or Self Care"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eCefE.QMiywJF20KZeH7FF.otuzM.qcubZaIBnfQmJ5I3",
+              "display": "UnityPoint Health-MeriterTherapy-Central"
+            }
+          },
+          {
+            "location": {
+              "reference": "Location/eCefE.QMiywJF20KZeH7FF.otuzM.qcubZaIBnfQmJ5I3",
+              "display": "UnityPoint Health-MeriterTherapy-Central"
+            }
+          },
+          {
+            "location": {
+              "reference": "Location/egjpywdJOoeSn5JpmOHLRKA3",
+              "display": "UnityPoint Health"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eO1U1Zl-BCecCFvt3t7pScg3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eO1U1Zl-BCecCFvt3t7pScg3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "837844366"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "13",
+          "display": "Support OP Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "70",
+                "display": "Telephone"
+              }
+            ],
+            "text": "Telephone"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-09-08",
+          "end": "2020-09-08"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "140008",
+                "display": "Hand Pain"
+              }
+            ],
+            "text": "Hand Pain"
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eE0V8lLZfr-r9pJhN8KLz7A3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eE0V8lLZfr-r9pJhN8KLz7A3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "833901305"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "13",
+          "display": "Support OP Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "70",
+                "display": "Telephone"
+              }
+            ],
+            "text": "Telephone"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-08-14",
+          "end": "2020-08-14"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "110033",
+                "display": "Follow-up"
+              }
+            ],
+            "text": "Follow-up"
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/ejQJPEZrfKxMX52tTdyMhfQ3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "ejQJPEZrfKxMX52tTdyMhfQ3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "830047706"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "13",
+          "display": "Support OP Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "70",
+                "display": "Telephone"
+              }
+            ],
+            "text": "Telephone"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-07-21",
+          "end": "2020-07-21"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "110033",
+                "display": "Follow-up"
+              }
+            ],
+            "text": "Follow-up"
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eYHyFcsBbmYwd1M8ysxb-hA3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eYHyFcsBbmYwd1M8ysxb-hA3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "830043848"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "13",
+          "display": "Support OP Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "70",
+                "display": "Telephone"
+              }
+            ],
+            "text": "Telephone"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-07-21",
+          "end": "2020-07-21"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "534",
+                "display": "Care Coordination"
+              }
+            ],
+            "text": "Care Coordination"
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eHcSgydLAxcfCAKBVtwDxXw3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eHcSgydLAxcfCAKBVtwDxXw3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "829995922"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "13",
+          "display": "Support OP Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "111",
+                "display": "Orders Only"
+              }
+            ],
+            "text": "Orders Only"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-07-21",
+          "end": "2020-07-21"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eO5BPd4vBOvR8PDqpYvlgfQ3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eO5BPd4vBOvR8PDqpYvlgfQ3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "829393933"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "13",
+          "display": "Support OP Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "111",
+                "display": "Orders Only"
+              }
+            ],
+            "text": "Orders Only"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-07-15",
+          "end": "2020-07-15"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eF2CRthQyZ2Gd2CquUWkfsQ3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eF2CRthQyZ2Gd2CquUWkfsQ3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "829385742"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "13",
+          "display": "Support OP Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "70",
+                "display": "Telephone"
+              }
+            ],
+            "text": "Telephone"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-07-15",
+          "end": "2020-07-15"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "744",
+                "display": "Prior Authorization"
+              }
+            ],
+            "text": "Prior Authorization"
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eED6OhVRXP6XsEM4vxkusjA3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eED6OhVRXP6XsEM4vxkusjA3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "829213099"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "5",
+          "display": "Appointment"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "76",
+                "display": "Telemedicine"
+              }
+            ],
+            "text": "Telemedicine"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "570827036",
+                "display": "Telehealth"
+              }
+            ],
+            "text": "Telehealth"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "period": {
+              "start": "2020-07-14T19:30:00Z",
+              "end": "2020-07-14T20:00:00Z"
+            },
+            "individual": {
+              "reference": "Practitioner/eK5.k-HYolPVGSphPKQIOWQ3",
+              "display": "M Picone"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-07-14T19:30:00Z",
+          "end": "2020-07-14T20:00:00Z"
+        },
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/e7jVo8vEAxcJ36UbHZzVojw3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "e7jVo8vEAxcJ36UbHZzVojw3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "799951565"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "5",
+          "display": "Appointment"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "101",
+                "display": "Office Visit"
+              }
+            ],
+            "text": "Office Visit"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "570821122",
+                "display": "Office Visit"
+              }
+            ],
+            "text": "Office Visit"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          },
+          {
+            "period": {
+              "start": "2020-01-09T18:45:00Z",
+              "end": "2020-01-09T19:00:00Z"
+            },
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-01-09T18:45:00Z",
+          "end": "2020-01-09T19:00:00Z"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "520",
+                "display": "Skin Check"
+              }
+            ],
+            "text": "Skin Check"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "160690",
+                "display": "Heartburn"
+              }
+            ],
+            "text": "Heartburn"
+          }
+        ],
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eiF39dGwybweLIUrk9Z7aCQ3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eiF39dGwybweLIUrk9Z7aCQ3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "750474644"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "13",
+          "display": "Support OP Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "70",
+                "display": "Telephone"
+              }
+            ],
+            "text": "Telephone"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2019-02-01",
+          "end": "2019-02-01"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "111",
+                "display": "Travel Consult"
+              }
+            ],
+            "text": "Travel Consult"
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "Location/e2tFlWq4f.6ewAk-IWYrgZZjU0VDOJvLJJY6MIcCbS4o3",
+              "display": "UnityPoint Health - Meriter Pediatrics W Washington"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eXbL1HO48IkxB3IcuSy3ntQ3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eXbL1HO48IkxB3IcuSy3ntQ3",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "727947624"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "13",
+          "display": "Support OP Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "70",
+                "display": "Telephone"
+              }
+            ],
+            "text": "Telephone"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2018-08-28",
+          "end": "2018-08-28"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "95",
+                "display": "Results"
+              }
+            ],
+            "text": "Results"
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/ef5y5upKfLIsUvqi9Xrmfig3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "ef5y5upKfLIsUvqi9Xrmfig3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "725327197"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "5",
+          "display": "Appointment"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "2513",
+                "display": "Lab"
+              }
+            ],
+            "text": "Lab"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "570824604",
+                "display": "Lab"
+              }
+            ],
+            "text": "Lab"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2018-08-18T14:30:00Z",
+          "end": "2018-08-18T14:35:00Z"
+        },
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-EOOCptq8VIkP6x3qgcOQY3",
+              "display": "Associated Physicians Laboratory"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/e-Y4mag6.P2MlJiyxCLjK4g3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "e-Y4mag6.P2MlJiyxCLjK4g3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "724628999"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "5",
+          "display": "Appointment"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "2513",
+                "display": "Lab"
+              }
+            ],
+            "text": "Lab"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "570824604",
+                "display": "Lab"
+              }
+            ],
+            "text": "Lab"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2018-08-09T15:20:00Z",
+          "end": "2018-08-09T15:25:00Z"
+        },
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-EOOCptq8VIkP6x3qgcOQY3",
+              "display": "Associated Physicians Laboratory"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Encounter/eVMXHnnT7souX6XGVBlM3Cg3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "eVMXHnnT7souX6XGVBlM3Cg3",
+        "extension": [
+          {
+            "valueBoolean": false,
+            "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "720803470"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+          "code": "5",
+          "display": "Appointment"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.30",
+                "code": "101",
+                "display": "Office Visit"
+              }
+            ],
+            "text": "Office Visit"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.808267",
+                "code": "570821014",
+                "display": "Office Visit"
+              }
+            ],
+            "text": "Office Visit"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.18875",
+                "code": "3",
+                "display": "Elective"
+              }
+            ],
+            "text": "Elective"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer"
+                  }
+                ],
+                "text": "referrer"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "type": "Practitioner",
+              "display": "Dr. P Dhillon"
+            }
+          },
+          {
+            "period": {
+              "start": "2018-08-09T14:30:00Z",
+              "end": "2018-08-09T15:00:00Z"
+            },
+            "individual": {
+              "reference": "Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+              "display": "Dr. P Dhillon"
+            }
+          }
+        ],
+        "period": {
+          "start": "2018-08-09T14:30:00Z",
+          "end": "2018-08-09T15:00:00Z"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "42",
+                "display": "Establish Care"
+              }
+            ],
+            "text": "Establish Care"
+          },
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.728286",
+                "code": "83",
+                "display": "Annual Exam"
+              }
+            ],
+            "text": "Annual Exam"
+          }
+        ],
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.10.698084.10310",
+                "code": "1",
+                "display": "Self"
+              }
+            ],
+            "text": "Self"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/eY3MQR9m.houWYvy5mpACL-tOdxUVkBDJ8VqL8pDwA6A3",
+              "display": "Assoc Physicians Internal Medicine"
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    }
+  ],
+  "total": 24,
+  "type": "collection"
+}

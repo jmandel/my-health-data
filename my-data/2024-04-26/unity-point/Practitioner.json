@@ -1,0 +1,299 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Practitioner/eLT5TYxUWqvf6piKZ8-r.yA3",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "eLT5TYxUWqvf6piKZ8-r.yA3",
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "text": "NPI"
+            },
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1073855474"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "INTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.697780",
+            "value": " DHILLOPS"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "EXTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.697780",
+            "value": "DHILLOPS"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "EPIC"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.60",
+            "value": "1073855474"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "Epic"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.63",
+            "value": "6050558173003"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "CCPROVID"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.99",
+            "value": "802011"
+          },
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.126",
+            "value": "207R00000X"
+          },
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.557",
+            "value": "1073855474"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "INTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.836982",
+            "value": "  802011"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "EXTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.836982",
+            "value": "802011"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "usual",
+            "text": "Dr. P Dhillon",
+            "family": "Dhillon",
+            "given": [
+              "P"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Practitioner/eK5.k-HYolPVGSphPKQIOWQ3",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "eK5.k-HYolPVGSphPKQIOWQ3",
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "text": "NPI"
+            },
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1730357849"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "INTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.697780",
+            "value": " PICONEMA"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "EXTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.697780",
+            "value": "PICONEMA"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "EPIC"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.60",
+            "value": "1730357849"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "Epic"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.63",
+            "value": "6572844523084"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "CCPROVID"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.99",
+            "value": "219711"
+          },
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.126",
+            "value": "363LF0000X"
+          },
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.557",
+            "value": "1730357849"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "INTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.836982",
+            "value": "  219711"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "EXTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.836982",
+            "value": "219711"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "usual",
+            "text": "M Picone",
+            "family": "Picone",
+            "given": [
+              "M"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Practitioner/ey81YiHNZU361WB9p7j7lsw3",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "ey81YiHNZU361WB9p7j7lsw3",
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "text": "NPI"
+            },
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1205323193"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "INTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.697780",
+            "value": " RAMMELZL"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "EXTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.697780",
+            "value": "RAMMELZL"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "EPIC"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.60",
+            "value": "1205323193"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "Epic"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.63",
+            "value": "9005828432002"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "CCPROVID"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.99",
+            "value": "144590"
+          },
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.126",
+            "value": "207R00000X"
+          },
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.553",
+            "value": "RAMMELZL"
+          },
+          {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.5.737384.557",
+            "value": "1205323193"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "INTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.836982",
+            "value": "  144590"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "text": "EXTERNAL"
+            },
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.2.836982",
+            "value": "144590"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "usual",
+            "text": "Dr. Z Rammelkamp",
+            "family": "Rammelkamp",
+            "given": [
+              "Z"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "total": 3,
+  "type": "collection"
+}

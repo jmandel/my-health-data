@@ -1,0 +1,245 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/CarePlan/eOAr5kF.4C3hbvqHpX7Wq08d2ZP1EK-VJ0N7MW5T4fuk3",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "eOAr5kF.4C3hbvqHpX7Wq08d2ZP1EK-VJ0N7MW5T4fuk3",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Plan for Patient Care</h1><h2>Active Problems</h2><ul><li>Gastroesophageal reflux disease</li><li>Post concussion syndrome</li></ul><h2>Goals</h2><ul><li>Blood Pressure below 140/90</li></ul><h2>Upcoming Appointments</h2><table><tr><th>Start</th><th>End</th><th>Status</th></tr><tr><td>Nov 07, 2024 02:30 PM UTC</td><td>Nov 07, 2024 03:15 PM UTC</td><td>Scheduled</td></tr></table></div>"
+        },
+        "status": "active",
+        "intent": "plan",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                "code": "assess-plan",
+                "display": "Assessment and Plan of Treatment"
+              }
+            ],
+            "text": "Assessment and Plan of Treatment"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "38717003",
+                "display": "Longitudinal"
+              }
+            ],
+            "text": "Longitudinal"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/ey9D-CCgaYNTNBamddODJgRWkvcZ0m5AvcZA1meQCORc3",
+            "display": "Gastroesophageal reflux disease"
+          },
+          {
+            "reference": "Condition/epCVtMcGpB2.HetQahGDyfkpTL..DUZjNB.hnumcLtWE3",
+            "display": "Post concussion syndrome"
+          }
+        ],
+        "goal": [
+          {
+            "reference": "Goal/eZD.KqPPKIwIeW5hwZv0lkOHaS53LnWp.St-PYr5lB-03",
+            "display": "Blood Pressure below 140/90"
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "kind": "Appointment",
+              "status": "scheduled",
+              "doNotPerform": false,
+              "scheduledPeriod": {
+                "start": "2024-11-07T14:30:00Z",
+                "end": "2024-11-07T15:15:00Z"
+              }
+            }
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/CarePlan/eOAr5kF.4C3hbvqHpX7Wq0zic8jkizqhwUXgZC2Usp-k3",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "eOAr5kF.4C3hbvqHpX7Wq0zic8jkizqhwUXgZC2Usp-k3",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Patient Instructions</h1><p><pre>For post-concussive syndrome: I agree with all of the things you are doing. Other things to consider would be a medication like topiramate for headaches; other options would be amitriptyline, which is an antidepressant &#13;&#10;For blood pressure: &#13;&#10;&#13;&#10;</pre></p></div>"
+        },
+        "status": "active",
+        "intent": "proposal",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                "code": "assess-plan",
+                "display": "Assessment and Plan of Treatment"
+              }
+            ],
+            "text": "Assessment and Plan of Treatment"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "734163000",
+                "display": "Encounter Level"
+              }
+            ],
+            "text": "Encounter Level"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/e9Yth5IquIww-psZE1ZqiPQ3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "948004323"
+          },
+          "display": "Office Visit"
+        },
+        "note": [
+          {
+            "text": "Patient Instructions: For post-concussive syndrome: I agree with all of the things you are doing. Other things to consider would be a medication like topiramate for headaches; other options would be amitriptyline, which is an antidepressant \r\nFor blood pressure: \r\n\r\n"
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/CarePlan/eOAr5kF.4C3hbvqHpX7Wq0zKHX6bJs-v0S0C17ouhbdg3",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "eOAr5kF.4C3hbvqHpX7Wq0zKHX6bJs-v0S0C17ouhbdg3",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Patient Instructions</h1><p><pre>Start with 10 mg of nortriptylene at night &#13;&#10;Can increase to 20 mg at night after 1-2 weeks (allow your system to get used to it) &#13;&#10;</pre></p></div>"
+        },
+        "status": "active",
+        "intent": "proposal",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                "code": "assess-plan",
+                "display": "Assessment and Plan of Treatment"
+              }
+            ],
+            "text": "Assessment and Plan of Treatment"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "734163000",
+                "display": "Encounter Level"
+              }
+            ],
+            "text": "Encounter Level"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/eaczqSTIxEFgrkvi.zMgWQQ3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "974614965"
+          },
+          "display": "Office Visit"
+        },
+        "note": [
+          {
+            "text": "Patient Instructions: Start with 10 mg of nortriptylene at night \r\nCan increase to 20 mg at night after 1-2 weeks (allow your system to get used to it) \r\n"
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/CarePlan/eOAr5kF.4C3hbvqHpX7Wq00ItOw1J5f2aEj-rfNs0B9o3",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "eOAr5kF.4C3hbvqHpX7Wq00ItOw1J5f2aEj-rfNs0B9o3",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Patient Instructions</h1><p><pre>Nortriptyline taper: 10 mg once a night for 2 weeks. Then can go to 10 mg every other night. &#13;&#10;</pre></p></div>"
+        },
+        "status": "active",
+        "intent": "proposal",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                "code": "assess-plan",
+                "display": "Assessment and Plan of Treatment"
+              }
+            ],
+            "text": "Assessment and Plan of Treatment"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "734163000",
+                "display": "Encounter Level"
+              }
+            ],
+            "text": "Encounter Level"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "encounter": {
+          "reference": "Encounter/eMwIgHPJe9mGD4QJWjwpyng3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.283.2.7.3.698084.8",
+            "value": "958148810"
+          },
+          "display": "Office Visit"
+        },
+        "note": [
+          {
+            "text": "Patient Instructions: Nortriptyline taper: 10 mg once a night for 2 weeks. Then can go to 10 mg every other night. \r\n"
+          }
+        ],
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    }
+  ],
+  "total": 4,
+  "type": "collection"
+}

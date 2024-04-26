@@ -1,0 +1,42 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/Goal/eZD.KqPPKIwIeW5hwZv0lkOHaS53LnWp.St-PYr5lB-03",
+      "resource": {
+        "resourceType": "Goal",
+        "id": "eZD.KqPPKIwIeW5hwZv0lkOHaS53LnWp.St-PYr5lB-03",
+        "lifecycleStatus": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.283.2.7.4.737184.20005",
+                "code": "4",
+                "display": "Blood Pressure"
+              }
+            ],
+            "text": "Blood Pressure"
+          }
+        ],
+        "description": {
+          "text": "Blood Pressure below 140/90"
+        },
+        "subject": {
+          "reference": "Patient/euBTtyZGh3f-JTiA7uZ5FgZJna7wj9UegXGnkSaLxxLk3",
+          "display": "Mandel, Josh C"
+        },
+        "startDate": "2022-08-29",
+        "expressedBy": {
+          "reference": "Practitioner/er.OePSLrxqVlzVsMn.4myxDHOyNMErSQdktjBHxTGKY3",
+          "type": "Practitioner",
+          "display": "Dr. Z Rammelkamp"
+        },
+        "meta": {
+          "source": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/"
+        }
+      }
+    }
+  ],
+  "total": 1,
+  "type": "collection"
+}
