@@ -79,5 +79,6 @@
     }
   ],
   "total": 3,
-  "type": "collection"
+  "type": "collection",
+  "resourceType": "Bundle"
 }

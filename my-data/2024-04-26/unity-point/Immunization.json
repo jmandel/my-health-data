@@ -906,5 +906,6 @@
     }
   ],
   "total": 14,
-  "type": "collection"
+  "type": "collection",
+  "resourceType": "Bundle"
 }

@@ -1,4 +1,5 @@
 {
+  "resourceType": "Bundle",
   "entry": [
     {
       "fullUrl": "https://epicfhir.unitypoint.org/ProdFHIR/api/FHIR/R4/AllergyIntolerance/epKjDjZ5BLPDM4U.rKxTb6lHGa3NrjRsxODT8fsUA4dY3",

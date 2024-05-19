@@ -2334,5 +2334,6 @@
     }
   ],
   "total": 17,
-  "type": "collection"
+  "type": "collection",
+  "resourceType": "Bundle"
 }

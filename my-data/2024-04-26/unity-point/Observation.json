@@ -6585,5 +6585,6 @@
     }
   ],
   "total": 66,
-  "type": "collection"
+  "type": "collection",
+  "resourceType": "Bundle"
 }

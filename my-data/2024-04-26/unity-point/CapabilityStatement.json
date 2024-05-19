@@ -2911,5 +2911,6 @@
     }
   ],
   "total": 1,
-  "type": "collection"
+  "type": "collection",
+  "resourceType": "Bundle"
 }

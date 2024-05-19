@@ -3693,5 +3693,6 @@
     }
   ],
   "total": 7,
-  "type": "collection"
+  "type": "collection",
+  "resourceType": "Bundle"
 }

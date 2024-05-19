@@ -2483,5 +2483,6 @@
     }
   ],
   "total": 24,
-  "type": "collection"
+  "type": "collection",
+  "resourceType": "Bundle"
 }
