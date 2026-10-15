@@ -1,6 +1,6 @@
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["pydicom==3.0.1"]
+# dependencies = ["pydicom==3.0.1", "numpy==2.3.3", "pillow==11.3.0"]
 # ///
 """De-identifies Josh's imaging exports into the sample studies in this
 directory ("Josh Example").
@@ -30,14 +30,18 @@ keeping dates, descriptions and device type, as the owner chose):
   attributes; pixel data, byte for byte.
 - Instance-identifying UIDs are replaced by deterministic 2.25 UIDs.
   Coding-scheme, SOP Class, transfer syntax and implementation UIDs stay.
-- Screen captures and scanned documents are dropped (DROP_SERIES): they
-  show the patient's name and identifiers in the pixels.
+- Screen captures and scanned documents show the patient's name and
+  identifiers in their pixels (DROP_SERIES). Their originals are not
+  written; reconstruct.py redraws each from scratch with the sample
+  identity, marked "(reconstructed)" in SeriesDescription and
+  ImageComments. It also writes a synthetic CT dose SR.
 
 Output: <out>/<study>/<series number>-<series description>.tgz, one
 archive per series, each holding <study>/<series>/<instance>.dcm.
 """
 
 import argparse
+import copy
 import hashlib
 import io
 import os
@@ -51,6 +55,10 @@ import pydicom
 from pydicom.config import settings
 from pydicom.dataelem import DataElement
 from pydicom.tag import Tag
+
+sys.dont_write_bytecode = True
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import reconstruct  # noqa: E402
 
 settings.reading_validation_mode = 1  # warn, keep the original values
 settings.writing_validation_mode = 1
@@ -68,7 +76,11 @@ STUDIES = [
     {"date": "20121010", "description": "HAND RGHT PA LAT OBL MIN 3 VW", "id": "xr-hand-right-2012", "accession": "EXCR2012C"},
 ]
 
-# Series dropped because their pixels show identifying text.
+# Studies whose kept files the reconstructions draw on.
+KEEP_FOR_RECONSTRUCTION = {"mri-brain-2020", "ct-abdomen-pelvis-2012"}
+
+# Series whose pixels show identifying text. Their originals are not
+# written; reconstruct.py builds synthetic stand-ins from scratch.
 DROP_SERIES = {
     ("ct-abdomen-pelvis-2012", "Dose Report"): "screen capture showing patient name, ID and accession number",
     ("ct-abdomen-pelvis-2012", "Clinical Documents"): "scanned paper document",
@@ -179,6 +191,31 @@ def main() -> None:
     skipped = 0
     seen = {}  # SOP Instance UID -> file hash; the exports repeat some files
     duplicates = 0
+    ctx = reconstruct.Context(accession={s["id"]: s["accession"] for s in STUDIES})
+
+    def write(ds, study, path, comment=None, rebuilt=False):
+        birth = str(ds.get("PatientBirthDate", "") or "")
+        pixel_before = ds.PixelData if "PixelData" in ds else None
+        clean(ds, True)
+        clean(ds.file_meta, True)
+        ds.PatientName = PATIENT_NAME
+        ds.PatientID = PATIENT_ID
+        if re.fullmatch(r"\d{8}", birth):
+            ds.PatientBirthDate = birth[:4] + "0101"
+        ds.AccessionNumber = study["accession"]
+        ds.StudyID = study["accession"]
+        if comment:
+            ds.ImageComments = comment
+        if not rebuilt and (ds.PixelData if "PixelData" in ds else None) != pixel_before:
+            sys.exit(f"pixel data changed in {path}")
+        buf = io.BytesIO()
+        ds.save_as(buf, enforce_file_format=True)
+        num = int(ds.get("SeriesNumber") or 0)
+        desc = re.sub(r"\s*\((reconstructed|synthetic)\)$", "", str(ds.get("SeriesDescription", "")))
+        slug = re.sub(r"[^A-Za-z0-9]+", "-", desc).strip("-") or "series"
+        inst = int(ds.get("InstanceNumber") or 0)
+        series[(study["id"], f"{num:04d}-{slug}")].append((inst, ds.SOPInstanceUID, buf.getvalue()))
+
     for root in a.sources:
         for dp, _, fn in os.walk(root):
             for f in sorted(fn):
@@ -202,28 +239,24 @@ def main() -> None:
                 if study is None:
                     sys.exit(f"unrecognised study in {path}: add it to STUDIES")
                 desc = str(ds.get("SeriesDescription", ""))
-                if (study["id"], desc) in DROP_SERIES:
-                    dropped[(study["id"], desc)] += 1
+                if not ctx.birth_year and re.fullmatch(r"\d{8}", str(ds.get("PatientBirthDate", "") or "")):
+                    ctx.birth_year = str(ds.PatientBirthDate)[:4]
+                key = (study["id"], desc)
+                if key in DROP_SERIES:
+                    dropped[key] += 1
+                    ctx.dropped.setdefault(key, []).append(ds)
                     continue
+                if study["id"] in KEEP_FOR_RECONSTRUCTION:
+                    ctx.kept.setdefault(key, []).append(copy.deepcopy(ds))
+                write(ds, study, path)
 
-                birth = str(ds.get("PatientBirthDate", "") or "")
-                pixel_before = ds.PixelData if "PixelData" in ds else None
-                clean(ds, True)
-                clean(ds.file_meta, True)
-                ds.PatientName = PATIENT_NAME
-                ds.PatientID = PATIENT_ID
-                if re.fullmatch(r"\d{8}", birth):
-                    ds.PatientBirthDate = birth[:4] + "0101"
-                ds.AccessionNumber = study["accession"]
-                ds.StudyID = study["accession"]
-                if (ds.PixelData if "PixelData" in ds else None) != pixel_before:
-                    sys.exit(f"pixel data changed in {path}")
-                buf = io.BytesIO()
-                ds.save_as(buf, enforce_file_format=True)
-                num = int(ds.get("SeriesNumber") or 0)
-                slug = re.sub(r"[^A-Za-z0-9]+", "-", desc).strip("-") or "series"
-                inst = int(ds.get("InstanceNumber") or 0)
-                series[(study["id"], f"{num:04d}-{slug}")].append((inst, ds.SOPInstanceUID, buf.getvalue()))
+    # Synthetic stand-ins for the dropped series (reconstruct.py), written
+    # through the same de-identification as everything else.
+    rebuilt = 0
+    for ds, comment in sorted(reconstruct.build(ctx), key=lambda x: (str(x[0].StudyInstanceUID), int(x[0].SeriesNumber), int(x[0].get("InstanceNumber") or 0))):
+        study = next(s for s in STUDIES if str(ds.get("StudyDate")) == s["date"] and str(ds.get("StudyDescription")) == s["description"])
+        write(ds, study, f"reconstructed {ds.SeriesDescription}", comment, rebuilt=True)
+        rebuilt += 1
 
     # Guard: no identifying value from any source may appear in any output.
     leaks = defaultdict(set)
@@ -257,7 +290,8 @@ def main() -> None:
             fh.write(blob)
         print(f"{study_id}/{slug}.tgz  {len(files)} instances  {len(blob) / 1e6:.1f} MB")
     for (sid, desc), n in sorted(dropped.items()):
-        print(f"dropped {sid} '{desc}': {n} instance(s): {DROP_SERIES[(sid, desc)]}")
+        print(f"replaced {sid} '{desc}': {n} instance(s): {DROP_SERIES[(sid, desc)]}")
+    print(f"reconstructed or synthetic instances written: {rebuilt}")
     print(f"non-DICOM files skipped: {skipped}; identical duplicate files skipped: {duplicates}; identifying values checked: "
           + ", ".join(f"{k} {len(v)}" for k, v in sorted(terms.items())) + "; none found in outputs")
 
