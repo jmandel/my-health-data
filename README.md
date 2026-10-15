@@ -36,7 +36,9 @@ git checkout master
 | `xr-hand-wrist-right-2012/` | Radiographs, right hand and wrist, 10 Oct 2012 | 3 | 3 |
 | `xr-hand-right-2012/` | Radiographs, right hand (portable, in a splint), 10 Oct 2012 | 3 | 3 |
 
-What was changed, by `imaging/deid.py` and `imaging/reconstruct.py` (run `uv run imaging/deid.py --out imaging <export folders>`):
+The files were made by `imaging/deid.py` and `imaging/reconstruct.py`, which document exactly what was changed. Their inputs are my original, identified CD and portal exports, which are not published, so only I can re-run them (`uv run imaging/deid.py --out imaging <my export folders>`).
+
+What changed:
 
 - Patient name `Example^Josh`, patient ID `JEXAMPLE01`, birth date reduced to 1 January of the birth year. Age, sex and (on the MRI) weight are as recorded.
 - Accession numbers and study IDs replaced with `EXMRI2020`, `EXCT2012` and `EXCR2012A`–`C`.
@@ -51,5 +53,3 @@ What was changed, by `imaging/deid.py` and `imaging/reconstruct.py` (run `uv run
 - The fonts used for the reconstructions are DejaVu (`imaging/fonts/`, with their license).
 
 The radiographs show the technologists' lead markers (letters and initials), as taken.
-
-These replace `mri-brain-2020.tgz` and `wrist-low-res.tgz`, which held anonymized copies of the MRI and a lossy-compressed copy of the left wrist radiographs.

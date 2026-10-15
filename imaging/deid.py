@@ -2,12 +2,14 @@
 # requires-python = ">=3.10"
 # dependencies = ["pydicom==3.0.1", "numpy==2.3.3", "pillow==11.3.0"]
 # ///
-"""De-identifies Josh's imaging exports into the sample studies in this
-directory ("Josh Example").
+"""De-identifies Josh's imaging exports into the sample studies in the
+imaging/ directory, for the sample patient "Josh Example".
 
     uv run imaging/deid.py --out imaging SOURCE_DIR [SOURCE_DIR ...]
 
-SOURCE_DIRs are the unzipped CD/portal exports. The script holds no
+SOURCE_DIRs are Josh's original, identified CD/portal exports. They are not
+published, so only he can re-run this; the script is here to document
+exactly how the published files were made. The script holds no
 personal data: the identifiers it must remove are read from the inputs at
 run time, and the run fails if any of them is still present in an output.
 
